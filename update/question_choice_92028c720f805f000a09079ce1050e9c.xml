@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <misc>0</misc>
+        <order>1100</order>
+        <question display_value="2. Programme">ca5618050fcf47000a09079ce1050e54</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-02-06 11:37:22</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>92028c720f805f000a09079ce1050e9c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Type 26</sys_name>
+        <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+        <sys_update_name>question_choice_92028c720f805f000a09079ce1050e9c</sys_update_name>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-04-09 12:35:47</sys_updated_on>
+        <text>Type 26</text>
+        <value>7</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=92028c720f805f000a09079ce1050e9c"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="GBP">GBP</currency>
+        <field>misc</field>
+        <id>92028c720f805f000a09079ce1050e9c</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="GBP">GBP</reference_currency>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-02-06 11:37:22</sys_created_on>
+        <sys_id>cd1248f20f805f000a09079ce1050ebe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-02-06 11:37:22</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="GBP">GBP</currency>
+        <field>rec_misc</field>
+        <id>92028c720f805f000a09079ce1050e9c</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="GBP">GBP</reference_currency>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-02-06 11:37:22</sys_created_on>
+        <sys_id>851248f20f805f000a09079ce1050ebe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-02-06 11:37:22</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_application">
+    <sys_ui_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <hint/>
+        <name>Legal Portal</name>
+        <order/>
+        <roles>x_baes2_legal_port_read</roles>
+        <sys_class_name>sys_ui_application</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2017-11-22 10:51:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>4cbe9cd60fe60300bb20716ce1050e98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Legal Portal</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+        <sys_update_name>sys_ui_application_4cbe9cd60fe60300bb20716ce1050e98</sys_update_name>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2017-11-22 10:51:13</sys_updated_on>
+    </sys_ui_application>
+</record_update>

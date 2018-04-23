@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Legal Portal Licence" max_length="40" name="x_baes2_legal_port_licence" type="collection">
+        <element display="true" label="Display Title" max_length="255" name="display_title" type="string_full_utf8"/>
+        <element label="Licence Type" mandatory="true" max_length="32" name="licence_type" reference="x_baes2_legal_port_licence_type" type="reference"/>
+        <element label="Title" mandatory="true" max_length="100" name="title" type="string"/>
+        <index name="index">
+            <element name="licence_type"/>
+        </index>
+    </element>
+</database>

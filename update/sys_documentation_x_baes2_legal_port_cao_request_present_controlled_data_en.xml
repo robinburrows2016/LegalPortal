@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="present_controlled_data" label="Present Controlled Data" language="en" table="x_baes2_legal_port_cao_request">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>present_controlled_data</element>
+            <help/>
+            <hint/>
+            <label>Present Controlled Data</label>
+            <language>en</language>
+            <name>x_baes2_legal_port_cao_request</name>
+            <plural>Present Controlled Data</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-11-24 07:50:31</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>e088ca760fae83000a09079ce1050e8e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Present Controlled Data</sys_name>
+            <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+            <sys_update_name>sys_documentation_x_baes2_legal_port_cao_request_present_controlled_data_en</sys_update_name>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2017-11-24 07:50:31</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

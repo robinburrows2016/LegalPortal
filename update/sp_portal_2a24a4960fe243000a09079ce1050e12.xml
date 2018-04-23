@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_portal">
+    <sp_portal action="INSERT_OR_UPDATE">
+        <css_variables>$grid-gutter-width: 15px !default;</css_variables>
+        <default>false</default>
+        <homepage display_value="splg_index">8e97205a0fe243000a09079ce1050e19</homepage>
+        <icon/>
+        <kb_knowledge_base display_value="Legal Portal Knowledge">56ae1cd60fe60300bb20716ce1050ec1</kb_knowledge_base>
+        <kb_knowledge_page display_value="kb_view2">26c2e030d7201200a9addd173e24d437</kb_knowledge_page>
+        <login_page display_value="landing">36c61807cb31120000f8d856634c9ca9</login_page>
+        <logo/>
+        <notfound_page display_value="404">3c2c9063cb11020000f8d856634c9c1f</notfound_page>
+        <quick_start_config><![CDATA[[{
+	"tagline": {
+		"table" : "sp_instance",
+		"sys_id" : "34fe3d96cb20020000f8d856634c9cf4",
+		"field" : "title"
+	},
+	"hero_background": {
+		"table" : "sp_container",
+		"sys_id" : "be98a8d2cb20020000f8d856634c9c63",
+		"field" : "background_image"
+	}
+}]]]></quick_start_config>
+        <sc_catalog display_value="Legal Portal Catalog">02ae1cd60fe60300bb20716ce1050ea2</sc_catalog>
+        <sc_catalog_page display_value="sc_home">fe87a11147132100ba13a5554ee490b9</sc_catalog_page>
+        <sc_category_page/>
+        <sp_chat_queue/>
+        <sp_rectangle_menu display_value="SPLG Mega Menu">d849a4960fe243000a09079ce1050e34</sp_rectangle_menu>
+        <sqanda_knowledge_base display_value="End User Knowledge">d04fa8b44fa9924069a8c9318110c7b2</sqanda_knowledge_base>
+        <sys_class_name>sp_portal</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2017-11-22 11:15:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2a24a4960fe243000a09079ce1050e12</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Legal Portal</sys_name>
+        <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+        <sys_update_name>sp_portal_2a24a4960fe243000a09079ce1050e12</sys_update_name>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-03-19 15:52:45</sys_updated_on>
+        <theme display_value="Mega-Menu">f0cad5a10f6de600fdbb4d9ce1050ecb</theme>
+        <title>Legal Portal</title>
+        <url_suffix>splg</url_suffix>
+    </sp_portal>
+</record_update>

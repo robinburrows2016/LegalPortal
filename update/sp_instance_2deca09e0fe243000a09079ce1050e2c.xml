@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>0</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">2fbc209e0fe243000a09079ce1050e25</sp_column>
+        <sp_widget display_value="Group Profile - BAE">d99878334f068380bceaf9b7c210c783</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2017-11-22 11:53:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2deca09e0fe243000a09079ce1050e2c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Meet the Team</sys_name>
+        <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+        <sys_update_name>sp_instance_2deca09e0fe243000a09079ce1050e2c</sys_update_name>
+        <sys_updated_by>Andy.bourner@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-01-24 07:34:05</sys_updated_on>
+        <title>Meet the Team</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"sys_user_group": {
+		"value": "c3bc4fca0fb603000a09079ce1050eb4",
+		"displayValue": "Export Control Officers"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+</record_update>

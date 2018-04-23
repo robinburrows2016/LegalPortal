@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="INSERT_OR_UPDATE">
+        <category display_value="Legal Portal Geolocation">0f9e58d60fe60300bb20716ce1050e66</category>
+        <order>1</order>
+        <property display_value="x_baes2_legal_port.travel.buffer" name="x_baes2_legal_port.travel.buffer">d59ed4d60fe60300bb20716ce1050eff</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2017-11-22 10:50:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>039e58d60fe60300bb20716ce1050e68</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_baes2_legal_port.travel.buffer.Legal Portal Geolocation</sys_name>
+        <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_039e58d60fe60300bb20716ce1050e68</sys_update_name>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2017-11-22 10:50:53</sys_updated_on>
+    </sys_properties_category_m2m>
+</record_update>

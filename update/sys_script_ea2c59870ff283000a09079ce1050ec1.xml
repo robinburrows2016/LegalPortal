@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_label/>
+        <action_name/>
+        <action_query>false</action_query>
+        <action_run_at>server</action_run_at>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <application/>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_baes2_legal_port_cao_request</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Legal CAO Application Evaluation</name>
+        <onclick/>
+        <order>100</order>
+        <priority>100</priority>
+        <read_access_action>false</read_access_action>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	//gs.info('LEGAL CAO: Current Operation: ' + current.operation());
+	
+	if (current.operation() == "insert") {
+		// If CAO Request Exists, Force Update Instead
+		var gr_cao = new GlideRecord("x_baes2_legal_port_cao_request") ;
+		//gs.info('LEGAL CAO: Current Number: ' + current.number);
+		if (gr_cao.get(current.number)) {
+			if (current.rejection_reason) {
+				// Evaluation=Rejection
+				gr_cao.rejection_reason = current.rejection_reason;
+				gr_cao.comments = current.comments;
+				gr_cao.authorised_by = gs.getUserID();
+				gr_cao.state = 7;				
+			} else {
+				// Evaluation=Authorised
+				gr_cao.expiry_date = current.expiry_date;
+				gr_cao.licences = current.licences;
+				gr_cao.other_licences = current.other_licences;				
+				gr_cao.licence_additional_information = current.licence_additional_information;
+				gr_cao.authorised_by = gs.getUserID();				
+				gr_cao.state = 8;					
+			}
+			//Update CAO Record	
+			gr_cao.update();
+			// Prevent insert message
+			current.number = null;
+			// Prevent insert as existing record already updated
+			current.setAbortAction(true);
+		}
+	}	
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2017-12-07 09:33:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>ea2c59870ff283000a09079ce1050ec1</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>Legal CAO Application Evaluation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+        <sys_update_name>sys_script_ea2c59870ff283000a09079ce1050ec1</sys_update_name>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-03-29 12:55:22</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+</record_update>

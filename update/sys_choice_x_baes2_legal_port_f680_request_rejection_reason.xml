@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="rejection_reason" table="x_baes2_legal_port_f680_request" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>rejection_reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Authorisation already exists</label>
+            <language>en</language>
+            <name>x_baes2_legal_port_f680_request</name>
+            <sequence/>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2018-01-24 13:18:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>c46c55aa0fbb07000a09079ce1050e82</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-01-24 13:18:12</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>rejection_reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Application resubmitted</label>
+            <language>en</language>
+            <name>x_baes2_legal_port_f680_request</name>
+            <sequence/>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2018-01-24 13:18:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>cb7c95aa0fbb07000a09079ce1050e50</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-01-24 13:18:33</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>rejection_reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Incorrect application</label>
+            <language>en</language>
+            <name>x_baes2_legal_port_f680_request</name>
+            <sequence/>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2018-01-24 13:18:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>378c95aa0fbb07000a09079ce1050e02</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-01-24 13:18:47</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>rejection_reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Manual approval</label>
+            <language>en</language>
+            <name>x_baes2_legal_port_f680_request</name>
+            <sequence/>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2018-01-24 13:18:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>2b9c59aa0fbb07000a09079ce1050e15</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-01-24 13:19:05</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>rejection_reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Request no longer required</label>
+            <language>en</language>
+            <name>x_baes2_legal_port_f680_request</name>
+            <sequence/>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2018-01-24 13:19:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>3aac5daa0fbb07000a09079ce1050e62</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-01-24 13:19:26</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>rejection_reason</element>
+            <name>x_baes2_legal_port_f680_request</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2018-01-24 13:18:10</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>8f7c95aa0fbb07000a09079ce1050e49</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>rejection_reason</sys_name>
+            <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+            <sys_update_name>sys_choice_x_baes2_legal_port_f680_request_rejection_reason</sys_update_name>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-01-24 13:18:10</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Clearance" section_id="e2d2c9550f0b87000a09079ce1050e23" sys_domain="global" table="x_baes2_legal_port_f680_request" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>equipment_uk_armed_forces</element>
+            <position>0</position>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-14 07:29:26</sys_created_on>
+            <sys_id>727389950f0b87000a09079ce1050e34</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Clearance" display_value="Clearance" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">e2d2c9550f0b87000a09079ce1050e23</sys_ui_section>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2017-12-14 07:29:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>equipment_uk_armed_forces_information</element>
+            <position>1</position>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-14 07:29:26</sys_created_on>
+            <sys_id>f27389950f0b87000a09079ce1050e34</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Clearance" display_value="Clearance" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">e2d2c9550f0b87000a09079ce1050e23</sys_ui_section>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2017-12-14 07:29:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>equipment_security_classification</element>
+            <position>2</position>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-14 07:29:26</sys_created_on>
+            <sys_id>767389950f0b87000a09079ce1050e34</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Clearance" display_value="Clearance" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">e2d2c9550f0b87000a09079ce1050e23</sys_ui_section>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2017-12-14 07:29:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>equipment_security_classified</element>
+            <position>3</position>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-14 07:29:26</sys_created_on>
+            <sys_id>f67389950f0b87000a09079ce1050e34</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Clearance" display_value="Clearance" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">e2d2c9550f0b87000a09079ce1050e23</sys_ui_section>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2017-12-14 07:29:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>equipment_security_classification_caveat</element>
+            <position>4</position>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-14 07:29:26</sys_created_on>
+            <sys_id>7a7389950f0b87000a09079ce1050e34</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Clearance" display_value="Clearance" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">e2d2c9550f0b87000a09079ce1050e23</sys_ui_section>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2017-12-14 07:29:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>equipment_security_classification_issuing_authority</element>
+            <position>5</position>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-14 07:29:26</sys_created_on>
+            <sys_id>fa7389950f0b87000a09079ce1050e34</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Clearance" display_value="Clearance" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">e2d2c9550f0b87000a09079ce1050e23</sys_ui_section>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2017-12-14 07:29:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>equipment_clearance</element>
+            <position>6</position>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-14 07:29:26</sys_created_on>
+            <sys_id>7e7389950f0b87000a09079ce1050e34</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Clearance" display_value="Clearance" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">e2d2c9550f0b87000a09079ce1050e23</sys_ui_section>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2017-12-14 07:29:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>equipment_local_assembly_information</element>
+            <position>7</position>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-14 07:29:26</sys_created_on>
+            <sys_id>fe7389950f0b87000a09079ce1050e34</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Clearance" display_value="Clearance" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">e2d2c9550f0b87000a09079ce1050e23</sys_ui_section>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2017-12-14 07:29:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>equipment_local_assembly</element>
+            <position>8</position>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-14 07:29:26</sys_created_on>
+            <sys_id>727389950f0b87000a09079ce1050e35</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Clearance" display_value="Clearance" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">e2d2c9550f0b87000a09079ce1050e23</sys_ui_section>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2017-12-14 07:29:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>release_security_classification_caveat</element>
+            <position>9</position>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-14 07:29:26</sys_created_on>
+            <sys_id>f27389950f0b87000a09079ce1050e35</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Clearance" display_value="Clearance" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">e2d2c9550f0b87000a09079ce1050e23</sys_ui_section>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2017-12-14 07:29:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>release_security_classification</element>
+            <position>10</position>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-14 07:29:26</sys_created_on>
+            <sys_id>767389950f0b87000a09079ce1050e35</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Clearance" display_value="Clearance" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">e2d2c9550f0b87000a09079ce1050e23</sys_ui_section>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2017-12-14 07:29:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>release_mtcr_rated</element>
+            <position>11</position>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-14 07:29:26</sys_created_on>
+            <sys_id>f67389950f0b87000a09079ce1050e35</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Clearance" display_value="Clearance" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">e2d2c9550f0b87000a09079ce1050e23</sys_ui_section>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2017-12-14 07:29:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>release_foreign_technology_information</element>
+            <position>12</position>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-14 07:29:26</sys_created_on>
+            <sys_id>7a7389950f0b87000a09079ce1050e35</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Clearance" display_value="Clearance" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">e2d2c9550f0b87000a09079ce1050e23</sys_ui_section>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2017-12-14 07:29:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>release_foreign_technology</element>
+            <position>13</position>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-14 07:29:26</sys_created_on>
+            <sys_id>fa7389950f0b87000a09079ce1050e35</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Clearance" display_value="Clearance" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">e2d2c9550f0b87000a09079ce1050e23</sys_ui_section>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2017-12-14 07:29:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Clearance</caption>
+            <header>false</header>
+            <name>x_baes2_legal_port_f680_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-14 07:26:42</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>e2d2c9550f0b87000a09079ce1050e23</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Clearance</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+            <sys_update_name>sys_ui_section_e2d2c9550f0b87000a09079ce1050e23</sys_update_name>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2017-12-14 07:26:42</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

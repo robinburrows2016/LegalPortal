@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>EC_standard_email_footer</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[template.print("<br />Kind Regards");
+template.print("<br />Your Export Control Team");
+//Footer Divider
+template.print("<div style='border-top: solid #0066A4 1.0pt; border-left: none; border-bottom: none; border-right: none; padding: 5.00pt 0cm 5.00pt 0cm'></div>");]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-03-27 11:52:07</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>725bd8220fc517800a09079ce1050e93</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EC_standard_email_footer</sys_name>
+        <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+        <sys_update_name>sys_script_email_725bd8220fc517800a09079ce1050e93</sys_update_name>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-03-27 11:52:07</sys_updated_on>
+    </sys_script_email>
+</record_update>

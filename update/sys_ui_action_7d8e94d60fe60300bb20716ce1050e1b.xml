@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>accept</action_name>
+        <active>true</active>
+        <client>false</client>
+        <comments>Assignee accepts this task</comments>
+        <condition>current.state==16 &amp;&amp; (new global.StateFlow().validFlow(current, 'b58e94d60fe60300bb20716ce1050e1b', 'manual'));</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_style/>
+        <hint>Agent is available and able to work on assigned Legal Portal Task at scheduled time</hint>
+        <list_action>true</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>true</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <name>Accept</name>
+        <onclick/>
+        <order>300</order>
+        <script><![CDATA[new global.StateFlow().processFlow(current, 'b58e94d60fe60300bb20716ce1050e1b', 'manual');]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2017-11-22 10:50:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>7d8e94d60fe60300bb20716ce1050e1b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Accept</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+        <sys_update_name>sys_ui_action_7d8e94d60fe60300bb20716ce1050e1b</sys_update_name>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2017-11-22 10:50:32</sys_updated_on>
+        <table>x_baes2_legal_portal_task</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

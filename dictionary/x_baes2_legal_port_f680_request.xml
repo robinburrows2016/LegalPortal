@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="Legal Portal F680 Request" max_length="40" name="x_baes2_legal_port_f680_request" sizeclass="23" type="collection">
+        <element label="Applicant" max_length="32" name="applicant" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element choice="1" label="Applicant BAE Permanent" max_length="40" name="applicant_bae_permanent" type="choice">
+            <choice>
+                <element label="No" value="0"/>
+                <element label="Yes" value="1"/>
+            </choice>
+        </element>
+        <element label="Applicant BAE Technical Contact" max_length="1024" name="applicant_bae_technical_contact" type="string_full_utf8"/>
+        <element label="Applicant Email" max_length="128" name="applicant_email" type="string"/>
+        <element label="Applicant Employer" max_length="1024" name="applicant_employer" type="string_full_utf8"/>
+        <element label="Applicant Manager" max_length="128" name="applicant_manager" type="string"/>
+        <element label="Applicant Passport Name" max_length="128" name="applicant_passport_name" type="string"/>
+        <element label="Applicant Telephone" max_length="128" name="applicant_telephone" type="string"/>
+        <element label="Application Further Information" max_length="1024" name="application_further_information" type="string_full_utf8"/>
+        <element choice="1" label="BAE Legal Entity" max_length="40" name="bae_legal_entity" type="choice">
+            <choice>
+                <element label="BAE Systems Surface Ships International Limited" value="2"/>
+                <element label="BAE Systems Surface Ships Limited" value="1"/>
+            </choice>
+        </element>
+        <element label="Clearance Required By" max_length="40" name="clearance_required_by" type="glide_date"/>
+        <element choice="1" label="Clearance Within 30 Days" max_length="40" name="clearance_within_30_days" type="choice">
+            <choice>
+                <element label="No" value="0"/>
+                <element label="Yes" value="1"/>
+            </choice>
+        </element>
+        <element label="Clearance Within 30 Days Information" max_length="1024" name="clearance_within_30_days_information" type="string_full_utf8"/>
+        <element label="Customer Information" max_length="1024" name="customer_information" type="string_full_utf8"/>
+        <element label="Customer Name" max_length="128" name="customer_name" type="string"/>
+        <element label="Customer Security Classification" max_length="4000" name="customer_security_classification" reference="u_mod_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
+        <element label="End User Information" max_length="1024" name="end_user_information" type="string_full_utf8"/>
+        <element label="End User Name" max_length="128" name="end_user_name" type="string"/>
+        <element label="End User Security Classification" max_length="4000" name="end_user_security_classification" reference="u_mod_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
+        <element choice="1" label="Equipment Clearance" max_length="40" name="equipment_clearance" reference="sys_choice" reference_qual="element=equipment_clearance^name=x_baes2_legal_port_f680_request^EQ" reference_qual_condition="element=equipment_clearance^name=x_baes2_legal_port_f680_request^EQ" type="glide_list">
+            <choice>
+                <element label="Demonstration In The United Kingdom To Overseas Customers" value="Demonstration In The United Kingdom To Overseas Customers"/>
+                <element label="Demonstration Overseas" value="Demonstration Overseas"/>
+                <element label="Market Survey/Initial Discussions/Promotion" value="Market Survey/Initial Discussions/Promotion"/>
+                <element label="Through Life Support" value="Through Life Support"/>
+                <element label="Training" value="Training"/>
+            </choice>
+        </element>
+        <element choice="1" label="Equipment Cryptographic Usage " max_length="40" name="equipment_cryptographic_usage" type="choice">
+            <choice>
+                <element label="No" value="0"/>
+                <element label="Yes" value="1"/>
+            </choice>
+        </element>
+        <element label="Equipment Cryptographic Usage Information" max_length="1024" name="equipment_cryptographic_usage_information" type="string_full_utf8"/>
+        <element label="Equipment Description" max_length="1024" name="equipment_description" type="string_full_utf8"/>
+        <element label="Equipment Export Control" max_length="1024" name="equipment_export_control" type="string_full_utf8"/>
+        <element choice="1" label="Equipment Funding" max_length="40" name="equipment_funding" type="choice">
+            <choice>
+                <element label="MOD Funded" value="0"/>
+                <element label="Part MOD Funded / Part Private Venture" value="1"/>
+                <element label="Private Venture" value="2"/>
+            </choice>
+        </element>
+        <element label="Equipment Funding Information" max_length="1024" name="equipment_funding_information" type="string_full_utf8"/>
+        <element choice="1" label="Equipment Local Assembly" max_length="40" name="equipment_local_assembly" type="choice">
+            <choice>
+                <element label="No" value="0"/>
+                <element label="Yes" value="1"/>
+            </choice>
+        </element>
+        <element label="Equipment Local Assembly Information" max_length="1024" name="equipment_local_assembly_information" type="string_full_utf8"/>
+        <element choice="1" label="Equipment MOD EW Release" max_length="40" name="equipment_mod_ew_release" type="choice">
+            <choice>
+                <element label="No" value="0"/>
+                <element label="Yes" value="1"/>
+            </choice>
+        </element>
+        <element label="Equipment Name" max_length="1024" name="equipment_name" type="string_full_utf8"/>
+        <element label="Equipment Operational Purpose" max_length="1024" name="equipment_operational_purpose" type="string_full_utf8"/>
+        <element label="Equipment Security Classification" max_length="4000" name="equipment_security_classification" reference="u_mod_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
+        <element label="Equipment Security Classification Caveat" max_length="1024" name="equipment_security_classification_caveat" type="string_full_utf8"/>
+        <element label="Equipment Security Classification Issuing Authority" max_length="1024" name="equipment_security_classification_issuing_authority" type="string_full_utf8"/>
+        <element choice="1" label="Equipment Security Classified" max_length="40" name="equipment_security_classified" type="choice">
+            <choice>
+                <element label="No" value="0"/>
+                <element label="Yes" value="1"/>
+            </choice>
+        </element>
+        <element label="Equipment Security Unclassified Action" max_length="1024" name="equipment_security_unclassified_action" type="string_full_utf8"/>
+        <element label="Equipment Technical Description" max_length="1024" name="equipment_technical_description" type="string_full_utf8"/>
+        <element choice="1" label="Equipment UK Armed Forces" max_length="40" name="equipment_uk_armed_forces" type="choice">
+            <choice>
+                <element label="No" value="0"/>
+                <element label="Yes" value="1"/>
+            </choice>
+        </element>
+        <element label="Equipment UK Armed Forces Information" max_length="1024" name="equipment_uk_armed_forces_information" type="string_full_utf8"/>
+        <element label="Third Party Address 1" max_length="1024" name="f680_third_parties_third_party_address_1" type="string_full_utf8"/>
+        <element label="Third Party Address 10" max_length="1024" name="f680_third_parties_third_party_address_10" type="string_full_utf8"/>
+        <element label="Third Party Address 11" max_length="1024" name="f680_third_parties_third_party_address_11" type="string_full_utf8"/>
+        <element label="Third Party Address 12" max_length="1024" name="f680_third_parties_third_party_address_12" type="string_full_utf8"/>
+        <element label="Third Party Address 13" max_length="1024" name="f680_third_parties_third_party_address_13" type="string_full_utf8"/>
+        <element label="Third Party Address 14" max_length="1024" name="f680_third_parties_third_party_address_14" type="string_full_utf8"/>
+        <element label="Third Party Address 15" max_length="1024" name="f680_third_parties_third_party_address_15" type="string_full_utf8"/>
+        <element label="Third Party Address 16" max_length="1024" name="f680_third_parties_third_party_address_16" type="string_full_utf8"/>
+        <element label="Third Party Address 17" max_length="1024" name="f680_third_parties_third_party_address_17" type="string_full_utf8"/>
+        <element label="Third Party Address 18" max_length="1024" name="f680_third_parties_third_party_address_18" type="string_full_utf8"/>
+        <element label="Third Party Address 19" max_length="1024" name="f680_third_parties_third_party_address_19" type="string_full_utf8"/>
+        <element label="Third Party Address 2" max_length="1024" name="f680_third_parties_third_party_address_2" type="string_full_utf8"/>
+        <element label="Third Party Address 20" max_length="1024" name="f680_third_parties_third_party_address_20" type="string_full_utf8"/>
+        <element label="Third Party Address 3" max_length="1024" name="f680_third_parties_third_party_address_3" type="string_full_utf8"/>
+        <element label="Third Party Address 4" max_length="1024" name="f680_third_parties_third_party_address_4" type="string_full_utf8"/>
+        <element label="Third Party Address 5" max_length="1024" name="f680_third_parties_third_party_address_5" type="string_full_utf8"/>
+        <element label="Third Party Address 6" max_length="1024" name="f680_third_parties_third_party_address_6" type="string_full_utf8"/>
+        <element label="Third Party Address 7" max_length="1024" name="f680_third_parties_third_party_address_7" type="string_full_utf8"/>
+        <element label="Third Party Address 8" max_length="1024" name="f680_third_parties_third_party_address_8" type="string_full_utf8"/>
+        <element label="Third Party Address 9" max_length="1024" name="f680_third_parties_third_party_address_9" type="string_full_utf8"/>
+        <element label="Third Party Name 1" max_length="128" name="f680_third_parties_third_party_name_1" type="string"/>
+        <element label="Third Party Name 10" max_length="128" name="f680_third_parties_third_party_name_10" type="string"/>
+        <element label="Third Party Name 11" max_length="128" name="f680_third_parties_third_party_name_11" type="string"/>
+        <element label="Third Party Name 12" max_length="128" name="f680_third_parties_third_party_name_12" type="string"/>
+        <element label="Third Party Name 13" max_length="128" name="f680_third_parties_third_party_name_13" type="string"/>
+        <element label="Third Party Name 14" max_length="128" name="f680_third_parties_third_party_name_14" type="string"/>
+        <element label="Third Party Name 15" max_length="128" name="f680_third_parties_third_party_name_15" type="string"/>
+        <element label="Third Party Name 16" max_length="128" name="f680_third_parties_third_party_name_16" type="string"/>
+        <element label="Third Party Name 17" max_length="128" name="f680_third_parties_third_party_name_17" type="string"/>
+        <element label="Third Party Name 18" max_length="128" name="f680_third_parties_third_party_name_18" type="string"/>
+        <element label="Third Party Name 19" max_length="128" name="f680_third_parties_third_party_name_19" type="string"/>
+        <element label="Third Party Name 2" max_length="128" name="f680_third_parties_third_party_name_2" type="string"/>
+        <element label="Third Party Name 20" max_length="128" name="f680_third_parties_third_party_name_20" type="string"/>
+        <element label="Third Party Name 3" max_length="128" name="f680_third_parties_third_party_name_3" type="string"/>
+        <element label="Third Party Name 4" max_length="128" name="f680_third_parties_third_party_name_4" type="string"/>
+        <element label="Third Party Name 5" max_length="128" name="f680_third_parties_third_party_name_5" type="string"/>
+        <element label="Third Party Name 6" max_length="128" name="f680_third_parties_third_party_name_6" type="string"/>
+        <element label="Third Party Name 7" max_length="128" name="f680_third_parties_third_party_name_7" type="string"/>
+        <element label="Third Party Name 8" max_length="128" name="f680_third_parties_third_party_name_8" type="string"/>
+        <element label="Third Party Name 9" max_length="128" name="f680_third_parties_third_party_name_9" type="string"/>
+        <element label="Third Party Role 1" max_length="1024" name="f680_third_parties_third_party_role_1" type="string_full_utf8"/>
+        <element label="Third Party Role 10" max_length="1024" name="f680_third_parties_third_party_role_10" type="string_full_utf8"/>
+        <element label="Third Party Role 11" max_length="1024" name="f680_third_parties_third_party_role_11" type="string_full_utf8"/>
+        <element label="Third Party Role 12" max_length="1024" name="f680_third_parties_third_party_role_12" type="string_full_utf8"/>
+        <element label="Third Party Role 13" max_length="1024" name="f680_third_parties_third_party_role_13" type="string_full_utf8"/>
+        <element label="Third Party Role 14" max_length="1024" name="f680_third_parties_third_party_role_14" type="string_full_utf8"/>
+        <element label="Third Party Role 15" max_length="1024" name="f680_third_parties_third_party_role_15" type="string_full_utf8"/>
+        <element label="Third Party Role 16" max_length="1024" name="f680_third_parties_third_party_role_16" type="string_full_utf8"/>
+        <element label="Third Party Role 17" max_length="1024" name="f680_third_parties_third_party_role_17" type="string_full_utf8"/>
+        <element label="Third Party Role 18" max_length="1024" name="f680_third_parties_third_party_role_18" type="string_full_utf8"/>
+        <element label="Third Party Role 19" max_length="1024" name="f680_third_parties_third_party_role_19" type="string_full_utf8"/>
+        <element label="Third Party Role 2" max_length="1024" name="f680_third_parties_third_party_role_2" type="string_full_utf8"/>
+        <element label="Third Party Role 20" max_length="1024" name="f680_third_parties_third_party_role_20" type="string_full_utf8"/>
+        <element label="Third Party Role 3" max_length="1024" name="f680_third_parties_third_party_role_3" type="string_full_utf8"/>
+        <element label="Third Party Role 4" max_length="1024" name="f680_third_parties_third_party_role_4" type="string_full_utf8"/>
+        <element label="Third Party Role 5" max_length="1024" name="f680_third_parties_third_party_role_5" type="string_full_utf8"/>
+        <element label="Third Party Role 6" max_length="1024" name="f680_third_parties_third_party_role_6" type="string_full_utf8"/>
+        <element label="Third Party Role 7" max_length="1024" name="f680_third_parties_third_party_role_7" type="string_full_utf8"/>
+        <element label="Third Party Role 8" max_length="1024" name="f680_third_parties_third_party_role_8" type="string_full_utf8"/>
+        <element label="Third Party Role 9" max_length="1024" name="f680_third_parties_third_party_role_9" type="string_full_utf8"/>
+        <element label="Third Party Security Classification 1" max_length="4000" name="f680_third_parties_third_party_security_classification_1" reference="u_mod_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
+        <element label="Third Party Security Classification 10" max_length="4000" name="f680_third_parties_third_party_security_classification_10" reference="u_mod_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
+        <element label="Third Party Security Classification 11" max_length="4000" name="f680_third_parties_third_party_security_classification_11" reference="u_mod_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
+        <element label="Third Party Security Classification 12" max_length="4000" name="f680_third_parties_third_party_security_classification_12" reference="u_mod_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
+        <element label="Third Party Security Classification 13" max_length="4000" name="f680_third_parties_third_party_security_classification_13" reference="u_mod_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
+        <element label="Third Party Security Classification 14" max_length="4000" name="f680_third_parties_third_party_security_classification_14" reference="u_mod_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
+        <element label="Third Party Security Classification 15" max_length="4000" name="f680_third_parties_third_party_security_classification_15" reference="u_mod_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
+        <element label="Third Party Security Classification 16" max_length="4000" name="f680_third_parties_third_party_security_classification_16" reference="u_mod_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
+        <element label="Third Party Security Classification 17" max_length="4000" name="f680_third_parties_third_party_security_classification_17" reference="u_mod_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
+        <element label="Third Party Security Classification 18" max_length="4000" name="f680_third_parties_third_party_security_classification_18" reference="u_mod_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
+        <element label="Third Party Security Classification 19" max_length="4000" name="f680_third_parties_third_party_security_classification_19" reference="u_mod_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
+        <element label="Third Party Security Classification 2" max_length="4000" name="f680_third_parties_third_party_security_classification_2" reference="u_mod_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
+        <element label="Third Party Security Classification 20" max_length="4000" name="f680_third_parties_third_party_security_classification_20" reference="u_mod_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
+        <element label="Third Party Security Classification 3" max_length="4000" name="f680_third_parties_third_party_security_classification_3" reference="u_mod_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
+        <element label="Third Party Security Classification 4" max_length="4000" name="f680_third_parties_third_party_security_classification_4" reference="u_mod_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
+        <element label="Third Party Security Classification 5" max_length="4000" name="f680_third_parties_third_party_security_classification_5" reference="u_mod_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
+        <element label="Third Party Security Classification 6" max_length="4000" name="f680_third_parties_third_party_security_classification_6" reference="u_mod_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
+        <element label="Third Party Security Classification 7" max_length="4000" name="f680_third_parties_third_party_security_classification_7" reference="u_mod_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
+        <element label="Third Party Security Classification 8" max_length="4000" name="f680_third_parties_third_party_security_classification_8" reference="u_mod_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
+        <element label="Third Party Security Classification 9" max_length="4000" name="f680_third_parties_third_party_security_classification_9" reference="u_mod_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
+        <element label="MOD Authorisation Reference" max_length="128" name="mod_authorisation_reference" type="string"/>
+        <element choice="1" label="Previous Applications" max_length="40" name="previous_applications" type="choice">
+            <choice>
+                <element label="No" value="0"/>
+                <element label="Yes" value="1"/>
+            </choice>
+        </element>
+        <element label="Previous Application Information" max_length="1024" name="previous_application_information" type="string_full_utf8"/>
+        <element choice="1" label="Programme" max_length="40" name="programme" type="choice">
+            <choice>
+                <element label="Australia Sea 5000" value="9"/>
+                <element label="Central Engineering" value="1"/>
+                <element label="Combat Systems" value="2"/>
+                <element label="CSC (Canada)" value="10"/>
+                <element label="GCS - Pre-Contract" value="3"/>
+                <element label="N/A" value="13"/>
+                <element label="Oman" value="8"/>
+                <element label="Pre-Contract - International (other)" value="12"/>
+                <element label="QEC" value="4"/>
+                <element label="RCB2" value="5"/>
+                <element label="Thailand" value="6"/>
+                <element label="Type 26" value="7"/>
+                <element label="Type 31e" value="11"/>
+            </choice>
+        </element>
+        <element label="Prospect Estimated Value" max_length="20" name="prospect_estimated_value" type="currency"/>
+        <element choice="1" label="Rejection reason" max_length="40" name="rejection_reason" type="choice">
+            <choice>
+                <element label="Application resubmitted" value="2"/>
+                <element label="Authorisation already exists" value="1"/>
+                <element label="Incorrect application" value="3"/>
+                <element label="Manual approval" value="4"/>
+                <element label="Request no longer required" value="5"/>
+            </choice>
+        </element>
+        <element choice="1" label="Release Foreign Technology" max_length="40" name="release_foreign_technology" type="choice">
+            <choice>
+                <element label="No" value="0"/>
+                <element label="Yes" value="1"/>
+            </choice>
+        </element>
+        <element label="Release Foreign Technology Information" max_length="1024" name="release_foreign_technology_information" type="string_full_utf8"/>
+        <element choice="1" label="Release MTCR Rated" max_length="40" name="release_mtcr_rated" type="choice">
+            <choice>
+                <element label="No" value="0"/>
+                <element label="Unknown" value="3"/>
+                <element label="Yes – MTCR Category 1" value="1"/>
+                <element label="Yes – MTCR Category 2" value="2"/>
+            </choice>
+        </element>
+        <element label="Release Security Classification" max_length="4000" name="release_security_classification" reference="u_mod_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
+        <element label="Release Security Classification Caveat" max_length="1024" name="release_security_classification_caveat" type="string_full_utf8"/>
+    </element>
+</database>

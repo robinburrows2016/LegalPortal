@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="programme" table="x_baes2_legal_port_f680_request" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>programme</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Central Engineering</label>
+            <language>en</language>
+            <name>x_baes2_legal_port_f680_request</name>
+            <sequence/>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-12 13:48:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>3107c4f80f8747000a09079ce1050eda</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-04-09 12:43:02</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>programme</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>CSC (Canada)</label>
+            <language>en</language>
+            <name>x_baes2_legal_port_f680_request</name>
+            <sequence/>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2018-04-09 12:44:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>4b1427660fd99380bb20716ce1050e4e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-04-09 12:44:54</sys_updated_on>
+            <value>10</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>programme</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Type 31e</label>
+            <language>en</language>
+            <name>x_baes2_legal_port_f680_request</name>
+            <sequence/>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2018-04-09 12:45:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>ef24e3660fd99380bb20716ce1050edc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-04-09 12:45:13</sys_updated_on>
+            <value>11</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>programme</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pre-Contract - International (other)</label>
+            <language>en</language>
+            <name>x_baes2_legal_port_f680_request</name>
+            <sequence/>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2018-04-09 12:45:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>373427660fd99380bb20716ce1050e8a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-04-09 12:45:30</sys_updated_on>
+            <value>12</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>programme</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>N/A</label>
+            <language>en</language>
+            <name>x_baes2_legal_port_f680_request</name>
+            <sequence/>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2018-04-09 12:45:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>3344a3660fd99380bb20716ce1050eef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-04-09 12:45:47</sys_updated_on>
+            <value>13</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>programme</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Combat Systems</label>
+            <language>en</language>
+            <name>x_baes2_legal_port_f680_request</name>
+            <sequence/>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-12 13:49:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>2c2744f80f8747000a09079ce1050ecf</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-04-09 12:43:13</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>programme</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>GCS - Pre-Contract</label>
+            <language>en</language>
+            <name>x_baes2_legal_port_f680_request</name>
+            <sequence/>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-12 13:49:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>fb37c0f80f8747000a09079ce1050ef6</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-04-09 12:43:24</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>programme</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>QEC</label>
+            <language>en</language>
+            <name>x_baes2_legal_port_f680_request</name>
+            <sequence/>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-12 13:49:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>1457c0f80f8747000a09079ce1050ef7</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-04-09 12:43:34</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>programme</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>RCB2</label>
+            <language>en</language>
+            <name>x_baes2_legal_port_f680_request</name>
+            <sequence/>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-12 13:50:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>1d6744f80f8747000a09079ce1050ee2</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-04-09 12:43:43</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>programme</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Thailand</label>
+            <language>en</language>
+            <name>x_baes2_legal_port_f680_request</name>
+            <sequence/>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-12 13:51:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>7f8744f80f8747000a09079ce1050ed1</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-04-09 12:43:53</sys_updated_on>
+            <value>6</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>programme</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Type 26</label>
+            <language>en</language>
+            <name>x_baes2_legal_port_f680_request</name>
+            <sequence/>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-12 13:51:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>d5a70cf80f8747000a09079ce1050ef8</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-04-09 12:44:03</sys_updated_on>
+            <value>7</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>programme</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Oman</label>
+            <language>en</language>
+            <name>x_baes2_legal_port_f680_request</name>
+            <sequence/>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2018-04-09 12:44:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>b5f3a7260fd99380bb20716ce1050e2d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-04-09 12:44:17</sys_updated_on>
+            <value>8</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>programme</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Australia Sea 5000</label>
+            <language>en</language>
+            <name>x_baes2_legal_port_f680_request</name>
+            <sequence/>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2018-04-09 12:44:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>2d0467660fd99380bb20716ce1050ed3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-04-09 12:44:32</sys_updated_on>
+            <value>9</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>programme</element>
+            <name>x_baes2_legal_port_f680_request</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-12 13:48:49</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>ec2708f80f8747000a09079ce1050ee4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>programme</sys_name>
+            <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+            <sys_update_name>sys_choice_x_baes2_legal_port_f680_request_programme</sys_update_name>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2017-12-12 13:48:49</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update node_type="sys_portal_page" unload_date="2018-04-23 10:48:48">
+    <sys_portal_page action="INSERT_OR_UPDATE">
+        <layout display_value="layout_2_across">f6defafa0a0a0b12000d5016bd12ff06</layout>
+        <order>850</order>
+        <read_roles>x_baes2_legal_port_read</read_roles>
+        <roles>x_baes2_legal_port_admin</roles>
+        <selectable>false</selectable>
+        <sys_class_name>sys_portal_page</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2017-11-22 10:51:12</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>7fae9cd60fe60300bb20716ce1050e64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Legal Portal Overview</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+        <sys_update_name>sys_portal_page_7fae9cd60fe60300bb20716ce1050e64</sys_update_name>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2017-11-22 10:51:12</sys_updated_on>
+        <title>Legal Portal Overview</title>
+        <user/>
+        <view>legal_portal_overview</view>
+        <related_items_node>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone2</dropzone>
+                <offset>0</offset>
+                <page display_value="Legal Portal Overview">7fae9cd60fe60300bb20716ce1050e64</page>
+                <summary>Legal Portal Requests by Month</summary>
+                <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+                <sys_created_on>2017-11-22 10:51:12</sys_created_on>
+                <sys_id>37ae9cd60fe60300bb20716ce1050e69</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+                <sys_updated_on>2017-11-22 10:51:12</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 22/11/2017 10:51:12">37ae9cd60fe60300bb20716ce1050e69</portal_section>
+                        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+                        <sys_created_on>2017-11-22 10:51:12</sys_created_on>
+                        <sys_id>7bae9cd60fe60300bb20716ce1050e69</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+                        <sys_updated_on>2017-11-22 10:51:12</sys_updated_on>
+                        <value>Legal Portal Requests by Month</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 22/11/2017 10:51:12">37ae9cd60fe60300bb20716ce1050e69</portal_section>
+                        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+                        <sys_created_on>2017-11-22 10:51:12</sys_created_on>
+                        <sys_id>b3ae9cd60fe60300bb20716ce1050e6a</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+                        <sys_updated_on>2017-11-22 10:51:12</sys_updated_on>
+                        <value>e3ae9cd60fe60300bb20716ce1050e46</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 22/11/2017 10:51:12">37ae9cd60fe60300bb20716ce1050e69</portal_section>
+                        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+                        <sys_created_on>2017-11-22 10:51:12</sys_created_on>
+                        <sys_id>ffae9cd60fe60300bb20716ce1050e69</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+                        <sys_updated_on>2017-11-22 10:51:12</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderDashboard</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone1</dropzone>
+                <offset>1</offset>
+                <page display_value="Legal Portal Overview">7fae9cd60fe60300bb20716ce1050e64</page>
+                <summary>Legal Portal Group Usage</summary>
+                <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+                <sys_created_on>2017-11-22 10:51:12</sys_created_on>
+                <sys_id>3bae9cd60fe60300bb20716ce1050e65</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+                <sys_updated_on>2017-11-22 10:51:12</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 22/11/2017 10:51:12">3bae9cd60fe60300bb20716ce1050e65</portal_section>
+                        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+                        <sys_created_on>2017-11-22 10:51:12</sys_created_on>
+                        <sys_id>7bae9cd60fe60300bb20716ce1050e66</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+                        <sys_updated_on>2017-11-22 10:51:12</sys_updated_on>
+                        <value>efae9cd60fe60300bb20716ce1050e5d</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 22/11/2017 10:51:12">3bae9cd60fe60300bb20716ce1050e65</portal_section>
+                        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+                        <sys_created_on>2017-11-22 10:51:12</sys_created_on>
+                        <sys_id>b7ae9cd60fe60300bb20716ce1050e66</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+                        <sys_updated_on>2017-11-22 10:51:12</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderDashboard</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 22/11/2017 10:51:12">3bae9cd60fe60300bb20716ce1050e65</portal_section>
+                        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+                        <sys_created_on>2017-11-22 10:51:12</sys_created_on>
+                        <sys_id>ffae9cd60fe60300bb20716ce1050e65</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+                        <sys_updated_on>2017-11-22 10:51:12</sys_updated_on>
+                        <value>Legal Portal Group Usage</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone1</dropzone>
+                <offset>0</offset>
+                <page display_value="Legal Portal Overview">7fae9cd60fe60300bb20716ce1050e64</page>
+                <summary>Legal Portal Requests</summary>
+                <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+                <sys_created_on>2017-11-22 10:51:12</sys_created_on>
+                <sys_id>73ae9cd60fe60300bb20716ce1050e68</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+                <sys_updated_on>2017-11-22 10:51:12</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 22/11/2017 10:51:12">73ae9cd60fe60300bb20716ce1050e68</portal_section>
+                        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+                        <sys_created_on>2017-11-22 10:51:12</sys_created_on>
+                        <sys_id>3fae9cd60fe60300bb20716ce1050e68</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+                        <sys_updated_on>2017-11-22 10:51:12</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderDashboard</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 22/11/2017 10:51:12">73ae9cd60fe60300bb20716ce1050e68</portal_section>
+                        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+                        <sys_created_on>2017-11-22 10:51:12</sys_created_on>
+                        <sys_id>b7ae9cd60fe60300bb20716ce1050e68</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+                        <sys_updated_on>2017-11-22 10:51:12</sys_updated_on>
+                        <value>Legal Portal Requests</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 22/11/2017 10:51:12">73ae9cd60fe60300bb20716ce1050e68</portal_section>
+                        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+                        <sys_created_on>2017-11-22 10:51:12</sys_created_on>
+                        <sys_id>ffae9cd60fe60300bb20716ce1050e68</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+                        <sys_updated_on>2017-11-22 10:51:12</sys_updated_on>
+                        <value>23ae9cd60fe60300bb20716ce1050e3d</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone2</dropzone>
+                <offset>1</offset>
+                <page display_value="Legal Portal Overview">7fae9cd60fe60300bb20716ce1050e64</page>
+                <summary>Legal Portal Tasks</summary>
+                <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+                <sys_created_on>2017-11-22 10:51:12</sys_created_on>
+                <sys_id>bfae9cd60fe60300bb20716ce1050e66</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+                <sys_updated_on>2017-11-22 10:51:12</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 22/11/2017 10:51:12">bfae9cd60fe60300bb20716ce1050e66</portal_section>
+                        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+                        <sys_created_on>2017-11-22 10:51:12</sys_created_on>
+                        <sys_id>3fae9cd60fe60300bb20716ce1050e67</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+                        <sys_updated_on>2017-11-22 10:51:12</sys_updated_on>
+                        <value>ebae9cd60fe60300bb20716ce1050e60</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 22/11/2017 10:51:12">bfae9cd60fe60300bb20716ce1050e66</portal_section>
+                        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+                        <sys_created_on>2017-11-22 10:51:12</sys_created_on>
+                        <sys_id>7bae9cd60fe60300bb20716ce1050e67</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+                        <sys_updated_on>2017-11-22 10:51:12</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderDashboard</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 22/11/2017 10:51:12">bfae9cd60fe60300bb20716ce1050e66</portal_section>
+                        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+                        <sys_created_on>2017-11-22 10:51:12</sys_created_on>
+                        <sys_id>f3ae9cd60fe60300bb20716ce1050e67</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+                        <sys_updated_on>2017-11-22 10:51:12</sys_updated_on>
+                        <value>Legal Portal Tasks</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone999</dropzone>
+                <offset>0</offset>
+                <page display_value="Legal Portal Overview">7fae9cd60fe60300bb20716ce1050e64</page>
+                <summary>Legal Portal Catalog Usage</summary>
+                <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+                <sys_created_on>2017-11-22 10:51:12</sys_created_on>
+                <sys_id>f7ae9cd60fe60300bb20716ce1050e6a</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+                <sys_updated_on>2017-11-22 10:51:12</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 22/11/2017 10:51:12">f7ae9cd60fe60300bb20716ce1050e6a</portal_section>
+                        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+                        <sys_created_on>2017-11-22 10:51:12</sys_created_on>
+                        <sys_id>3fae9cd60fe60300bb20716ce1050e6a</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+                        <sys_updated_on>2017-11-22 10:51:12</sys_updated_on>
+                        <value>Legal Portal Catalog Usage</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 22/11/2017 10:51:12">f7ae9cd60fe60300bb20716ce1050e6a</portal_section>
+                        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+                        <sys_created_on>2017-11-22 10:51:12</sys_created_on>
+                        <sys_id>77ae9cd60fe60300bb20716ce1050e6b</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+                        <sys_updated_on>2017-11-22 10:51:12</sys_updated_on>
+                        <value>2fae9cd60fe60300bb20716ce1050e3f</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 22/11/2017 10:51:12">f7ae9cd60fe60300bb20716ce1050e6a</portal_section>
+                        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+                        <sys_created_on>2017-11-22 10:51:12</sys_created_on>
+                        <sys_id>b3ae9cd60fe60300bb20716ce1050e6b</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+                        <sys_updated_on>2017-11-22 10:51:12</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderDashboard</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+        </related_items_node>
+    </sys_portal_page>
+</record_update>

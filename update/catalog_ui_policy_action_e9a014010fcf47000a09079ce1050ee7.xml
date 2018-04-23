@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="F680 Request">a790d4cd0f8f47000a09079ce1050e4a</catalog_item>
+        <catalog_variable>IO:6001bc410f0387000a09079ce1050efd</catalog_variable>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2017-12-13 09:08:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e9a014010fcf47000a09079ce1050ee7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>equipment_mod_ew_release_instructions</sys_name>
+        <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_e9a014010fcf47000a09079ce1050ee7</sys_update_name>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-01-25 17:11:23</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Hide EW Data Release on F680 form">a5a014010fcf47000a09079ce1050ee5</ui_policy>
+        <variable>equipment_mod_ew_release_instructions</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

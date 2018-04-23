@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="knowledge_manager" name="knowledge_manager">f8bfbd02eb202100216a87b9d106fe92</contains>
+        <role display_value="x_baes2_legal_port_admin" name="x_baes2_legal_port_admin">3b7e14d60fe60300bb20716ce1050e7f</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2017-11-22 10:50:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5c8e14d60fe60300bb20716ce1050ef6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>knowledge_manager.x_baes2_legal_port_admin</sys_name>
+        <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+        <sys_update_name>sys_user_role_contains_5c8e14d60fe60300bb20716ce1050ef6</sys_update_name>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2017-11-22 10:50:25</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>

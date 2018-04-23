@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Company Electronic Asset Overseas Evaluation">dc8819f20ffa43000a09079ce1050e42</catalog_item>
+        <catalog_variable>IO:8abad3890f89d740bb20716ce1050e9d</catalog_variable>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-03-23 10:14:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>388e930d0f89d740bb20716ce1050e51</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>other_licences</sys_name>
+        <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_388e930d0f89d740bb20716ce1050e51</sys_update_name>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-04-10 08:23:48</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Hide / Show Licence based on Evaluation">1ff5058b0fb283000a09079ce1050e5d</ui_policy>
+        <variable>other_licences</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+</record_update>

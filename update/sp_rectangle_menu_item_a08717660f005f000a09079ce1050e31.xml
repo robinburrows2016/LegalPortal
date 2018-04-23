@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_rectangle_menu_item">
+    <sp_rectangle_menu_item action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <color>default</color>
+        <condition>GlideSPScriptable.canSeePage("progress_update")</condition>
+        <display_1/>
+        <display_2/>
+        <display_date/>
+        <filter/>
+        <glyph/>
+        <hint/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <label>Request Status</label>
+        <order>200</order>
+        <record_script/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description/>
+        <sp_page/>
+        <sp_rectangle_menu display_value="SPLG Mega Menu">d849a4960fe243000a09079ce1050e34</sp_rectangle_menu>
+        <sp_rectangle_menu_item/>
+        <sys_class_name>sp_rectangle_menu_item</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-02-06 08:32:31</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a08717660f005f000a09079ce1050e31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request Status</sys_name>
+        <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+        <sys_update_name>sp_rectangle_menu_item_a08717660f005f000a09079ce1050e31</sys_update_name>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-02-06 08:32:31</sys_updated_on>
+        <table/>
+        <type>sc</type>
+        <u_mega_menu_properties>{mega_menu_class:"dropdown-full", widget:"jb-megamenu-progress-splg", animation:"fadeIn"}</u_mega_menu_properties>
+        <url/>
+        <url_target/>
+    </sp_rectangle_menu_item>
+</record_update>

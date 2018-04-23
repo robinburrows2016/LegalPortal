@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>EC_CAO_standard_letter_SAVED2</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(current, template, email, email_action, event) {
+	
+	template.print("<br />Kind Regards");
+	template.print("<br />Your Export Control Team");
+	
+	//Letter Divider
+	//template.print("<div style='padding-top:40px;'></div>");
+	//template.print("<div style='border-top: solid #0066A4 1.0pt; border-left: none; border-bottom: none; border-right: none; padding: 5.00pt 0cm 5.00pt 0cm'></div>");
+	//template.print("<div style='padding-bottom:20px;'></div>");	
+
+	template.print("<br />");	
+	template.print("<div class='row'>");
+	template.print("<div class='col'><hr></div>");
+	template.print("</div'>");
+	template.print("<br />");	
+	
+	// Container - Start
+	template.print("<div class='container'>");		
+	
+	template.print("<div class='row'>");
+	template.print("<div class='col'><img class='pull-right' src='ESS_Header_Logo.jpg' width='250' height='75'/></div>");		
+	template.print("<div class='col'><p>BAE Systems<span>www.baesystems.com</span><br />Maritime - Naval Ships<br />Warwick House<br />PO BOX 87<br />Farnborough Aerospace Centre<br />Farnborough<br />Hampshire GU14 6YU<br />UK</p></div>");
+	template.print("</div'>");	
+	
+	template.print("<div class='row'><p>Reference: " + current.number + "</p></div>");
+	template.print("<div class='row'><p class='lead'><span class='center'><strong>AUTHORITY TO HAND CARRY BAE SYSTEMS ELECTRONIC COMPANY ASSETS OVERSEAS</strong></span></p></div");	
+	template.print("<div style='float:none;padding-top:20px;'><p>To whom it may concern:</p></div>");	
+	template.print("<div style='float:none;padding-top:20px;'><p>We , hereby authorise <strong>" + current.applicant_passport_name + "</strong>, representative of BAE Systems Surface Ships Limited to carry in their possession technology to enable them to carry out their work while overseas in the following country(s):</p></div>");
+	template.print("<div style='float:none;padding-top:20px;'><p>" + current.getDisplayValue('destination_countries') + ".</p></div>");
+	
+	template.print("<br />");
+	template.print("<div align='left' style='float:none;padding-top:40px;'><p>The technology is being exported under the following export licence(s):</p></div>");
+	
+	//Format Licences	
+	var arrayUtil = new global.ArrayUtil();
+	var list = current.getValue('licences').toString();
+	var arrayList = list.split(",");
+	for (var i in arrayList){
+		var gr = new GlideRecord("x_baes2_legal_port_licence") ;
+		if (gr.get(arrayList[i])) {		
+			template.print("<div align='left' style='float:none;padding-top:20px;'><p>" +  gr.getDisplayValue("licence_type") + " Under Licence No: " + gr.title + "</p></div>");
+		}
+	}	
+
+	template.print("<br />");
+	template.print("<div align='left' style='float:none;padding-top:40px;'><p>Authority is given to hand carry the following equipment:</p></div>");
+	template.print("<div align='left' style='float:none;padding-top:20px;'><p>" + "Laptop - Asset No(s): " + current.getDisplayValue('bae_laptop_asset_number') + "</p></div>");
+	template.print("<div align='left' style='float:none;padding-top:20px;'><p>" + "Mobile - IMEI No(s): " + current.getDisplayValue('bae_mobile_asset_imei') + "</p></div>");
+	template.print("<div align='left' style='float:none;padding-top:20px;'><p>" + "Other devices: " + current.getDisplayValue('bae_other_devices_information') + "</p></div>");
+	
+	template.print("<br />");
+	template.print("<div align='left' style='float:none;padding-top:40px;padding-bottom:40px;'><p>Whilst overseas they cannot transfer technology to any other country.</p></div>");
+	
+	template.print("<br />");	
+	template.print("<div class='jumbotron' style='padding: 5px!important; margin-bottom: 0px!important;border: 1px solid #000000;'><p><strong><span>NOTE TO REPRESENTATIVE:<br/> <br /> You are authorised to access remotely from overseas your UK server, providing that the technology is:<ol><li>Not used to upgrade equipment or software and</li><li>The technology will not be transferred to any other party without first obtaining the authority of BAE Systems Surface Ships Ltd</li><li>On return, provide information to Export Team whether or not any Technical/Military Controlled Information was received whilst overseas</li></ol></span></strong></p></div>");
+
+	template.print("<br />");	
+	template.print("<div align='left' style='float:none;padding-top:40px;padding-bottom:60px;'><p>For and on behalf of:</p></div>");
+
+	//Format Expiry Date
+	var gd = new GlideDate();
+	gd.setValue(current.getValue('expiry_date'));
+	template.print("<div align='left'><p>Name:" + current.getDisplayValue('sys_updated_by') + "</p></div>");
+	template.print("<div align='left' style='float:none;padding-top:10px;'><p>Export Control Officer</p></div>");
+	template.print("<div style='float:right;padding-right:0px;'><p>Authorisation Valid To: " + gd.getByFormat('EEEE dd MMMM yyyy') + "</p></div>");		
+	template.print("<div align='left' style='float:none;padding-top:40px;padding-bottom:20px;'><p><strong>This Authorisation has been electronically signed</strong></p></div>");
+	
+	//Footer Divider
+	//template.print("<div style='border-top: solid #0066A4 1.0pt; border-left: none; border-bottom: none; border-right: none; padding: 5.00pt 0cm 5.00pt 0cm'></div>");
+	template.print("<br />");	
+	template.print("<div class='row'>");
+	template.print("<div class='col'><hr></div>");
+	template.print("</div'>");
+	
+	template.print("<div align='left' style='float:none;padding-top:0px;font-size:10px;'>BAE Systems Surface Ships Limited Registered in England & Wales No: 06160534</div>");
+	template.print("<div align='left' style='float:none;padding-top:0px;font-size:10px;'>Registered Office: Warwick House, PO BOX 87, Farnborough Aerospace Centre, Farnborough, Hampshire, GU14 6YU, UK </div>");
+	
+	// Container - End
+	template.print("</div'>");	
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-03-29 09:53:11</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5c53d2470f8197800a09079ce1050e50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EC_CAO_standard_letter_SAVED2</sys_name>
+        <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+        <sys_update_name>sys_script_email_5c53d2470f8197800a09079ce1050e50</sys_update_name>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-03-29 09:53:11</sys_updated_on>
+    </sys_script_email>
+</record_update>

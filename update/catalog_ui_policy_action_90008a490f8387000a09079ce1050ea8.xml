@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="F680 Request">a790d4cd0f8f47000a09079ce1050e4a</catalog_item>
+        <catalog_variable>IO:0cd8c58d0f0387000a09079ce1050ea9</catalog_variable>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2017-12-13 17:15:34</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>90008a490f8387000a09079ce1050ea8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>equipment_local_assembly_information</sys_name>
+        <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_90008a490f8387000a09079ce1050ea8</sys_update_name>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2017-12-13 17:15:34</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Hide Local Assembly on F680 form">edef75490f8387000a09079ce1050efd</ui_policy>
+        <variable>equipment_local_assembly_information</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

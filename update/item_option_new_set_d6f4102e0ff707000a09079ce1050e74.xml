@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="item_option_new_set">
+    <item_option_new_set action="INSERT_OR_UPDATE">
+        <description>Source variable set used to generate multiple F680 Third Party variable set</description>
+        <display_title>false</display_title>
+        <layout>normal</layout>
+        <name>F680 Third Party</name>
+        <order>100</order>
+        <sys_class_name>item_option_new_set</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-01-24 08:06:38</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d6f4102e0ff707000a09079ce1050e74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>F680 Third Party</sys_name>
+        <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+        <sys_update_name>item_option_new_set_d6f4102e0ff707000a09079ce1050e74</sys_update_name>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-01-24 08:06:38</sys_updated_on>
+        <title/>
+    </item_option_new_set>
+</record_update>

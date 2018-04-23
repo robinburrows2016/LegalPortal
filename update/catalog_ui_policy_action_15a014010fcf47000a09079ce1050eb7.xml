@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="F680 Request">a790d4cd0f8f47000a09079ce1050e4a</catalog_item>
+        <catalog_variable>IO:5bc878850f0387000a09079ce1050e5c</catalog_variable>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2017-12-13 09:08:52</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>15a014010fcf47000a09079ce1050eb7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>equipment_security_classification</sys_name>
+        <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_15a014010fcf47000a09079ce1050eb7</sys_update_name>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2017-12-13 17:12:30</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Hide UK MOD Authority on F680 form#1">dda014010fcf47000a09079ce1050eb4</ui_policy>
+        <variable>equipment_security_classification</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

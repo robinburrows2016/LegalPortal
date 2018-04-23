@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="2541c55d0fc787000a09079ce1050e4f" sys_domain="global" table="x_baes2_legal_port_f680_request" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-14 07:19:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>a5414d550f0b87000a09079ce1050e67</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_baes2_legal_port_f680_request" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">2541c55d0fc787000a09079ce1050e4f</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">53fffc150f0b87000a09079ce1050e5e</sys_ui_section>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2017-12-14 07:19:48</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-14 07:19:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>a9414d550f0b87000a09079ce1050e68</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_baes2_legal_port_f680_request" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">2541c55d0fc787000a09079ce1050e4f</sys_ui_form>
+            <sys_ui_section caption="Applicant" display_value="Applicant" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">ed414d550f0b87000a09079ce1050e67</sys_ui_section>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2017-12-14 07:19:48</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-14 07:22:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>6ce1c9550f0b87000a09079ce1050e1b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_baes2_legal_port_f680_request" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">2541c55d0fc787000a09079ce1050e4f</sys_ui_form>
+            <sys_ui_section caption="F680" display_value="F680" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">ece1c9550f0b87000a09079ce1050e19</sys_ui_section>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2017-12-14 07:22:27</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-14 07:24:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>d052cd550f0b87000a09079ce1050e1f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_baes2_legal_port_f680_request" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">2541c55d0fc787000a09079ce1050e4f</sys_ui_form>
+            <sys_ui_section caption="Equipment" display_value="Equipment" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">9052cd550f0b87000a09079ce1050e1d</sys_ui_section>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2017-12-14 07:24:22</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-14 07:26:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>e6d2c9550f0b87000a09079ce1050e25</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_baes2_legal_port_f680_request" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">2541c55d0fc787000a09079ce1050e4f</sys_ui_form>
+            <sys_ui_section caption="Clearance" display_value="Clearance" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">e2d2c9550f0b87000a09079ce1050e23</sys_ui_section>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2017-12-14 07:26:42</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>5</position>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-14 07:29:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>ba9385950f0b87000a09079ce1050e21</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_baes2_legal_port_f680_request" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">2541c55d0fc787000a09079ce1050e4f</sys_ui_form>
+            <sys_ui_section caption="Additional" display_value="Additional" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">f29385950f0b87000a09079ce1050e1f</sys_ui_section>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2017-12-14 07:29:59</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>6</position>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2018-01-25 08:19:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>20c1a1fe0fb347000a09079ce1050e85</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_baes2_legal_port_f680_request" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">2541c55d0fc787000a09079ce1050e4f</sys_ui_form>
+            <sys_ui_section caption="Evaluation" display_value="Evaluation" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">24c1a1fe0fb347000a09079ce1050e82</sys_ui_section>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-01-25 12:16:59</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>7</position>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2018-01-25 08:15:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>36d0ad7e0fb347000a09079ce1050ea2</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_baes2_legal_port_f680_request" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">2541c55d0fc787000a09079ce1050e4f</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">bad0ad7e0fb347000a09079ce1050e9e</sys_ui_section>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-01-25 12:16:59</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_baes2_legal_port_f680_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2017-12-14 07:19:48</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>2541c55d0fc787000a09079ce1050e4f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_baes2_legal_port_f680_request</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+            <sys_update_name>sys_ui_form_sections_2541c55d0fc787000a09079ce1050e4f</sys_update_name>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2017-12-14 07:19:48</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

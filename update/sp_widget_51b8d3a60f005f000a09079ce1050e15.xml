@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function($scope, $location) {
+  /* widget controller */
+  var c = this;
+	
+	c.show_more = false;
+
+	this.changeRequestState = function(state) {
+		c.data.request_state = state;
+	};
+
+	this.changeDemandState = function(state) {
+		c.data.demand_state = state;
+	};
+
+	this.changeIncidentState = function(state) {
+		c.data.incident_state = state;
+	};
+	
+	this.goToURL = function(sURL) {
+		$location.url(sURL);
+	};	
+
+	this.onClick = function($event, item, url, action) {
+		$event.stopPropagation();
+		$event.preventDefault();
+		if (url)
+			$location.search(url);
+		else {
+			var evt = {};
+			evt.url = url;
+			evt.table = c.data.table;
+			evt.sys_id = item.sys_id;
+			evt.record = item;
+			evt.rectangle_id = c.data.sys_id;
+			evt.action = action;
+			// put out the selection with simple list "sl_" prefix
+			$location.search('sl_sys_id', evt.sys_id);
+			$location.search('sl_table', evt.table);
+			$location.search('spa', 1); // spa means "I've got this"
+			$rootScope.$broadcast('$sp.list.click', evt);
+		}
+	};	
+	
+	c.showTooltip = function(headingID, id, table) {
+	    // Hide Any Open Tooltips
+		jQuery(".tooltip").tooltip("hide");
+		
+		// Request Item Tooltip
+		if (table == 'x_baes2_legal_port_cao_request') {
+			$scope.server.get({
+				action: "getTooltip_REQ",
+				itemID: id
+			}).then(function(response) {
+				var tt_target = '#' + headingID + id;				
+				jQuery(tt_target).attr('data-title', response.data.tooltip);
+				jQuery(tt_target).tooltip('show');
+			});
+		}
+		
+		// Idea Tooltip
+		if (table == 'x_baes2_legal_port_f680_request') {
+			$scope.server.get({
+				action: "getTooltip_IDEA",
+				itemID: id
+			}).then(function(response) {
+				var tt_target = '#' + headingID + id;				
+				jQuery(tt_target).attr('data-title', response.data.tooltip);
+				jQuery(tt_target).tooltip('show');
+			});
+		}
+		
+		// Demand Tooltip
+		if (table == 'dmn_demand') {
+			$scope.server.get({
+				action: "getTooltip_DMN",
+				itemID: id
+			}).then(function(response) {
+				var tt_target = '#' + headingID + id;				
+				jQuery(tt_target).attr('data-title', response.data.tooltip);
+				jQuery(tt_target).tooltip('show');
+			});
+		}
+		
+		// Incident Tooltip
+		if (table == 'incident') {
+			$scope.server.get({
+				action: "getTooltip_INC",
+				itemID: id
+			}).then(function(response) {
+				var tt_target = '#' + headingID + id;				
+				jQuery(tt_target).attr('data-title', response.data.tooltip);
+				jQuery(tt_target).tooltip('show');
+			});
+		}		
+		
+	};	
+	
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.section_title {&#13;
+  border-bottom: 1px solid $navbar-inverse-bg;&#13;
+}&#13;
+&#13;
+.top_items li a {&#13;
+  padding-left:0;&#13;
+}&#13;
+&#13;
+.btn-primary {&#13;
+    color: #fff!important;&#13;
+}&#13;
+.btn-xs {&#13;
+    padding: 1px 5px!important;&#13;
+}&#13;
+&#13;
+tooltip tip {&#13;
+  text-align: left!important;&#13;
+  width: 500px!important;&#13;
+}&#13;
+&#13;
+.tip-header {&#13;
+  border-bottom: 1px solid #ccc!important;&#13;
+  background-color: #f5f5f5!important;  &#13;
+  color: #428bca!important;  &#13;
+  margin-top: -8px!important;  &#13;
+  margin-left: -16px!important;&#13;
+  margin-right: -16px!important;&#13;
+  padding-top: 8px!important;&#13;
+  padding-left: 16px!important;&#13;
+  padding-bottom: 8px!important;&#13;
+  margin-bottom: 5px!important;   &#13;
+}&#13;
+&#13;
+tooltip._top tip {&#13;
+  transform: none!important;&#13;
+  left: 15px!important;&#13;
+  color: #717171!important;&#13;
+  background-color: #f5f5f5!important;&#13;
+  border: 1px solid #ccc!important;&#13;
+  -moz-box-shadow: 0px 5px 5px 0px rgba(221,221,221,1) !important;&#13;
+  box-shadow: 0px 5px 5px 0px rgba(221,221,221,1) !important;  &#13;
+}&#13;
+&#13;
+tooltip._top tip tip-arrow {&#13;
+  display: none!important;&#13;
+}&#13;
+&#13;
+.tip-row {&#13;
+  padding-bottom: 10px!important;  &#13;
+}&#13;
+&#13;
+.tip-col {&#13;
+  vertical-align: top!important;  &#13;
+}&#13;
+&#13;
+.m-b {&#13;
+    margin-bottom: 5px!important;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>jb-megamenu-progress-splg</id>
+        <internal>false</internal>
+        <link/>
+        <name>JB Megamenu Progress SPLG</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	
+	// Initial load	
+
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+
+	data.omit_badges = false;
+	data.request_state = 'Open';
+	data.demand_state = 'Open';
+	data.incident_state = 'Open';
+
+	//User details
+	data.sysUserID = gs.getUser().getID();
+	var sysUserGR = new GlideRecord("sys_user");
+	data.user = sysUserGR.get(data.sysUserID);
+	data.ACA = false;
+	/*if (sysUserGR.getDisplayValue("u_business_group") == 'ACA') {
+		data.ACA = true;
+	} else {
+		data.ACA = false;
+	}*/
+
+	var fPortalRec = $sp.getPortalRecord();	
+	data.kb = fPortalRec.getValue('kb_knowledge_base');
+	data.secondary_fields = ['number','sys_updated_on','sys_updated_by'];
+
+	// Open CAO Requests
+
+	data.requests_open = [];
+	var q = new GlideRecordSecure('x_baes2_legal_port_cao_request'); // does ACL checking for us
+	q.addEncodedQuery('opened_by=javascript:gs.getUserID()^active=true');
+	//q.addActiveQuery();
+	q.orderByDesc('sys_created_on');
+	q.setLimit(5);
+	q.query();
+	while (q.next()) {
+		if (!q.canRead())
+			continue;
+
+		var b = {};
+		b.sys_id = q.getValue('sys_id');
+		b.number = q.getDisplayValue("number");
+		b.display_field = q.getDisplayValue("short_description");
+		b.updated_on = q.sys_updated_on.getDisplayValue();
+		b.updated_by = q.getDisplayValue("sys_updated_by");
+		b.table = 'x_baes2_legal_port_cao_request';
+		b.secondary_fields = [];
+		data.secondary_fields.forEach(function(f) {
+			b.secondary_fields.push(getField(q, f));
+		});
+
+		b.url = {id: 'ticket', table: 'x_baes2_legal_port_cao_request', sys_id: b.sys_id};
+		$sp.getRecordValues(b, q, 'short_description,sys_view_count,sys_id,published');
+		b.published_display = q.getDisplayValue("published");				
+
+		data.requests_open.push(b);
+	}
+
+	// Closed CAO Requests
+
+	data.requests_closed = [];
+	var q = new GlideRecordSecure('x_baes2_legal_port_cao_request'); // does ACL checking for us
+	q.addEncodedQuery('opened_by=javascript:gs.getUserID()^active=false');
+	//q.addInactiveQuery();
+	q.orderByDesc('sys_created_on');
+	q.setLimit(5);
+	q.query();
+	while (q.next()) {
+		if (!q.canRead())
+			continue;
+
+		var b = {};
+		b.sys_id = q.getValue('sys_id');
+		b.number = q.getDisplayValue("number");		
+		b.display_field = q.getDisplayValue("short_description");
+		b.updated_on = q.sys_updated_on.getDisplayValue();
+		b.updated_by = q.getDisplayValue("sys_updated_by");
+		b.table = 'x_baes2_legal_port_cao_request';		
+		b.secondary_fields = [];
+		data.secondary_fields.forEach(function(f) {
+			b.secondary_fields.push(getField(q, f));
+		});
+
+		b.url = {id: 'ticket', table: 'x_baes2_legal_port_cao_request', sys_id: b.sys_id};
+		$sp.getRecordValues(b, q, 'short_description,sys_view_count,sys_id,published');
+		b.published_display = q.getDisplayValue("published");					
+
+		data.requests_closed.push(b);
+	}		
+
+	// Open F680 Requests
+
+	data.demands_open = [];
+	var q = new GlideRecordSecure('x_baes2_legal_port_f680_request'); // does ACL checking for us
+	q.addEncodedQuery('opened_by=javascript:gs.getUserID()^active=true');    
+	q.orderByDesc('sys_created_on');
+	q.setLimit(5);
+	q.query();
+	while (q.next()) {
+		if (!q.canRead())
+			continue;
+
+		var b = {};
+		b.sys_id = q.getValue('sys_id');
+		b.number = q.getDisplayValue("number");		
+		b.display_field = q.getDisplayValue("short_description");
+		b.updated_on = q.sys_updated_on.getDisplayValue();
+		b.updated_by = q.getDisplayValue("sys_updated_by");
+		b.table = 'x_baes2_legal_port_f680_request';		
+		b.secondary_fields = [];
+		data.secondary_fields.forEach(function(f) {
+			b.secondary_fields.push(getField(q, f));
+		});
+
+		b.url = {id: 'ticket', table: 'x_baes2_legal_port_f680_request', sys_id: b.sys_id};
+		$sp.getRecordValues(b, q, 'short_description,sys_view_count,sys_id,published');
+		b.published_display = q.getDisplayValue("published");							
+
+		data.demands_open.push(b);
+	}
+
+	// Closed F680 Requests
+
+	data.demands_closed = [];
+	var q = new GlideRecordSecure('x_baes2_legal_port_f680_request'); // does ACL checking for us
+	q.addEncodedQuery('opened_by=javascript:gs.getUserID()^active=false');    
+	q.orderByDesc('sys_created_on');
+	q.setLimit(5);
+	q.query();
+	while (q.next()) {
+		if (!q.canRead())
+			continue;
+
+		var b = {};
+		b.sys_id = q.getValue('sys_id');
+		b.number = q.getDisplayValue("number");		
+		b.display_field = q.getDisplayValue("short_description");
+		b.updated_on = q.sys_updated_on.getDisplayValue();
+		b.updated_by = q.getDisplayValue("sys_updated_by");
+		b.table = 'x_baes2_legal_port_f680_request';		
+		b.secondary_fields = [];
+		data.secondary_fields.forEach(function(f) {
+			b.secondary_fields.push(getField(q, f));
+		});
+
+		b.url = {id: 'ticket', table: 'x_baes2_legal_port_f680_request', sys_id: b.sys_id};
+		$sp.getRecordValues(b, q, 'short_description,sys_view_count,sys_id,published');
+		b.published_display = q.getDisplayValue("published");
+
+		data.demands_closed.push(b);
+	}	
+	
+	data.tooltip = "";
+	
+	if (input) {
+		
+		// Client Request For Request Item Tooltip
+		if (input && input.action === "getTooltip_REQ") {
+			var gr = new GlideRecord("x_baes2_legal_port_cao_request");
+			if (gr.get(input.itemID)) {
+				number = gr.getDisplayValue("number");				
+				display_field = gr.getDisplayValue("short_description");
+				updated_on = gr.sys_updated_on.getDisplayValue();
+				updated_by = gr.getDisplayValue("sys_updated_by");			
+				secondary_fields = [];
+				//data.secondary_fields.forEach(function(f) {
+					//secondary_fields.push(getField(q, f));
+				//});
+				published_display = gr.getDisplayValue("published");			
+				var variables = $sp.getRecordVariablesArray(gr);			
+				data.tooltip = '<div class="tip-header">' + number + ' - ' + display_field + '</br><medium class="text-muted"><span class="glyphicon glyphicon-time " />&nbsp;' + updated_on + ' • ' + updated_by + '</medium>' +  '</div><table><tbody>';		
+				for(var i =0; i< variables.length; i++){
+					if (variables[i].label) {
+						data.tooltip += "<tr class='tip-row'><td class='tip-col'>" + variables[i].label + "&nbsp;&nbsp;</td><td class='tip-col'>" + variables[i].display_value + "</td></tr>";
+					}
+				}
+				data.tooltip += "</tbody></table>";
+			}
+			return;
+		}		
+		
+		// Client Request For Idea Tooltip
+		if (input && input.action === "getTooltip_IDEA") {
+			var gr = new GlideRecord("x_baes2_legal_port_f680_request");
+			if (gr.get(input.itemID)) {
+				number = gr.getDisplayValue("number");
+				display_field = gr.getDisplayValue("short_description");
+				updated_on = gr.sys_updated_on.getDisplayValue();
+				updated_by = gr.getDisplayValue("sys_updated_by");
+				secondary_fields = [];
+				//data.secondary_fields.forEach(function(f) {
+					//secondary_fields.push(getField(q, f));
+				//});
+				published_display = gr.getDisplayValue("published");
+				classification = gr.getDisplayValue("classification");
+				event_date = gr.getDisplayValue("work_start");				
+				var variables = $sp.getRecordVariablesArray(gr);
+				data.tooltip = '<div class="tip-header">' + number + ' - ' + display_field + '</br><medium class="text-muted"><span class="glyphicon glyphicon-time " />&nbsp;' + updated_on + ' • ' + updated_by + '</medium>' +  '</div><table><tbody>';
+				if (variables.length == 0) {
+					data.tooltip += "<tr class='tip-row'><td class='tip-col'>Name&nbsp;&nbsp;</td><td class='tip-col'>" + display_field + "</td></tr>";					
+					data.tooltip += "<tr class='tip-row'><td class='tip-col'>Classification&nbsp;&nbsp;</td><td class='tip-col'>" + classification + "</td></tr>";
+					data.tooltip += "<tr class='tip-row'><td class='tip-col'>Event date&nbsp;&nbsp;</td><td class='tip-col'>" + event_date + "</td></tr>";			
+				}				
+				for(var i =0; i< variables.length; i++){
+					if (variables[i].label) {
+						data.tooltip += "<tr class='tip-row'><td class='tip-col'>" + variables[i].label + "&nbsp;&nbsp;</td><td class='tip-col'>" + variables[i].display_value + "</td></tr>";
+					}
+				}
+				data.tooltip += "</tbody></table>";
+			}
+			return;
+		}		
+		
+		// Client Request For Demand Tooltip
+		if (input && input.action === "getTooltip_DMN") {
+			var gr = new GlideRecord("dmn_demand");
+			if (gr.get(input.itemID)) {
+				number = gr.getDisplayValue("number");
+				display_field = gr.getDisplayValue("short_description");
+				updated_on = gr.sys_updated_on.getDisplayValue();
+				updated_by = gr.getDisplayValue("sys_updated_by");
+				secondary_fields = [];
+				//data.secondary_fields.forEach(function(f) {
+					//secondary_fields.push(getField(q, f));
+				//});
+				published_display = gr.getDisplayValue("published");
+				short_description = gr.getDisplayValue("short_description");				
+				business_case = gr.getDisplayValue("business_case");				
+				var variables = $sp.getRecordVariablesArray(gr);
+				data.tooltip = '<div class="tip-header">' + number + ' - ' + display_field + '</br><medium class="text-muted"><span class="glyphicon glyphicon-time " />&nbsp;' + updated_on + ' • ' + updated_by + '</medium>' +  '</div><table><tbody>';
+				if (variables.length == 0) {
+					data.tooltip += "<tr class='tip-row'><td class='tip-col'>Title&nbsp;&nbsp;</td><td class='tip-col'>" + short_description + "</td></tr>";					
+					data.tooltip += "<tr class='tip-row'><td class='tip-col'>Additional Information&nbsp;&nbsp;</td><td class='tip-col'>" + business_case + "</td></tr>";
+				}				
+				for(var i =0; i< variables.length; i++){
+					if (variables[i].label) {
+						data.tooltip += "<tr class='tip-row'><td class='tip-col'>" + variables[i].label + "&nbsp;&nbsp;</td><td class='tip-col'>" + variables[i].display_value + "</td></tr>";
+					}
+				}
+				data.tooltip += "</tbody></table>";
+			}
+			return;
+		}		
+		
+		// Client Request For Incident Tooltip
+		if (input && input.action === "getTooltip_INC") {
+			var gr = new GlideRecord("incident");
+			if (gr.get(input.itemID)) {
+				number = gr.getDisplayValue("number");
+				display_field = gr.getDisplayValue("short_description");
+				updated_on = gr.sys_updated_on.getDisplayValue();
+				updated_by = gr.getDisplayValue("sys_updated_by");
+				secondary_fields = [];
+				//data.secondary_fields.forEach(function(f) {
+					//secondary_fields.push(getField(q, f));
+				//});
+				published_display = gr.getDisplayValue("published");		
+				var variables = $sp.getRecordVariablesArray(gr);
+				data.tooltip = '<div class="tip-header">' + number + ' - ' + display_field + '</br><medium class="text-muted"><span class="glyphicon glyphicon-time " />&nbsp;' + updated_on + ' • ' + updated_by + '</medium>' +  '</div><table><tbody>';		
+				for(var i =0; i< variables.length; i++){
+					if (variables[i].label) {
+						data.tooltip += "<tr class='tip-row'><td class='tip-col'>" + variables[i].label + "&nbsp;&nbsp;</td><td class='tip-col'>" + variables[i].display_value + "</td></tr>";
+					}
+				}
+				data.tooltip += "</tbody></table>";
+			}
+			return;
+		}		
+		
+		
+	}  
+	else {  	
+	
+	}
+
+	function getField(gr, name) {
+		var f = {};
+		f.display_value = gr.getDisplayValue(name);
+		f.value = gr.getValue(name);
+		var ge = gr.getElement(name);
+		f.type = ge.getED().getInternalType();
+		f.label = ge.getLabel();
+		return f;
+	}
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-02-06 08:38:11</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>51b8d3a60f005f000a09079ce1050e15</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>JB Megamenu Progress SPLG</sys_name>
+        <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+        <sys_update_name>sp_widget_51b8d3a60f005f000a09079ce1050e15</sys_update_name>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-02-06 09:02:51</sys_updated_on>
+        <template><![CDATA[<div class="container">
+  <div class="row">
+    
+    <div ng-show="c.data.request_state=='Open'" ng-class="c.data.ACA==true ? 'col-lg-4 col-md-4 col-sm-4 col-xs-12' : 'col-lg-6 col-md-6 col-sm-6 col-xs-12'">
+      <div class="panel panel-default b">
+      <div class="panel-heading">
+      	<h4 class="panel-title">
+        CAOs - Open
+        <a type="button" class="btn-xs btn-primary pull-right" ng-click="c.changeRequestState('Closed')" href="javascript:void(0);">View Closed</a>          
+        </h4>
+      </div>
+      <div class="panel-body">      
+      <ul class="top_items">
+        <li ng-repeat="viewItem in c.data.requests_open">          
+          <div style="float:left;">
+            <span class="fa fa-info-circle" id="MMPU{{viewItem.sys_id}}" data-container="#the-basics" data-viewport=".page" data-placement="right" data-html="true" data-title="<div>loading ..</div>" ng-mouseover="c.showTooltip('MMPU',viewItem.sys_id,viewItem.table)">&nbsp;</span>            
+          </div>
+          <div>
+            <a ng-click="c.onClick($event, viewItem, viewItem.url, {})" href="javascript:void(0)" title="Click to view request item">
+              <div ng-class="{'l-h-40': !viewItem.secondary_fields.length}">{{viewItem.display_field}}</div>
+              <small class="text-muted" ng-repeat="f in viewItem.secondary_fields">
+                <span ng-if="!$first"> • </span>
+                <span ng-switch="f.type" title="{{::f.label}}">
+                  <span ng-switch-when="glide_date"><sn-time-ago timestamp="::f.value" /></span>
+                  <span ng-switch-when="glide_date_time"><sn-time-ago timestamp="::f.value" /></span>
+                  <span ng-switch-default="">{{f.display_value}}</span>
+                </span>
+              </small>
+            </a>
+          </div>         
+        </li>
+      </ul>
+      <ul class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <li class="divider"></li>
+        <li><a href="javascript:void(0);" ng-click="c.goToURL('?id=datatable&table=x_baes2_legal_port_cao_request&view=sp&sp_page=ticket&filter=opened_by%3Djavascript%3Ags.getUserID()%5Eactive%3Dtrue')">View all open CAOs</a></li>        
+      </ul>
+      </div>
+      </div>        
+  </div>
+    
+     <div ng-show="c.data.request_state=='Closed'" ng-class="c.data.ACA==true ? 'col-lg-4 col-md-4 col-sm-4 col-xs-12' : 'col-lg-6 col-md-6 col-sm-6 col-xs-12'">
+      <div class="panel panel-default b">
+      <div class="panel-heading">
+      	<h4 class="panel-title">
+        CAOs - Closed
+        <a type="button" class="btn-xs btn-primary pull-right" ng-click="c.changeRequestState('Open')" href="javascript:void(0);">View Open</a>
+        </h4>
+      </div>
+      <div class="panel-body">       
+      <ul class="top_items">
+        <li ng-repeat="viewItem in c.data.requests_closed">
+          <div style="float:left;">
+            <span class="fa fa-info-circle" id="MMPU{{viewItem.sys_id}}" data-container="#the-basics" data-viewport=".page" data-placement="right" data-html="true" data-title="<div>loading ..</div>" ng-mouseover="c.showTooltip('MMPU',viewItem.sys_id,viewItem.table)">&nbsp;</span>                        
+          </div>
+          <div>
+            <a ng-click="c.onClick($event, viewItem, viewItem.url, {})" href="javascript:void(0)" title="Click to view request item">
+            <div ng-class="{'l-h-40': !viewItem.secondary_fields.length}">{{viewItem.display_field}}</div>
+              <small class="text-muted" ng-repeat="f in viewItem.secondary_fields">
+                <span ng-if="!$first"> • </span>
+                <span ng-switch="f.type" title="{{::f.label}}">
+                  <span ng-switch-when="glide_date"><sn-time-ago timestamp="::f.value" /></span>
+                  <span ng-switch-when="glide_date_time"><sn-time-ago timestamp="::f.value" /></span>
+                  <span ng-switch-default="">{{f.display_value}}</span>
+                </span>
+              </small>
+            </a>
+          </div>          
+        </li>
+      </ul>
+      <ul class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <li class="divider"></li>
+        <li><a href="javascript:void(0);" ng-click="c.goToURL('?id=datatable&table=x_baes2_legal_port_cao_request&view=sp&sp_page=ticket&filter=opened_by%3Djavascript%3Ags.getUserID()%5Eactive%3Dfalse')">View all closed CAOs</a></li>        
+        <li style="display:none"><a href="javascript:void(0);" ng-click="c.goToURL('?id=requests_closed')">View all closed requests</a></li>
+      </ul>
+      </div>
+      </div>        
+  </div>
+     
+    <div ng-show="c.data.demand_state=='Open'" ng-class="c.data.ACA==true ? 'col-lg-4 col-md-4 col-sm-4 col-xs-12' : 'col-lg-6 col-md-6 col-sm-6 col-xs-12'">
+      <div class="panel panel-default b">
+      <div class="panel-heading">
+      	<h4 class="panel-title">
+        F680s - Open
+        <a type="button" class="btn-xs btn-primary pull-right" ng-click="c.changeDemandState('Closed')" href="javascript:void(0);">View Closed</a>
+        </h4>
+      </div>
+      <div class="panel-body">      
+      <ul class="top_items">
+        <li ng-repeat="viewItem in c.data.demands_open">
+          <div style="float:left;">
+            <span class="fa fa-info-circle" id="MMPU{{viewItem.sys_id}}" data-container="#the-basics" data-viewport=".page" data-placement="right" data-html="true" data-title="<div>loading ..</div>" ng-mouseover="c.showTooltip('MMPU',viewItem.sys_id,viewItem.table)">&nbsp;</span>                        
+          </div>
+          <div>
+            <a ng-click="c.onClick($event, viewItem, viewItem.url, {})" href="javascript:void(0)" title="Click to view demand">
+              <div ng-class="{'l-h-40': !viewItem.secondary_fields.length}">{{viewItem.display_field}}</div>
+              <small class="text-muted" ng-repeat="f in viewItem.secondary_fields">
+                <span ng-if="!$first"> • </span>
+                <span ng-switch="f.type" title="{{::f.label}}">
+                  <span ng-switch-when="glide_date"><sn-time-ago timestamp="::f.value" /></span>
+                  <span ng-switch-when="glide_date_time"><sn-time-ago timestamp="::f.value" /></span>
+                  <span ng-switch-default="">{{f.display_value}}</span>
+                </span>
+              </small>
+            </a>
+          </div>          
+        </li>
+      </ul>
+      <ul class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <li class="divider"></li>
+        <li><a href="javascript:void(0);" ng-click="c.goToURL('?id=datatable&table=x_baes2_legal_port_f680_request&view=sp&filter=opened_by%3Djavascript%3Ags.getUserID()%5Eactive%3Dtrue')">View all open F680s</a></li>
+      </ul>
+      </div>
+      </div>         
+  </div>
+    
+     <div ng-show="c.data.demand_state=='Closed'" ng-class="c.data.ACA==true ? 'col-lg-4 col-md-4 col-sm-4 col-xs-12' : 'col-lg-6 col-md-6 col-sm-6 col-xs-12'">
+      <div class="panel panel-default b">
+      <div class="panel-heading">
+      	<h4 class="panel-title">
+        F680s - Closed
+        <a type="button" class="btn-xs btn-primary pull-right" ng-click="c.changeDemandState('Open')" href="javascript:void(0);">View Open</a>
+        </h4>
+      </div>
+      <div class="panel-body">       
+      <ul class="top_items">
+        <li ng-repeat="viewItem in c.data.demands_closed">
+          <div style="float:left;">
+            <span class="fa fa-info-circle" id="MMPU{{viewItem.sys_id}}" data-container="#the-basics" data-viewport=".page" data-placement="right" data-html="true" data-title="<div>loading ..</div>" ng-mouseover="c.showTooltip('MMPU',viewItem.sys_id,viewItem.table)">&nbsp;</span>                                    
+          </div>
+          <div>
+            <a ng-click="c.onClick($event, viewItem, viewItem.url, {})" href="javascript:void(0)" title="Click to view demand">
+              <div ng-class="{'l-h-40': !viewItem.secondary_fields.length}">{{viewItem.display_field}}</div>
+              <small class="text-muted" ng-repeat="f in viewItem.secondary_fields">
+                <span ng-if="!$first"> • </span>
+                <span ng-switch="f.type" title="{{::f.label}}">
+                  <span ng-switch-when="glide_date"><sn-time-ago timestamp="::f.value" /></span>
+                  <span ng-switch-when="glide_date_time"><sn-time-ago timestamp="::f.value" /></span>
+                  <span ng-switch-default="">{{f.display_value}}</span>
+                </span>
+              </small>
+            </a>
+          </div>
+        </li>
+      </ul>
+      <ul class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <li class="divider"></li>
+        <li><a href="javascript:void(0);" ng-click="c.goToURL('?id=datatable&table=x_baes2_legal_port_f680_request&view=sp&filter=opened_by%3Djavascript%3Ags.getUserID()%5Eactive%3Dfalse')">View all closed F680s</a></li>
+      </ul>
+      </div>
+      </div>        
+  </div>
+     
+    <div ng-show="c.data.ACA==true && c.data.incident_state=='Open'" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+      <div class="panel panel-default b">
+      <div class="panel-heading">
+      	<h4 class="panel-title">
+        Incidents - Open
+        <a type="button" class="btn-xs btn-primary pull-right" ng-click="c.changeIncidentState('Closed')" href="javascript:void(0);">View Closed</a>
+        </h4>
+      </div>
+      <div class="panel-body">      
+      <ul class="top_items">
+        <li ng-repeat="viewItem in c.data.incidents_open">
+          <div style="float:left;">
+            <span class="fa fa-info-circle" id="MMPU{{viewItem.sys_id}}" data-container="#the-basics" data-viewport=".page" data-placement="right" data-html="true" data-title="<div>loading ..</div>" ng-mouseover="c.showTooltip('MMPU',viewItem.sys_id,viewItem.table)">&nbsp;</span>            
+          </div>
+          <div>
+            <a ng-click="c.onClick($event, viewItem, viewItem.url, {})" href="javascript:void(0)" title="Click to view incident">
+              <div ng-class="{'l-h-40': !viewItem.secondary_fields.length}">{{viewItem.display_field}}</div>
+              <small class="text-muted" ng-repeat="f in viewItem.secondary_fields">
+                <span ng-if="!$first"> • </span>
+                <span ng-switch="f.type" title="{{::f.label}}">
+                  <span ng-switch-when="glide_date"><sn-time-ago timestamp="::f.value" /></span>
+                  <span ng-switch-when="glide_date_time"><sn-time-ago timestamp="::f.value" /></span>
+                  <span ng-switch-default="">{{f.display_value}}</span>
+                </span>
+              </small>
+            </a>
+          </div>
+        </li>
+      </ul>
+      <ul class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <li class="divider"></li>
+        <li><a href="javascript:void(0);" ng-click="c.goToURL('?id=datatable&table=incident&view=sp&filter=caller_id%3Djavascript%3Ags.getUserID()%5EORopened_by%3Djavascript%3Ags.getUserID()%5Eactive%3Dtrue')">View all open incidents</a></li>        
+      </ul>
+      </div>
+      </div>        
+  </div>
+    
+     <div ng-show="c.data.ACA==true && c.data.incident_state=='Closed'" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+      <div class="panel panel-default b">
+      <div class="panel-heading">
+      	<h4 class="panel-title">
+        Incidents - Closed
+        <a type="button" class="btn-xs btn-primary pull-right" ng-click="c.changeIncidentState('Open')" href="javascript:void(0);">View Open</a>
+        </h4>
+      </div>
+      <div class="panel-body">       
+      <ul class="top_items">
+        <li ng-repeat="viewItem in c.data.incidents_closed">
+          <div style="float:left;">
+            <span class="fa fa-info-circle" id="MMPU{{viewItem.sys_id}}" data-container="#the-basics" data-viewport=".page" data-placement="right" data-html="true" data-title="<div>loading ..</div>" ng-mouseover="c.showTooltip('MMPU',viewItem.sys_id,viewItem.table)">&nbsp;</span>                               	
+          </div>
+          <div>
+            <a ng-click="c.onClick($event, viewItem, viewItem.url, {})" href="javascript:void(0)" title="Click to view incident">
+              <div ng-class="{'l-h-40': !viewItem.secondary_fields.length}">{{viewItem.display_field}}</div>
+              <small class="text-muted" ng-repeat="f in viewItem.secondary_fields">
+                <span ng-if="!$first"> • </span>
+                <span ng-switch="f.type" title="{{::f.label}}">
+                  <span ng-switch-when="glide_date"><sn-time-ago timestamp="::f.value" /></span>
+                  <span ng-switch-when="glide_date_time"><sn-time-ago timestamp="::f.value" /></span>
+                  <span ng-switch-default="">{{f.display_value}}</span>
+                </span>
+              </small>
+            </a>
+          </div>
+        </li>
+      </ul>
+      <ul class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <li class="divider"></li>
+        <li><a href="javascript:void(0);" ng-click="c.goToURL('?id=datatable&table=incident&view=sp&filter=caller_id%3Djavascript%3Ags.getUserID()%5EORopened_by%3Djavascript%3Ags.getUserID()%5Eactive%3Dfalse')">View all closed incidents</a></li>
+      </ul>
+      </div>
+      </div>       
+  </div> 
+  
+</div>]]></template>
+    </sp_widget>
+</record_update>

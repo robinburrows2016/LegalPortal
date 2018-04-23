@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <encryption_context/>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_baes2_legal_port.legal_port_f680_request_user</name>
+        <suffix>legal_port_f680_request_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2017-12-12 13:36:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>893444780f8747000a09079ce1050ebf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_baes2_legal_port.legal_port_f680_request_user</sys_name>
+        <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+        <sys_update_name>sys_user_role_893444780f8747000a09079ce1050ebf</sys_update_name>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2017-12-12 13:36:01</sys_updated_on>
+    </sys_user_role>
+</record_update>

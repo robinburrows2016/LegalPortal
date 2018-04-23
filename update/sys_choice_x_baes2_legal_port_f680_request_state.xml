@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="state" table="x_baes2_legal_port_f680_request" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Submitted</label>
+            <language>en</language>
+            <name>x_baes2_legal_port_f680_request</name>
+            <sequence>2</sequence>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2018-01-25 11:55:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>b20316360f7747000a09079ce1050e18</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-01-25 11:55:02</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Approved</label>
+            <language>en</language>
+            <name>x_baes2_legal_port_f680_request</name>
+            <sequence>3</sequence>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2018-01-25 11:55:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>1e13da360f7747000a09079ce1050e22</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-01-25 11:55:16</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Incomplete</label>
+            <language>en</language>
+            <name>x_baes2_legal_port_f680_request</name>
+            <sequence>5</sequence>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2018-01-25 11:55:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>f71316360f7747000a09079ce1050ec4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-01-25 11:55:22</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rejected</label>
+            <language>en</language>
+            <name>x_baes2_legal_port_f680_request</name>
+            <sequence>7</sequence>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2018-01-25 11:55:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>0123de360f7747000a09079ce1050e62</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-01-25 11:55:28</sys_updated_on>
+            <value>7</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Authorised</label>
+            <language>en</language>
+            <name>x_baes2_legal_port_f680_request</name>
+            <sequence>8</sequence>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2018-01-25 11:55:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>d7239e360f7747000a09079ce1050ef6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-01-25 11:55:37</sys_updated_on>
+            <value>8</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Completed</label>
+            <language>en</language>
+            <name>x_baes2_legal_port_f680_request</name>
+            <sequence>9</sequence>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2018-01-25 11:55:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>853312760f7747000a09079ce1050ed5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-01-25 11:55:44</sys_updated_on>
+            <value>9</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <name>x_baes2_legal_port_f680_request</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2018-01-25 11:55:02</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>360316360f7747000a09079ce1050e1a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>state</sys_name>
+            <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+            <sys_update_name>sys_choice_x_baes2_legal_port_f680_request_state</sys_update_name>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-01-25 11:55:02</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

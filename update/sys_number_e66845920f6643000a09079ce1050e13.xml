@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_baes2_legal_port_cao_request">x_baes2_legal_port_cao_request</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>HCA</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2017-11-22 13:54:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e66845920f6643000a09079ce1050e13</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>HCA</sys_name>
+        <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+        <sys_update_name>sys_number_e66845920f6643000a09079ce1050e13</sys_update_name>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2017-12-05 16:59:16</sys_updated_on>
+    </sys_number>
+</record_update>

@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="acf01fd10f405340bb20716ce1050e80" sys_domain="global" table="x_baes2_legal_port_cao_request" version="3" view="Service_Portal">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>process_flow.xml</element>
+            <position>0</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>f24d98e90f889b000a09079ce1050eb5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Process Flow">b692f06e0f7243000a09079ce1050e87</sys_ui_formatter>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>1</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>7e4d98e90f889b000a09079ce1050eb5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>2</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>fe4d98e90f889b000a09079ce1050eb5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>3</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>724d98e90f889b000a09079ce1050eb6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>4</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>f24d98e90f889b000a09079ce1050eb6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>bae_other_devices_information</element>
+            <position>5</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>764d98e90f889b000a09079ce1050eb6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>destination_countries</element>
+            <position>6</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>f64d98e90f889b000a09079ce1050eb6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>destination_details</element>
+            <position>7</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>7a4d98e90f889b000a09079ce1050eb6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>destination_usa_confirmation</element>
+            <position>8</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>fa4d98e90f889b000a09079ce1050eb6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>export_control_data</element>
+            <position>9</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>7e4d98e90f889b000a09079ce1050eb6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>export_control_data_information</element>
+            <position>10</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>fe4d98e90f889b000a09079ce1050eb6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>itar_control_data</element>
+            <position>11</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>724d98e90f889b000a09079ce1050eb7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>itar_control_data_information</element>
+            <position>12</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>f24d98e90f889b000a09079ce1050eb7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>information_shared</element>
+            <position>13</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>764d98e90f889b000a09079ce1050eb7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>licence_additional_information</element>
+            <position>14</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>f64d98e90f889b000a09079ce1050eb7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>licences</element>
+            <position>15</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>7a4d98e90f889b000a09079ce1050eb7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>present_controlled_data</element>
+            <position>16</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>fa4d98e90f889b000a09079ce1050eb7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>project</element>
+            <position>17</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>7e4d98e90f889b000a09079ce1050eb7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>purpose_of_travel</element>
+            <position>18</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>fe4d98e90f889b000a09079ce1050eb7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>rejection_reason</element>
+            <position>19</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>724d98e90f889b000a09079ce1050eb8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>information_reason</element>
+            <position>20</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>f24d98e90f889b000a09079ce1050eb8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>information_discussed</element>
+            <position>21</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>764d98e90f889b000a09079ce1050eb8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>information_classification</element>
+            <position>22</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>f64d98e90f889b000a09079ce1050eb8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>bae_other_devices</element>
+            <position>23</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>7a4d98e90f889b000a09079ce1050eb8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>bae_network_classification</element>
+            <position>24</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>fa4d98e90f889b000a09079ce1050eb8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>bae_network_access</element>
+            <position>25</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>7e4d98e90f889b000a09079ce1050eb8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>bae_mobile_asset_models</element>
+            <position>26</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>fe4d98e90f889b000a09079ce1050eb8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>bae_mobile_asset_imei</element>
+            <position>27</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>724d98e90f889b000a09079ce1050eb9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>bae_mobile_asset</element>
+            <position>28</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>f24d98e90f889b000a09079ce1050eb9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>bae_legal_entity</element>
+            <position>29</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>764d98e90f889b000a09079ce1050eb9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>bae_laptop_configuration</element>
+            <position>30</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>f64d98e90f889b000a09079ce1050eb9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>bae_laptop_non_standard_information</element>
+            <position>31</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>7a4d98e90f889b000a09079ce1050eb9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>bae_laptop_asset_number</element>
+            <position>32</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>fa4d98e90f889b000a09079ce1050eb9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>bae_laptop_asset</element>
+            <position>33</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>7e4d98e90f889b000a09079ce1050eb9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>priority</element>
+            <position>34</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>fe4d98e90f889b000a09079ce1050eb9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>35</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>724d98e90f889b000a09079ce1050eba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>36</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>f24d98e90f889b000a09079ce1050eba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <position>37</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>764d98e90f889b000a09079ce1050eba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>applicant_bae_permanent</element>
+            <position>38</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>f64d98e90f889b000a09079ce1050eba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comments</element>
+            <position>39</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>7a4d98e90f889b000a09079ce1050eba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>asset_overseas_reason</element>
+            <position>40</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>fa4d98e90f889b000a09079ce1050eba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>asset_protection_marking</element>
+            <position>41</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>7e4d98e90f889b000a09079ce1050eba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>applicant_email</element>
+            <position>42</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>fe4d98e90f889b000a09079ce1050eba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>applicant_employer</element>
+            <position>43</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>724d98e90f889b000a09079ce1050ebb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>applicant_manager</element>
+            <position>44</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>f24d98e90f889b000a09079ce1050ebb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>applicant_passport_name</element>
+            <position>45</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>764d98e90f889b000a09079ce1050ebb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>applicant_telephone</element>
+            <position>46</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>f64d98e90f889b000a09079ce1050ebb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>function</element>
+            <position>47</position>
+            <sys_created_by>trupti.nigam@snc</sys_created_by>
+            <sys_created_on>2018-02-02 16:23:52</sys_created_on>
+            <sys_id>7a4d98e90f889b000a09079ce1050ebb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_baes2_legal_port_cao_request" sys_domain="global" view="f2891e03db97fa00496e728dae9619bd">acf01fd10f405340bb20716ce1050e80</sys_ui_section>
+            <sys_updated_by>trupti.nigam@snc</sys_updated_by>
+            <sys_updated_on>2018-02-02 16:23:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_baes2_legal_port_cao_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2018-02-02 10:50:17</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>acf01fd10f405340bb20716ce1050e80</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_baes2_legal_port_cao_request</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+            <sys_update_name>sys_ui_section_acf01fd10f405340bb20716ce1050e80</sys_update_name>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-02-02 10:50:17</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Service_portal" name="Service_Portal">f2891e03db97fa00496e728dae9619bd</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

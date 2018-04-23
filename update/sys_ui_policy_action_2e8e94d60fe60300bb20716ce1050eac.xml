@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <disabled>ignore</disabled>
+        <field>starting_state</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2017-11-22 10:50:34</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2e8e94d60fe60300bb20716ce1050eac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>starting_state</sys_name>
+        <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+        <sys_update_name>sys_ui_policy_action_2e8e94d60fe60300bb20716ce1050eac</sys_update_name>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2017-11-22 10:50:34</sys_updated_on>
+        <table>x_baes2_legal_port_sfal_request</table>
+        <ui_policy display_value="Hide start and end state">ea8e94d60fe60300bb20716ce1050eaa</ui_policy>
+        <visible>false</visible>
+    </sys_ui_policy_action>
+</record_update>
