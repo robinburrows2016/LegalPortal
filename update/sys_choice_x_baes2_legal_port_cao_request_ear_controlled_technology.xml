@@ -10,13 +10,13 @@
             <language>en</language>
             <name>x_baes2_legal_port_cao_request</name>
             <sequence/>
-            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
-            <sys_created_on>2018-03-23 09:13:28</sys_created_on>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2018-05-02 12:06:07</sys_created_on>
             <sys_domain>global</sys_domain>
-            <sys_id>aea0db050f89d740bb20716ce1050e97</sys_id>
+            <sys_id>3ac779424f3157003625e3518110c760</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-            <sys_updated_on>2018-03-23 09:13:28</sys_updated_on>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2018-05-02 12:06:07</sys_updated_on>
             <value>0</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -28,23 +28,23 @@
             <language>en</language>
             <name>x_baes2_legal_port_cao_request</name>
             <sequence/>
-            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
-            <sys_created_on>2018-03-23 09:13:42</sys_created_on>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2018-05-02 12:06:07</sys_created_on>
             <sys_domain>global</sys_domain>
-            <sys_id>8ab01b050f89d740bb20716ce1050e39</sys_id>
+            <sys_id>b6c779424f3157003625e3518110c762</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-            <sys_updated_on>2018-03-23 09:13:42</sys_updated_on>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2018-05-02 12:06:07</sys_updated_on>
             <value>1</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>ear_controlled_technology</element>
             <name>x_baes2_legal_port_cao_request</name>
             <sys_class_name>sys_choice_set</sys_class_name>
-            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
-            <sys_created_on>2018-03-23 09:13:28</sys_created_on>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2018-05-02 12:06:07</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>8cb0db050f89d740bb20716ce1050ed2</sys_id>
+            <sys_id>f2c779424f3157003625e3518110c762</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>ear_controlled_technology</sys_name>
             <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
@@ -52,8 +52,8 @@
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
             <sys_update_name>sys_choice_x_baes2_legal_port_cao_request_ear_controlled_technology</sys_update_name>
-            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-            <sys_updated_on>2018-03-23 09:13:28</sys_updated_on>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2018-05-02 12:06:07</sys_updated_on>
         </sys_choice_set>
     </sys_choice>
 </record_update>

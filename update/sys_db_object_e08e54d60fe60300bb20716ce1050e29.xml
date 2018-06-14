@@ -17,7 +17,7 @@
         <number_ref/>
         <provider_class/>
         <read_access>true</read_access>
-        <super_class display_value="Service Management Flow" name="sf_sm_flow">e3a2185e0fa60300bb20716ce1050e1a</super_class>
+        <super_class display_value="Service Management Flow" name="sf_sm_flow">724e301b4f615fc03625e3518110c7d9</super_class>
         <sys_class_code/>
         <sys_class_name>sys_db_object</sys_class_name>
         <sys_class_path/>

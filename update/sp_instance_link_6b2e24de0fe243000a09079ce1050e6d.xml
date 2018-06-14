@@ -10,7 +10,7 @@
         <kb_article/>
         <kb_category/>
         <kb_topic/>
-        <order>1</order>
+        <order>0</order>
         <roles/>
         <sc_cat_item/>
         <sc_category/>
@@ -24,7 +24,7 @@
         <sys_created_on>2017-11-22 11:58:54</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6b2e24de0fe243000a09079ce1050e6d</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Company Electronic Asset Overseas</sys_name>
         <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
         <sys_policy/>
@@ -32,7 +32,7 @@
         <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
         <sys_update_name>sp_instance_link_6b2e24de0fe243000a09079ce1050e6d</sys_update_name>
         <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-        <sys_updated_on>2018-03-22 07:36:27</sys_updated_on>
+        <sys_updated_on>2018-05-04 10:13:47</sys_updated_on>
         <title>Company Electronic Asset Overseas</title>
         <type>url</type>
         <url>/splg?id=sc_cat_item&amp;sys_id=8a00d11a0f6643000a09079ce1050e86</url>

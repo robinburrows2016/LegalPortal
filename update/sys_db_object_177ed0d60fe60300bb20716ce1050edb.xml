@@ -17,7 +17,7 @@
         <number_ref display_value="LPT">1aae1cd60fe60300bb20716ce1050ef6</number_ref>
         <provider_class/>
         <read_access>true</read_access>
-        <super_class display_value="Service Order Task" name="sm_task">d2a2d45e0fa60300bb20716ce1050e30</super_class>
+        <super_class display_value="Service Order Task" name="sm_task">424efcd74f615fc03625e3518110c741</super_class>
         <sys_class_code/>
         <sys_class_name>sys_db_object</sys_class_name>
         <sys_class_path/>

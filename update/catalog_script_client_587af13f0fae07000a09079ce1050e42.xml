@@ -24,14 +24,15 @@
 
 	//Retrieve user and display information
 	var user_sysid = g_form.getValue('applicant');
-	var employee = getReferenceAdvancedPortal(g_form, "applicant", "email;phone;manager.email;company.name;");
+	var employee = getReferenceAdvancedPortal(g_form, "applicant", "email;phone;manager;manager.email;company.name;");
 	var lookup = new GlideRecord('sys_user');
 	lookup.addQuery('sys_id', user_sysid);
 	lookup.query(function(lookup) {
 		if (lookup.next()) {
 			g_form.setValue('applicant_email', employee.email);
 			g_form.setValue('applicant_telephone', employee.phone);			
-			g_form.setValue('applicant_manager', employee.manager_email);
+			//g_form.setValue('applicant_manager', employee.manager_email);
+			g_form.setValue('applicant_bae_manager', employee.manager);			
 			g_form.setValue('applicant_employer', employee.company_name);			
 		}
 	});
@@ -43,7 +44,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>587af13f0fae07000a09079ce1050e42</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>CAO - Set BAE Employee Details</sys_name>
         <sys_overrides/>
         <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
@@ -52,7 +53,7 @@
         <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
         <sys_update_name>catalog_script_client_587af13f0fae07000a09079ce1050e42</sys_update_name>
         <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-        <sys_updated_on>2017-12-04 11:51:35</sys_updated_on>
+        <sys_updated_on>2018-06-06 07:48:39</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>1</ui_type>

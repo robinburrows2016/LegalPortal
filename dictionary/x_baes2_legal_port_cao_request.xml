@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="task" label="Legal Portal CAO Request" max_length="40" name="x_baes2_legal_port_cao_request" sizeclass="22" type="collection">
+    <element audit="true" extends="task" label="Legal Portal CAO Request" max_length="40" name="x_baes2_legal_port_cao_request" sizeclass="5" type="collection">
         <element label="Applicant" max_length="32" name="applicant" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element label="Applicant BAE Manager" max_length="32" name="applicant_bae_manager" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element choice="1" label="Applicant BAE Permanent" max_length="40" name="applicant_bae_permanent" type="choice">
             <choice>
                 <element label="No" value="0"/>
@@ -23,7 +24,7 @@
             </choice>
         </element>
         <element label="BAE Laptop Asset Number" max_length="80" name="bae_laptop_asset_number" type="string"/>
-        <element choice="1" label="BAE Laptop Standard Configuration " max_length="40" name="bae_laptop_configuration" type="choice">
+        <element choice="1" label="BAE Laptop Standard Configuration" max_length="40" name="bae_laptop_configuration" type="choice">
             <choice>
                 <element label="No" value="0"/>
                 <element label="Yes" value="1"/>

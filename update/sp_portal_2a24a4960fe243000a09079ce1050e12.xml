@@ -27,7 +27,7 @@
         <sc_category_page/>
         <sp_chat_queue/>
         <sp_rectangle_menu display_value="SPLG Mega Menu">d849a4960fe243000a09079ce1050e34</sp_rectangle_menu>
-        <sqanda_knowledge_base display_value="End User Knowledge">d04fa8b44fa9924069a8c9318110c7b2</sqanda_knowledge_base>
+        <sqanda_knowledge_base display_value="Service Requests Knowledge">d04fa8b44fa9924069a8c9318110c7b2</sqanda_knowledge_base>
         <sys_class_name>sp_portal</sys_class_name>
         <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
         <sys_created_on>2017-11-22 11:15:09</sys_created_on>

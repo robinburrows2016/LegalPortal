@@ -17,7 +17,7 @@
         <number_ref display_value="LPR">12ae1cd60fe60300bb20716ce1050eef</number_ref>
         <provider_class/>
         <read_access>true</read_access>
-        <super_class display_value="Service Order" name="sm_order">3aa2d45e0fa60300bb20716ce1050e65</super_class>
+        <super_class display_value="Service Order" name="sm_order">9a4efcd74f615fc03625e3518110c79b</super_class>
         <sys_class_code/>
         <sys_class_name>sys_db_object</sys_class_name>
         <sys_class_path/>
