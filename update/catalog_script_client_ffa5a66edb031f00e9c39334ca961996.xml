@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="Company Electronic Asset Overseas Request">8a00d11a0f6643000a09079ce1050e86</cat_item>
+        <cat_variable>IO:81bc8a3a0fae83000a09079ce1050ed8</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <messages/>
+        <name>CAO - Warning No Equipment Selected</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+
+	// Notify user that at least one equipment selection must be 'Yes'
+	var laptopAsset = g_form.getValue('bae_laptop_asset');		
+	var mobileAsset = g_form.getValue('bae_mobile_asset');	
+	var otherAssets = g_form.getValue('bae_other_devices');
+    if ((laptopAsset == '0') && (mobileAsset == '0') && (otherAssets == '0')) {	
+		var m = '<div class="row"><div class="col-md-2"><span class="fa-stack fa-2x"><i class="fa fa-circle fa-stack-2x text-success"></i><i class="fa fa-check fa-stack-1x text-white"></i></span></div><div class="col-md-10" style="padding-left: 0px;"><div class="ng-scope"><div class="font-bold">You must select one of the following options:<ul><li>7. Will you be taking a company laptop?</li><li>8. Will you be taking a company mobile(s)?</li><li>9. Will you be taking other company device(s) - (including tablets)?</li></ul></div></div></div></div>';
+		spModal.open({
+			title: 'Equipment Confirmation',
+			message: m,
+			buttons: [				
+				{label:'Amend Application', cancel: true}
+				]
+		});
+		return false;
+    } else {
+		return true;
+	}
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-05 08:02:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>ffa5a66edb031f00e9c39334ca961996</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>CAO - Warning No Equipment Selected</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+        <sys_update_name>catalog_script_client_ffa5a66edb031f00e9c39334ca961996</sys_update_name>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-06 14:43:24</sys_updated_on>
+        <table/>
+        <type>onSubmit</type>
+        <ui_type>1</ui_type>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+</record_update>

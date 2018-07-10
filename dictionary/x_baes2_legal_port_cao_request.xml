@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="task" label="Legal Portal CAO Request" max_length="40" name="x_baes2_legal_port_cao_request" sizeclass="5" type="collection">
+    <element audit="true" extends="task" label="Legal Portal CAO Request" max_length="40" name="x_baes2_legal_port_cao_request" sizeclass="9" type="collection">
         <element label="Applicant" max_length="32" name="applicant" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element label="Applicant BAE Manager" max_length="32" name="applicant_bae_manager" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element choice="1" label="Applicant BAE Permanent" max_length="40" name="applicant_bae_permanent" type="choice">
@@ -12,6 +12,12 @@
         <element label="Applicant Email" max_length="128" name="applicant_email" type="string"/>
         <element label="Applicant Employer" max_length="1024" name="applicant_employer" type="string_full_utf8"/>
         <element label="Applicant Manager Email" max_length="128" name="applicant_manager" type="string"/>
+        <element choice="1" label="Applicant Manager Email Response" max_length="40" name="applicant_manager_email_response" type="choice">
+            <choice>
+                <element label="Approved" value="1"/>
+                <element label="Rejected" value="2"/>
+            </choice>
+        </element>
         <element label="Applicant Passport Name" mandatory="true" max_length="128" name="applicant_passport_name" type="string"/>
         <element label="Applicant Telephone" max_length="128" name="applicant_telephone" type="string"/>
         <element label="Asset Overseas Reason" max_length="255" name="asset_overseas_reason" type="string_full_utf8"/>

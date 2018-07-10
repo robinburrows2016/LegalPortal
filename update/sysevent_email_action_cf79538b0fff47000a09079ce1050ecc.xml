@@ -52,14 +52,14 @@
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
-        <recipient_fields>applicant_email</recipient_fields>
-        <recipient_groups/>
+        <recipient_fields>sys_created_by</recipient_fields>
+        <recipient_groups name="Export Control - NS Site Security Officers">9a6dbabbdbae5f00496e728dae9619d9</recipient_groups>
         <recipient_users/>
         <reply_to/>
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>F680 Request ${number} for ${function} has been Authorised</subject>
+        <subject>F680 Request ${number} for ${programme} has been Authorised</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
@@ -67,7 +67,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>cf79538b0fff47000a09079ce1050ecc</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Legal F680 Authorised</sys_name>
         <sys_overrides/>
         <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
@@ -76,7 +76,7 @@
         <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
         <sys_update_name>sysevent_email_action_cf79538b0fff47000a09079ce1050ecc</sys_update_name>
         <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-        <sys_updated_on>2018-03-27 12:18:08</sys_updated_on>
+        <sys_updated_on>2018-06-21 12:07:38</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>

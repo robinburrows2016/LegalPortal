@@ -58,7 +58,7 @@
 			// Prevent insert message
 			current.number = null;
 			// Prevent insert as existing record already updated
-			current.setAbortAction(true);
+			current.setAbortAction(true);			
 		}
 	}	
 	
@@ -69,7 +69,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>3a99e5360ff347000a09079ce1050ec8</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Legal F680 Application Evaluation</sys_name>
         <sys_overrides/>
         <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
@@ -78,7 +78,7 @@
         <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
         <sys_update_name>sys_script_3a99e5360ff347000a09079ce1050ec8</sys_update_name>
         <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-        <sys_updated_on>2018-01-25 08:57:11</sys_updated_on>
+        <sys_updated_on>2018-06-20 08:59:57</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

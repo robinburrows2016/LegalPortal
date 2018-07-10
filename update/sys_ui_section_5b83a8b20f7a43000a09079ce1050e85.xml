@@ -5,13 +5,13 @@
             <element>applicant_bae_permanent</element>
             <position>0</position>
             <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
-            <sys_created_on>2017-12-06 11:22:45</sys_created_on>
-            <sys_id>5e2c6cb60f7a43000a09079ce1050e5e</sys_id>
+            <sys_created_on>2018-07-06 15:01:35</sys_created_on>
+            <sys_id>034f4dcbdb8f1f00e9c39334ca9619a7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Applicant" display_value="Applicant" name="x_baes2_legal_port_cao_request" sys_domain="global" view="Default view">5b83a8b20f7a43000a09079ce1050e85</sys_ui_section>
             <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-            <sys_updated_on>2017-12-06 11:22:45</sys_updated_on>
+            <sys_updated_on>2018-07-06 15:01:35</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -19,139 +19,167 @@
             <element>applicant</element>
             <position>1</position>
             <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
-            <sys_created_on>2017-12-06 11:22:45</sys_created_on>
-            <sys_id>de2c6cb60f7a43000a09079ce1050e5e</sys_id>
+            <sys_created_on>2018-07-06 15:01:35</sys_created_on>
+            <sys_id>834f4dcbdb8f1f00e9c39334ca9619a7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Applicant" display_value="Applicant" name="x_baes2_legal_port_cao_request" sys_domain="global" view="Default view">5b83a8b20f7a43000a09079ce1050e85</sys_ui_section>
             <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-            <sys_updated_on>2017-12-06 11:22:45</sys_updated_on>
+            <sys_updated_on>2018-07-06 15:01:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>applicant_bae_manager</element>
+            <position>2</position>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2018-07-06 15:01:35</sys_created_on>
+            <sys_id>074f4dcbdb8f1f00e9c39334ca9619a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Applicant" display_value="Applicant" name="x_baes2_legal_port_cao_request" sys_domain="global" view="Default view">5b83a8b20f7a43000a09079ce1050e85</sys_ui_section>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-07-06 15:01:35</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>applicant_passport_name</element>
-            <position>2</position>
+            <position>3</position>
             <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
-            <sys_created_on>2017-12-06 11:22:45</sys_created_on>
-            <sys_id>522c6cb60f7a43000a09079ce1050e5f</sys_id>
+            <sys_created_on>2018-07-06 15:01:35</sys_created_on>
+            <sys_id>874f4dcbdb8f1f00e9c39334ca9619a7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Applicant" display_value="Applicant" name="x_baes2_legal_port_cao_request" sys_domain="global" view="Default view">5b83a8b20f7a43000a09079ce1050e85</sys_ui_section>
             <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-            <sys_updated_on>2017-12-06 11:22:45</sys_updated_on>
+            <sys_updated_on>2018-07-06 15:01:35</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>applicant_email</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
-            <sys_created_on>2017-12-06 11:22:45</sys_created_on>
-            <sys_id>d22c6cb60f7a43000a09079ce1050e5f</sys_id>
+            <sys_created_on>2018-07-06 15:01:35</sys_created_on>
+            <sys_id>0b4f4dcbdb8f1f00e9c39334ca9619a7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Applicant" display_value="Applicant" name="x_baes2_legal_port_cao_request" sys_domain="global" view="Default view">5b83a8b20f7a43000a09079ce1050e85</sys_ui_section>
             <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-            <sys_updated_on>2017-12-06 11:22:45</sys_updated_on>
+            <sys_updated_on>2018-07-06 15:01:35</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>applicant_telephone</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
-            <sys_created_on>2017-12-06 11:22:45</sys_created_on>
-            <sys_id>562c6cb60f7a43000a09079ce1050e5f</sys_id>
+            <sys_created_on>2018-07-06 15:01:35</sys_created_on>
+            <sys_id>8b4f4dcbdb8f1f00e9c39334ca9619a7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Applicant" display_value="Applicant" name="x_baes2_legal_port_cao_request" sys_domain="global" view="Default view">5b83a8b20f7a43000a09079ce1050e85</sys_ui_section>
             <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-            <sys_updated_on>2017-12-06 11:22:45</sys_updated_on>
+            <sys_updated_on>2018-07-06 15:01:35</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>applicant_manager</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
-            <sys_created_on>2017-12-06 11:22:45</sys_created_on>
-            <sys_id>d62c6cb60f7a43000a09079ce1050e5f</sys_id>
+            <sys_created_on>2018-07-06 15:01:35</sys_created_on>
+            <sys_id>0f4f4dcbdb8f1f00e9c39334ca9619a7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Applicant" display_value="Applicant" name="x_baes2_legal_port_cao_request" sys_domain="global" view="Default view">5b83a8b20f7a43000a09079ce1050e85</sys_ui_section>
             <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-            <sys_updated_on>2017-12-06 11:22:45</sys_updated_on>
+            <sys_updated_on>2018-07-06 15:01:35</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>applicant_employer</element>
-            <position>6</position>
+            <position>7</position>
             <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
-            <sys_created_on>2017-12-06 11:22:45</sys_created_on>
-            <sys_id>5a2c6cb60f7a43000a09079ce1050e5f</sys_id>
+            <sys_created_on>2018-07-06 15:01:35</sys_created_on>
+            <sys_id>8f4f4dcbdb8f1f00e9c39334ca9619a7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Applicant" display_value="Applicant" name="x_baes2_legal_port_cao_request" sys_domain="global" view="Default view">5b83a8b20f7a43000a09079ce1050e85</sys_ui_section>
             <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-            <sys_updated_on>2017-12-06 11:22:45</sys_updated_on>
+            <sys_updated_on>2018-07-06 15:01:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>applicant_manager_email_response</element>
+            <position>8</position>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2018-07-06 15:01:35</sys_created_on>
+            <sys_id>034f4dcbdb8f1f00e9c39334ca9619a8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Applicant" display_value="Applicant" name="x_baes2_legal_port_cao_request" sys_domain="global" view="Default view">5b83a8b20f7a43000a09079ce1050e85</sys_ui_section>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-07-06 15:01:35</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>bae_legal_entity</element>
-            <position>7</position>
+            <position>9</position>
             <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
-            <sys_created_on>2017-12-06 11:22:45</sys_created_on>
-            <sys_id>da2c6cb60f7a43000a09079ce1050e5f</sys_id>
+            <sys_created_on>2018-07-06 15:01:35</sys_created_on>
+            <sys_id>834f4dcbdb8f1f00e9c39334ca9619a8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Applicant" display_value="Applicant" name="x_baes2_legal_port_cao_request" sys_domain="global" view="Default view">5b83a8b20f7a43000a09079ce1050e85</sys_ui_section>
             <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-            <sys_updated_on>2017-12-06 11:22:45</sys_updated_on>
+            <sys_updated_on>2018-07-06 15:01:35</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>site</element>
-            <position>8</position>
+            <position>10</position>
             <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
-            <sys_created_on>2017-12-06 11:22:45</sys_created_on>
-            <sys_id>5e2c6cb60f7a43000a09079ce1050e5f</sys_id>
+            <sys_created_on>2018-07-06 15:01:35</sys_created_on>
+            <sys_id>074f4dcbdb8f1f00e9c39334ca9619a8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Applicant" display_value="Applicant" name="x_baes2_legal_port_cao_request" sys_domain="global" view="Default view">5b83a8b20f7a43000a09079ce1050e85</sys_ui_section>
             <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-            <sys_updated_on>2017-12-06 11:22:45</sys_updated_on>
+            <sys_updated_on>2018-07-06 15:01:35</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>function</element>
-            <position>9</position>
+            <position>11</position>
             <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
-            <sys_created_on>2017-12-06 11:22:45</sys_created_on>
-            <sys_id>de2c6cb60f7a43000a09079ce1050e5f</sys_id>
+            <sys_created_on>2018-07-06 15:01:35</sys_created_on>
+            <sys_id>874f4dcbdb8f1f00e9c39334ca9619a8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Applicant" display_value="Applicant" name="x_baes2_legal_port_cao_request" sys_domain="global" view="Default view">5b83a8b20f7a43000a09079ce1050e85</sys_ui_section>
             <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-            <sys_updated_on>2017-12-06 11:22:45</sys_updated_on>
+            <sys_updated_on>2018-07-06 15:01:35</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>project</element>
-            <position>10</position>
+            <position>12</position>
             <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
-            <sys_created_on>2017-12-06 11:22:45</sys_created_on>
-            <sys_id>522c6cb60f7a43000a09079ce1050e60</sys_id>
+            <sys_created_on>2018-07-06 15:01:35</sys_created_on>
+            <sys_id>0b4f4dcbdb8f1f00e9c39334ca9619a8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Applicant" display_value="Applicant" name="x_baes2_legal_port_cao_request" sys_domain="global" view="Default view">5b83a8b20f7a43000a09079ce1050e85</sys_ui_section>
             <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-            <sys_updated_on>2017-12-06 11:22:45</sys_updated_on>
+            <sys_updated_on>2018-07-06 15:01:35</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

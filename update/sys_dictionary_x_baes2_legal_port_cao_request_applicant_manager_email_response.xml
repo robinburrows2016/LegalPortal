@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="" table="x_baes2_legal_port_f680_request">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="applicant_manager_email_response" table="x_baes2_legal_port_cao_request">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
         <attributes/>
-        <audit>true</audit>
+        <audit>false</audit>
         <calculation>(function calculatedFieldValue(current) {
 
 	// Add your code here
 	return '';  // return the calculated value
 
 })(current);</calculation>
-        <choice/>
+        <choice>1</choice>
         <choice_field/>
         <choice_table/>
-        <column_label/>
+        <column_label>Applicant Manager Email Response</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -28,13 +28,13 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element/>
+        <element>applicant_manager_email_response</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <internal_type display_value="Collection">collection</internal_type>
+        <internal_type display_value="Choice">choice</internal_type>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <name>x_baes2_legal_port_f680_request</name>
+        <name>x_baes2_legal_port_cao_request</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
@@ -46,23 +46,23 @@
         <reference_qual/>
         <reference_qual_condition/>
         <reference_type/>
-        <sizeclass>3</sizeclass>
+        <sizeclass/>
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
-        <sys_created_on>2017-12-12 13:37:53</sys_created_on>
+        <sys_created_on>2018-07-06 07:33:23</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>d820495f4f615fc03625e3518110c7b6</sys_id>
+        <sys_id>ac98a7f2dbcb1f00e9c39334ca9619f9</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_baes2_legal_port_f680_request</sys_name>
+        <sys_name>Applicant Manager Email Response</sys_name>
         <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
-        <sys_update_name>sys_dictionary_x_baes2_legal_port_f680_request_NULL</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2018-05-02 12:07:05</sys_updated_on>
+        <sys_update_name>sys_dictionary_x_baes2_legal_port_cao_request_applicant_manager_email_response</sys_update_name>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-06 07:33:23</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

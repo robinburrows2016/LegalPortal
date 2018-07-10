@@ -43,13 +43,13 @@
         <order>100</order>
         <push_message_only>false</push_message_only>
         <recipient_fields/>
-        <recipient_groups>b6ad4bc60fb603000a09079ce1050e62,c3bc4fca0fb603000a09079ce1050eb4</recipient_groups>
+        <recipient_groups>fce2fbdf4f695fc03625e3518110c731,90123bdb4f695fc03625e3518110c7e8</recipient_groups>
         <recipient_users/>
         <reply_to/>
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>Company Asset Overseas Request ${number} raised for ${function}</subject>
+        <subject>Company Asset Overseas Request ${number} raised for ${project}</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
@@ -57,7 +57,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>355f8c760f3a43000a09079ce1050e78</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>Legal CAO Created - EC Approvers</sys_name>
         <sys_overrides/>
         <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
@@ -66,7 +66,7 @@
         <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
         <sys_update_name>sysevent_email_action_355f8c760f3a43000a09079ce1050e78</sys_update_name>
         <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-        <sys_updated_on>2018-03-27 11:53:33</sys_updated_on>
+        <sys_updated_on>2018-06-28 10:15:47</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>

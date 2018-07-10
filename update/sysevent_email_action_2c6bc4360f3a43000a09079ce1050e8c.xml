@@ -48,7 +48,7 @@
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>Company Asset Overseas Request ${number} raised for ${function}</subject>
+        <subject>Company Asset Overseas Request ${number} raised for ${project}</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
@@ -56,7 +56,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>2c6bc4360f3a43000a09079ce1050e8c</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>Legal CAO Created - Applicant</sys_name>
         <sys_overrides/>
         <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
@@ -65,7 +65,7 @@
         <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
         <sys_update_name>sysevent_email_action_2c6bc4360f3a43000a09079ce1050e8c</sys_update_name>
         <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-        <sys_updated_on>2018-03-27 11:52:59</sys_updated_on>
+        <sys_updated_on>2018-06-28 10:15:29</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>
