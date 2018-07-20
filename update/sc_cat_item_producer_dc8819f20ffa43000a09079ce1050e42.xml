@@ -45,9 +45,39 @@
         <sc_ic_item_staging/>
         <sc_ic_version/>
         <script><![CDATA[// Form Submission Processing
+
+// If CAO Request Exists, Force Update Instead
+var gr_cao = new GlideRecord("x_baes2_legal_port_cao_request") ;
+//gs.info('LEGAL CAO: Current Number: ' + current.number);
+if (gr_cao.get(current.number)) {
+	if (current.rejection_reason) {
+		// Evaluation=Rejection
+		gr_cao.rejection_reason = current.rejection_reason;
+		gr_cao.comments = current.comments;
+		gr_cao.authorised_by = gs.getUserID();
+		gr_cao.state = 7;				
+	} else {
+		// Evaluation=Authorised
+		gr_cao.expiry_date = current.expiry_date;
+		gr_cao.licences = current.licences;
+		gr_cao.other_licences = current.other_licences;				
+		gr_cao.licence_additional_information = current.licence_additional_information;
+		gr_cao.authorised_by = gs.getUserID();				
+		gr_cao.state = 8;					
+	}
+	// Update CAO Record
+	gr_cao.update();	
+}
+
+// Prevent insert message
+current.number = null;
+// Prevent insert as existing record already updated
+current.setAbortAction(true);
+
+// Notification / Redirect
+producer.redirect = "/splg";
 var msg = 'Company Asset Overseas request has been successfully updated.';
-gs.addInfoMessage(msg);
-producer.redirect = "/splg";]]></script>
+gs.addInfoMessage(msg);]]></script>
         <short_description>Evaluation of request to take company electronic assets overseas</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
@@ -56,7 +86,7 @@ producer.redirect = "/splg";]]></script>
         <sys_created_on>2017-12-06 14:37:08</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>dc8819f20ffa43000a09079ce1050e42</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name>Company Electronic Asset Overseas Evaluation</sys_name>
         <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
         <sys_policy/>
@@ -64,7 +94,7 @@ producer.redirect = "/splg";]]></script>
         <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
         <sys_update_name>sc_cat_item_producer_dc8819f20ffa43000a09079ce1050e42</sys_update_name>
         <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-        <sys_updated_on>2018-03-23 11:00:12</sys_updated_on>
+        <sys_updated_on>2018-07-12 11:49:06</sys_updated_on>
         <table_name>x_baes2_legal_port_cao_request</table_name>
         <template/>
         <type>item</type>

@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function($scope, $location) {
+  /* widget controller */
+  var c = this;
+	
+	c.show_more = false;
+	c.goToURL = function(sURL) {
+		$location.url(sURL);
+	};
+	
+	c.data.left_cats = [];
+	c.data.right_cats = [];
+	
+	var half_length = Math.ceil(c.data.categories.length / 2);
+	var allcats = angular.copy(c.data.categories);
+	c.data.left_cats = allcats.splice(0,half_length);
+	allcats = angular.copy(c.data.categories);
+	c.data.right_cats = allcats.splice(half_length);
+	
+	c.showTooltip = function(headingID, id) {
+		// Hide Any Open Tooltips
+		jQuery(".tooltip").tooltip("hide");
+
+		// Tooltip
+		$scope.server.get({
+			action: "getTooltip",
+			itemID: id
+		}).then(function(response) {
+			var tt_target = '#' + headingID + id;
+			jQuery(tt_target).attr('data-title', response.data.tooltip);
+			jQuery(tt_target).tooltip('show');
+		});
+
+	};
+	
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.popular_items img {&#13;
+  height:30px;&#13;
+}&#13;
+&#13;
+.slide-content {&#13;
+  min-height:250px;&#13;
+  display:block;&#13;
+}&#13;
+&#13;
+.slider-wrapper {&#13;
+  padding-top:10px;&#13;
+}&#13;
+&#13;
+.section_title {&#13;
+  border-bottom: 1px solid $navbar-inverse-bg;&#13;
+}&#13;
+&#13;
+.BAE-megamenu-left {&#13;
+  padding-left:0px!important;&#13;
+  padding-right:10px!important;  &#13;
+}&#13;
+&#13;
+.BAE-megamenu-right {&#13;
+  padding-left:0px!important;  &#13;
+  padding-right:0px!important;&#13;
+}&#13;
+&#13;
+tooltip tip {&#13;
+  text-align: left!important;&#13;
+  width: 400px!important;&#13;
+}&#13;
+&#13;
+tooltip._top tip {&#13;
+  transform: none!important;&#13;
+  left: 35px!important;&#13;
+  color: #717171!important;&#13;
+  background-color: #f5f5f5!important;&#13;
+  border: 1px solid #ccc!important;&#13;
+  -moz-box-shadow: 0px 5px 5px 0px rgba(221,221,221,1) !important;&#13;
+  box-shadow: 0px 5px 5px 0px rgba(221,221,221,1) !important;  &#13;
+}&#13;
+&#13;
+tooltip._top tip tip-arrow {&#13;
+  display: none!important;&#13;
+}&#13;
+&#13;
+tooltip .catalog-item-image {&#13;
+  height:auto!important;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>jb-megamenu-catalog-splg</id>
+        <internal>false</internal>
+        <link/>
+        <name>JB MegaMenu Catalog SPLG</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	
+	// Initial load	
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+
+	data.omit_badges = false;
+	data.categories = [];
+
+	var sc = new GlideRecord('sc_category');
+	sc.addQuery('sys_class_name', 'sc_category');
+	sc.addQuery('u_show_in_portal', true);
+	sc.addActiveQuery();
+	sc.orderBy('title');
+
+	var fPortalRec = $sp.getPortalRecord();
+	var catalog_id = fPortalRec.getValue('sc_catalog');
+	if ( catalog_id != null && catalog_id != "" ) {
+		sc.addQuery('sc_catalog', catalog_id);
+	}
+
+	sc.query();
+	while (sc.next()) {
+		if (!$sp.canReadRecord("sc_category", sc.getUniqueValue()))
+			continue;
+		var itemCat = new GlideRecord('sc_cat_item_category');
+		prepQuery(itemCat);
+		itemCat.query();
+		var validatedCount = 0;
+		var checked = 0;
+		while (itemCat.next()) {			
+			checked++;
+			if ($sp.canReadRecord("sc_cat_item", itemCat.sc_cat_item.toString())) {
+				validatedCount++;
+			}
+
+			// if user can't see the first 50 items in this category, give up
+			if (validatedCount == 0 && checked == 50)
+				break;
+
+			// if omitting badges, and if we found one, work is done
+			if (validatedCount > 0 && data.omit_badges)
+				break;
+		}
+
+		if (validatedCount > 0) {
+			//gs.log('JB MegaMenu Catalog#6: ' + sc.title + '  Count: ' + validatedCount);
+			var cat = {};
+			cat.title = sc.title.getDisplayValue();
+			cat.sys_id = sc.getUniqueValue();
+			cat.count = validatedCount;
+			cat.parent = sc.parent.getDisplayValue();
+			cat.description = sc.description.getDisplayValue();			
+			cat.tooltip = "<div style='padding-bottom:10px;'>" + cat.title + "</div><div>" + cat.description + "</div>";
+			data.categories.push(cat);
+		}
+	}
+
+	//gs.log('JB MegaMenu Catalog#6 Array Length : ' + data.categories.length);		
+
+	var popular_items = [];
+	var count = new GlideAggregate('sc_req_item');
+	count.addAggregate('COUNT','cat_item');
+	count.groupBy('cat_item');
+	count.addQuery('cat_item.sys_class_name', 'NOT IN', 'sc_cat_item_guide,sc_cat_item_wizard,sc_cat_item_content');
+	if ( catalog_id != null && catalog_id != "" ) {
+		count.addQuery('cat_item.sc_catalogs', catalog_id);
+	}
+	count.orderByAggregate('COUNT', 'cat_item');
+	count.query();
+	while (count.next() && popular_items.length < 9) {
+		if (!$sp.canReadRecord("sc_cat_item", count.cat_item.sys_id.getDisplayValue()))
+			continue; // user does not have permission to see this item
+
+		var item = {};
+		item.count = count.getAggregate('COUNT', 'cat_item');
+		item.name = count.cat_item.name.getDisplayValue();
+		item.description = count.cat_item.description.getDisplayValue();		
+		item.short_description = count.cat_item.short_description.getDisplayValue();
+		item.picture = count.cat_item.picture.getDisplayValue();
+		item.price = count.cat_item.price.getDisplayValue();
+		item.sys_id = count.cat_item.sys_id.getDisplayValue();
+
+		/* V1 Tooltip
+			if (item.picture != '') {
+				item.tooltip = "<div class='col-sm-5' style='padding-left: 0px;><div class='panel panel-default b wrapper-lg text-center'><img class='img-responsive catalog-item-image' style='display: inline' src='" + item.picture + "'></div></div><div style='padding-bottom:10px;'>" + item.name + "</div><div>" + item.short_description + "</div><div>" + item.description + "</div>";
+			} else {
+				item.tooltip = "<div style='padding-bottom:10px;'>" + item.name + "</div><div>" + item.short_description + "</div><div>" + item.description + "</div>";
+			}
+			V1 Tooltip */
+
+		popular_items.push(item);
+	}
+
+	data.popular_items = popular_items;
+
+	data.slides = [];
+	data.slide_interval = 10000;
+	var fSlideInstance = new GlideRecord('sp_instance_carousel');
+	fSlideInstance.addQuery('sys_name', 'JB MegaMenu SPLG Carousel');
+	fSlideInstance.query();
+	if ( fSlideInstance.next() ) {
+		var fSlideRecs = new GlideRecord('sp_carousel_slide');
+		fSlideRecs.addQuery('carousel', fSlideInstance.sys_id);
+		fSlideRecs.orderBy('order');
+		fSlideRecs.query();
+		while ( fSlideRecs.next() ) {
+			var validSlide = true;
+			if (fSlideRecs.u_cat_item != '') {
+				if (!$sp.canReadRecord("sc_cat_item", fSlideRecs.u_cat_item.sys_id.getDisplayValue())) {
+					validSlide = false;
+				}
+				//gs.log('Cat Item: ' + fSlideRecs.u_cat_item.getDisplayValue() + '  Sys Id: ' + fSlideRecs.u_cat_item.sys_id.getDisplayValue() + '  canRead? ' + validSlide);				
+			}			
+			if (validSlide) {				
+				data.slides.push({
+					name:fSlideRecs.name.getDisplayValue(),
+					background:fSlideRecs.background.getDisplayValue(),
+					url:fSlideRecs.url.getDisplayValue()
+				})
+			}
+		}
+
+		data.slide_interval = fSlideInstance.getValue('interval');
+
+	}	
+	
+	data.tooltip = "";
+	
+	if (input) {
+		
+		// Client Request For Tooltip
+		if (input && input.action === "getTooltip") {
+			var gr = new GlideRecord("sc_cat_item");
+			if (gr.get(input.itemID)) {
+				var name = gr.getDisplayValue("name");
+				var description = "";
+				if (gr.getDisplayValue("description")) {
+					description = $sp.stripHTML(gr.getDisplayValue("description")).replace(/\"/g, "'");
+				}
+				var short_description = gr.getDisplayValue("short_description").replace(/\"/g, "'");				
+				var picture = gr.getDisplayValue("picture");
+				if (picture != '') {
+					data.tooltip = "<div class='col-sm-5' style='padding-left: 0px;'><div class='panel panel-default b wrapper-lg text-center'><img class='img-responsive catalog-item-image' style='display: inline;' src='" + picture + "'></div></div><div style='padding-bottom:10px;'>" + name + "</div><div>" + short_description + "</div><div>" + description + "</div>";
+				} else {
+					data.tooltip = "<div style='padding-bottom:10px;'>" + name + "</div><div>" + short_description + "</div><div>" + description + "</div>";
+				}
+			}
+			return;
+		}		
+		
+	}  
+	else {  
+
+	}
+	
+	function prepQuery(gr) {
+		gr.addQuery('sc_category', sc.getUniqueValue());
+		gr.addQuery('sc_cat_item.active', true);
+		gr.addQuery('sc_cat_item.visible_standalone', true);
+		gr.addQuery('sc_cat_item.sys_class_name', 'NOT IN', 'sc_cat_item_wizard');
+	}	
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-19 08:21:58</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c080f283db1f1b40561fb29a68961961</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>JB MegaMenu Catalog SPLG</sys_name>
+        <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+        <sys_update_name>sp_widget_c080f283db1f1b40561fb29a68961961</sys_update_name>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-20 07:14:10</sys_updated_on>
+        <template><![CDATA[<div class="container">
+  <div class="row">
+    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+      <div class="panel panel-default b">
+      	<div class="panel-heading">
+      		<h4 class="panel-title">${Categories}</h4>
+      	</div>
+      <div class="panel-body">
+      <ul class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <li ng-repeat="catItem in c.data.left_cats">
+          <div style="float:left;">
+          	<span class="fa fa-folder-open fa-fw text-muted" style="cursor:default;" tooltips tooltip-template="{{catItem.tooltip}}">&nbsp;</span>
+          </div>
+          <div>
+            <a class="BAE-megamenu-left" href="javascript:void(0);" ng-click="c.goToURL('?id=sc_category&sys_id='+catItem.sys_id)" title="Click here to view category items">
+              <span ng-if="!data.omit_badges" class="label label-as-badge label-primary pull-right">{{::catItem.count}}</span>
+              {{::catItem.title}}
+            </a>
+          </div>          
+        </li>
+      </ul>
+      <ul class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <li ng-repeat="catItem2 in c.data.right_cats">
+          <div style="float:left;padding-left:10px;">
+          	<span class="fa fa-folder-open fa-fw text-muted" style="cursor:default;" tooltips tooltip-template="{{catItem2.tooltip}}">&nbsp;</span>
+          </div>
+          <div>
+            <a class="BAE-megamenu-right" href="javascript:void(0);" ng-click="c.goToURL('?id=sc_category&sys_id='+catItem2.sys_id)" title="Click here to view category items">
+              <span ng-if="!data.omit_badges" class="label label-as-badge label-primary pull-right">{{::catItem2.count}}</span>
+              {{::catItem2.title}}
+            </a>
+          </div>          
+        </li>
+      </ul>
+      <ul class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <li class="divider"></li>
+        <li><a href="javascript:void(0);" ng-click="c.goToURL('?id=sc_catalog_az')">${View Catalog A-Z}</a></li>
+      </ul>
+      </div>
+      </div>        
+    </div>
+    
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 hidden-xs hidden">
+      <div class="panel panel-default b">
+      	<div class="panel-heading">
+      		<h4 class="panel-title">${Popular Items}</h4>
+      	</div>
+      <div class="panel-body">      
+      <ul class="popular_items">
+        <li ng-repeat="popItem in c.data.popular_items" style="height:35px;">
+          <div style="float:left;width:40px;height:35px;margin-right:5px;">
+            <!-- V1 Tooltip -->
+            <!--        
+            <img ng-if="popItem.picture != ''" src="{{::popItem.picture}}" tooltips tooltip-template="{{::popItem.tooltip}}"/>&nbsp;
+            <span ng-if="popItem.picture == ''" class="fa fa-info-circle" tooltips tooltip-template="{{::popItem.tooltip}}">&nbsp;</span>
+            -->            
+        	<img ng-if="popItem.picture != ''" src="{{::popItem.picture}}" style="cursor:default;" id="MMPI{{popItem.sys_id}}" data-container="#the-basics" data-viewport=".page" data-placement="right" data-html="true" data-title="<div>loading ..</div>" ng-mouseover="c.showTooltip('MMPI',popItem.sys_id)"/>        
+        	<span ng-if="popItem.picture == ''" class="fa fa-info-circle" style="cursor:default;" id="MMPI{{popItem.sys_id}}" data-container="#the-basics" data-viewport=".page" data-placement="right" data-html="true" data-title="<div>loading ..</div>" ng-mouseover="c.showTooltip('MMPI',popItem.sys_id)">&nbsp;</span>                  
+          </div>
+          <div class="clearfix">
+            <a ng-click="c.goToURL('?id=sc_cat_item&sys_id='+popItem.sys_id)" href="javascript:void(0);" title="Click to order catalog item">        
+            	{{::popItem.name}}
+            </a>
+          </div>          
+        </li>
+      </ul>
+      </div>
+      </div>         
+    </div>    
+    
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 hidden-xs hidden">
+      <div class="panel panel-default b">
+        <div class="panel-heading">
+          <h4 class="panel-title">${Featured Items}</h4>
+        </div>
+        <div class="panel-body" style="padding:0px;">      
+          <ul>
+            <li>
+                  <div class="slider-wrapper">
+                    <uib-carousel interval="c.data.slide_interval">
+                      <uib-slide ng-repeat="slide in ::c.data.slides" active="slide.active">
+                        <a href="javascript:void(0);" ng-click="c.goToURL(slide.url)" style="background: url({{::slide.background}}) no-repeat;background-size: 100%; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='${sBackgroundImage}',sizingMethod='scale');-ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='{{::slide.background}}',sizingMethod='scale');" class="slide-content">
+                          &nbsp;
+                        </a>
+                      </uib-slide>
+                    </uib-carousel>
+
+              </div>
+            </li>
+            <li class="divider"></li>
+            <li><a href="javascript:void(0);" ng-click="c.goToURL('?id=sc_home')">${View all items} <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+          </ul>
+      </div>
+      </div>          
+    </div>
+  </div>
+  
+</div>]]></template>
+    </sp_widget>
+</record_update>

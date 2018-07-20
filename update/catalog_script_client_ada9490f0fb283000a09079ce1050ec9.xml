@@ -18,9 +18,14 @@
         <name>CAO - Reset CAO Dependent Fields</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+	
+	//Reset Activity Summary
+	g_form.setValue('Activity', '');
+	g_form.setVisible('Activity', false);
+	
 	if (isLoading || newValue == '') {
 		return;
-	}
+	}	
 
 	var gr_cao = new GlideRecord("x_baes2_legal_port_cao_request") ;
 	gr_cao.addQuery('sys_id', newValue);
@@ -28,22 +33,37 @@
 		if (gr_cao.next()) {			
 			//Reset Dependent Fields							
 			g_form.setValue('expiry_date', gr_cao.getDisplayValue('expiry_date'));			
-
-			//alert(gr_cao.sys_id);
-			var journalString = ''; 
+			
 			var actObject = new GlideRecord('sys_journal_field');
 			actObject.addQuery('element_id', gr_cao.sys_id);
-			actObject.query(function(actObject) {				
+			actObject.query(function(actObject) {
+				var journalString = g_form.getValue('Activity'); 				
 				while( actObject.next()) {					
 					journalString += actObject.value;
 				}
+				if (journalString) {
+					journalString += '\n\n';	
+				}
 				g_form.setValue('Activity', journalString);			
-				g_form.setVisible("Activity", true);
-			});						
+				g_form.setVisible('Activity', true);
+			});
+			
+			var gr_app = new GlideRecord("sysapproval_approver") ;
+			gr_app.addQuery('document_id', gr_cao.sys_id);
+			gr_app.query(function(gr_app) {
+				var approvalString = g_form.getValue('Activity');				
+				while (gr_app.next()) {
+					approvalString += '=================================================================' + '\n';
+					approvalString += 'State: ' + gr_app.getDisplayValue('state') + '   Approver: ' + gr_app.getDisplayValue('approver') + '   On: ' + gr_app.getDisplayValue('sys_updated_on') + '\n';
+				}
+				g_form.setValue('Activity', approvalString);
+				g_form.setVisible('Activity', true);				
+			});
+            
 		} else {
 			g_form.setValue('expiry_date', '');
 			g_form.setValue('Activity', '');
-			g_form.setVisible("Activity", false);			
+			g_form.setVisible('Activity', false);			
 		}	
 	});
 }]]></script>
@@ -53,7 +73,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>ada9490f0fb283000a09079ce1050ec9</sys_id>
-        <sys_mod_count>81</sys_mod_count>
+        <sys_mod_count>111</sys_mod_count>
         <sys_name>CAO - Reset CAO Dependent Fields</sys_name>
         <sys_overrides/>
         <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
@@ -62,7 +82,7 @@
         <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
         <sys_update_name>catalog_script_client_ada9490f0fb283000a09079ce1050ec9</sys_update_name>
         <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-        <sys_updated_on>2018-07-09 10:56:41</sys_updated_on>
+        <sys_updated_on>2018-07-11 16:34:27</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>1</ui_type>
