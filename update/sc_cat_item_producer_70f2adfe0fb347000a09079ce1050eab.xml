@@ -81,7 +81,7 @@ gs.addInfoMessage(msg);]]></script>
         <sys_created_on>2018-01-25 08:24:54</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>70f2adfe0fb347000a09079ce1050eab</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>F680 – MoD SPIRE Notification</sys_name>
         <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
         <sys_policy/>
@@ -89,7 +89,7 @@ gs.addInfoMessage(msg);]]></script>
         <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
         <sys_update_name>sc_cat_item_producer_70f2adfe0fb347000a09079ce1050eab</sys_update_name>
         <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-        <sys_updated_on>2018-07-12 11:55:54</sys_updated_on>
+        <sys_updated_on>2018-07-27 08:20:11</sys_updated_on>
         <table_name>x_baes2_legal_port_f680_request</table_name>
         <template/>
         <type>item</type>
@@ -102,6 +102,7 @@ gs.addInfoMessage(msg);]]></script>
         <u_notification_event>false</u_notification_event>
         <u_notification_event_name/>
         <u_notify_itsecadmn>false</u_notify_itsecadmn>
+        <u_service_portal_tabbed>false</u_service_portal_tabbed>
         <u_vendor_product_code/>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>

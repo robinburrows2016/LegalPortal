@@ -4,7 +4,7 @@
         <active>true</active>
         <category/>
         <content><![CDATA[ <h1 class="title topictitle1">Indicators</h1>  <div class="body conbody">  <p class="p"><span class="ph">Indicators are statistics that businesses track to measure   current conditions and to forecast trends. They provide you with key information on how your   business is doing.</span></p>  <p class="p">You can present them in scorecards and in user-friendly dashboards.</p> </div>]]></content>
-        <last_sync>2018-07-11 08:49:10</last_sync>
+        <last_sync>2018-07-26 08:50:06</last_sync>
         <modifier>normal</modifier>
         <name>pa_indicators_list-normal</name>
         <page>pa_indicators_list</page>
@@ -18,7 +18,7 @@
         <sys_created_on>2018-01-29 13:31:08</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>616f0fc80f8cd7000a09079ce1050e4b</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>pa_indicators_list-normal</sys_name>
         <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
         <sys_policy/>
@@ -26,7 +26,7 @@
         <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
         <sys_update_name>sys_embedded_help_content_616f0fc80f8cd7000a09079ce1050e4b</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2018-07-11 08:49:10</sys_updated_on>
+        <sys_updated_on>2018-07-26 08:50:06</sys_updated_on>
         <version>j</version>
     </sys_embedded_help_content>
 </record_update>

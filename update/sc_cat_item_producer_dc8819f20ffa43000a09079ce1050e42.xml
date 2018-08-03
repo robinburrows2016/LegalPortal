@@ -74,8 +74,7 @@ current.number = null;
 // Prevent insert as existing record already updated
 current.setAbortAction(true);
 
-// Notification / Redirect
-producer.redirect = "/splg";
+producer.portal_redirect = "/splg";
 var msg = 'Company Asset Overseas request has been successfully updated.';
 gs.addInfoMessage(msg);]]></script>
         <short_description>Evaluation of request to take company electronic assets overseas</short_description>
@@ -86,7 +85,7 @@ gs.addInfoMessage(msg);]]></script>
         <sys_created_on>2017-12-06 14:37:08</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>dc8819f20ffa43000a09079ce1050e42</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name>Company Electronic Asset Overseas Evaluation</sys_name>
         <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
         <sys_policy/>
@@ -94,7 +93,7 @@ gs.addInfoMessage(msg);]]></script>
         <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
         <sys_update_name>sc_cat_item_producer_dc8819f20ffa43000a09079ce1050e42</sys_update_name>
         <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-        <sys_updated_on>2018-07-12 11:49:06</sys_updated_on>
+        <sys_updated_on>2018-07-30 14:28:38</sys_updated_on>
         <table_name>x_baes2_legal_port_cao_request</table_name>
         <template/>
         <type>item</type>
@@ -107,6 +106,7 @@ gs.addInfoMessage(msg);]]></script>
         <u_notification_event>false</u_notification_event>
         <u_notification_event_name/>
         <u_notify_itsecadmn>false</u_notify_itsecadmn>
+        <u_service_portal_tabbed>false</u_service_portal_tabbed>
         <u_vendor_product_code/>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>

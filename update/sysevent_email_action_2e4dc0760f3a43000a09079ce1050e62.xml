@@ -39,9 +39,9 @@
 <div>Unfortunately this application has been declined for the following reason:</div>
 <div>&nbsp;</div>
 <div>${rejection_reason}</div>
-<div>&nbsp;</div>
 <div>${mail_script:last_additional_comments}</div>
-<br />
+<div>${mail_script:IMT_email_rejection_history}</div>
+<div>&nbsp;</div>
 <div>Therefore permission has not been granted at this time for you to take your (Mobile/tablet/laptop) with you when you travel.</div>
 <br />
 <div>Please discuss this with your export control contact below should you have further queries / concerns&nbsp;or contact us using&nbsp;<a href="mailto:import.exportdept@baesystems.com">import.exportdept@baesystems.com</a></div>
@@ -69,7 +69,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>2e4dc0760f3a43000a09079ce1050e62</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>Legal CAO Rejected</sys_name>
         <sys_overrides/>
         <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
@@ -78,7 +78,7 @@
         <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
         <sys_update_name>sysevent_email_action_2e4dc0760f3a43000a09079ce1050e62</sys_update_name>
         <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-        <sys_updated_on>2018-06-28 10:15:38</sys_updated_on>
+        <sys_updated_on>2018-07-30 09:28:05</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>
