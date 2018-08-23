@@ -25,28 +25,13 @@
 	// Define Variables
 	var currentDateNum;
 	var travelDateNum;	
-
-	// ESS Access / Validation
-	if (typeof (moment) === "undefined") {
-		//current date + 5 days for Warning limit
-		var gdt = new GlideDateTime();
-		gdt.addDaysLocalTime(5);
-		var currentDateObj = gdt.getDate();		
-		var currentDateStr = formatDate(currentDateObj, g_user_date_time_format);
-		currentDateNum = getDateFromFormat(currentDateStr, g_user_date_time_format);
-
-		//get travel date
-		var travelDateStr = g_form.getValue('travel_date');
-		travelDateNum = getDateFromFormat(travelDateStr, g_user_date_format);
-	}	
+	
 	// Service Portal Access / Validation
-	else {
-		// current date  
-		currentDateNum = moment().add(5, 'days').valueOf();
-		
-		//get travel date  
-		travelDateNum = moment(g_form.getValue('travel_date'), "DD/MM/YYYY").valueOf(); 
-	} 	
+	// current date  
+	currentDateNum = moment().add(5, 'days').valueOf();
+
+	//get travel date  
+	travelDateNum = moment(g_form.getValue('travel_date'), "DD/MM/YYYY").valueOf();
 
 	// Prompt Confirmation If Travel Date Is Within 5 Days
 	if (travelDateNum < currentDateNum) {
@@ -91,7 +76,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>0907ca380f4ddf400a09079ce1050e10</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name>CAO - Warning Departure Within 5 Days</sys_name>
         <sys_overrides/>
         <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
@@ -100,7 +85,7 @@
         <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
         <sys_update_name>catalog_script_client_0907ca380f4ddf400a09079ce1050e10</sys_update_name>
         <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-        <sys_updated_on>2018-03-22 13:21:21</sys_updated_on>
+        <sys_updated_on>2018-08-15 14:38:26</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>1</ui_type>
