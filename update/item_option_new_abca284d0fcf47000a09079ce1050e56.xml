@@ -33,7 +33,7 @@
         <lookup_unique>false</lookup_unique>
         <lookup_value/>
         <macro/>
-        <mandatory>true</mandatory>
+        <mandatory>false</mandatory>
         <map_to_field>true</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
@@ -61,7 +61,7 @@
         <sys_created_on>2017-12-13 11:03:09</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>abca284d0fcf47000a09079ce1050e56</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>7.a F680 clearance (required in less than 30 working days) business case</sys_name>
         <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
         <sys_policy/>
@@ -69,7 +69,7 @@
         <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
         <sys_update_name>item_option_new_abca284d0fcf47000a09079ce1050e56</sys_update_name>
         <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-        <sys_updated_on>2018-04-03 08:22:21</sys_updated_on>
+        <sys_updated_on>2018-09-18 08:48:51</sys_updated_on>
         <table/>
         <tooltip/>
         <type>2</type>

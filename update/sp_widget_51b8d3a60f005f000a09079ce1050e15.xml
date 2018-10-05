@@ -97,7 +97,7 @@
 		}		
 		
 	};	
-	
+		
 }]]></client_script>
         <controller_as>c</controller_as>
         <css>.section_title {&#13;
@@ -249,6 +249,7 @@ tooltip._top tip tip-arrow {&#13;
 		b.display_field = q.getDisplayValue("short_description");
 		b.updated_on = q.sys_updated_on.getDisplayValue();
 		b.updated_by = q.getDisplayValue("sys_updated_by");
+		b.state = q.getDisplayValue("state");
 		b.table = 'x_baes2_legal_port_cao_request';		
 		b.secondary_fields = [];
 		data.secondary_fields.forEach(function(f) {
@@ -256,7 +257,8 @@ tooltip._top tip tip-arrow {&#13;
 		});
 
 		b.url = {id: 'ticket', table: 'x_baes2_legal_port_cao_request', sys_id: b.sys_id};
-		$sp.getRecordValues(b, q, 'short_description,sys_view_count,sys_id,published');
+		//b.edit_url = {id: 'sc_cat_item', sys_id: '8a00d11a0f6643000a09079ce1050e86', rec_id: b.sys_id};
+		b.edit_url = {id: 'sc_cat_item', sys_id: '8a00d11a0f6643000a09079ce1050e86', copy_item: b.sys_id, copy_table: 'x_baes2_legal_port_cao_request'};		$sp.getRecordValues(b, q, 'short_description,sys_view_count,sys_id,published');
 		b.published_display = q.getDisplayValue("published");					
 
 		data.requests_closed.push(b);
@@ -311,6 +313,7 @@ tooltip._top tip tip-arrow {&#13;
 		b.display_field = q.getDisplayValue("short_description");
 		b.updated_on = q.sys_updated_on.getDisplayValue();
 		b.updated_by = q.getDisplayValue("sys_updated_by");
+		b.state = q.getDisplayValue("state");		
 		b.table = 'x_baes2_legal_port_f680_request';		
 		b.secondary_fields = [];
 		data.secondary_fields.forEach(function(f) {
@@ -318,7 +321,8 @@ tooltip._top tip tip-arrow {&#13;
 		});
 
 		b.url = {id: 'ticket', table: 'x_baes2_legal_port_f680_request', sys_id: b.sys_id};
-		$sp.getRecordValues(b, q, 'short_description,sys_view_count,sys_id,published');
+		//b.edit_url = {id: 'sc_cat_item', sys_id: 'a790d4cd0f8f47000a09079ce1050e4a', rec_id: b.sys_id};
+		b.edit_url = {id: 'sc_cat_item', sys_id: 'a790d4cd0f8f47000a09079ce1050e4a', copy_item: b.sys_id, copy_table: 'x_baes2_legal_port_f680_request'};		$sp.getRecordValues(b, q, 'short_description,sys_view_count,sys_id,published');
 		b.published_display = q.getDisplayValue("published");
 
 		data.demands_closed.push(b);
@@ -326,7 +330,7 @@ tooltip._top tip tip-arrow {&#13;
 	
 	data.tooltip = "";
 	
-	if (input) {
+	if (input) {			
 		
 		// Client Request For Request Item Tooltip
 		if (input && input.action === "getTooltip_REQ") {
@@ -464,7 +468,7 @@ tooltip._top tip tip-arrow {&#13;
         <sys_created_on>2018-02-06 08:38:11</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>51b8d3a60f005f000a09079ce1050e15</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>39</sys_mod_count>
         <sys_name>JB Megamenu Progress SPLG</sys_name>
         <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
         <sys_policy/>
@@ -472,7 +476,7 @@ tooltip._top tip tip-arrow {&#13;
         <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
         <sys_update_name>sp_widget_51b8d3a60f005f000a09079ce1050e15</sys_update_name>
         <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-        <sys_updated_on>2018-02-06 09:02:51</sys_updated_on>
+        <sys_updated_on>2018-09-20 13:03:26</sys_updated_on>
         <template><![CDATA[<div class="container">
   <div class="row">
     
@@ -529,7 +533,9 @@ tooltip._top tip tip-arrow {&#13;
           </div>
           <div>
             <a ng-click="c.onClick($event, viewItem, viewItem.url, {})" href="javascript:void(0)" title="Click to view request item">
-            <div ng-class="{'l-h-40': !viewItem.secondary_fields.length}">{{viewItem.display_field}}</div>
+            <div ng-class="{'l-h-40': !viewItem.secondary_fields.length}">{{viewItem.display_field}} ({{viewItem.state}})
+              <span ng-if="(viewItem.state == 'Rejected')" class="pull-right"><a class="btn-xs btn-primary pull-right" href="javascript:void(0)" ng-click="c.onClick($event, viewItem, viewItem.edit_url, {})">Resubmit</a></span>
+            </div>
               <small class="text-muted" ng-repeat="f in viewItem.secondary_fields">
                 <span ng-if="!$first"> • </span>
                 <span ng-switch="f.type" title="{{::f.label}}">
@@ -604,7 +610,9 @@ tooltip._top tip tip-arrow {&#13;
           </div>
           <div>
             <a ng-click="c.onClick($event, viewItem, viewItem.url, {})" href="javascript:void(0)" title="Click to view demand">
-              <div ng-class="{'l-h-40': !viewItem.secondary_fields.length}">{{viewItem.display_field}}</div>
+              <div ng-class="{'l-h-40': !viewItem.secondary_fields.length}">{{viewItem.display_field}} ({{viewItem.state}})
+              	<span ng-if="(viewItem.state == 'Rejected')" class="pull-right"><a class="btn-xs btn-primary pull-right" href="javascript:void(0)" ng-click="c.onClick($event, viewItem, viewItem.edit_url, {})">Resubmit</a></span>                
+              </div>
               <small class="text-muted" ng-repeat="f in viewItem.secondary_fields">
                 <span ng-if="!$first"> • </span>
                 <span ng-switch="f.type" title="{{::f.label}}">
@@ -696,8 +704,9 @@ tooltip._top tip tip-arrow {&#13;
         <li><a href="javascript:void(0);" ng-click="c.goToURL('?id=datatable&table=incident&view=sp&filter=caller_id%3Djavascript%3Ags.getUserID()%5EORopened_by%3Djavascript%3Ags.getUserID()%5Eactive%3Dfalse')">View all closed incidents</a></li>
       </ul>
       </div>
-      </div>       
-  </div> 
+      </div> 
+	  <sp-widget widget="c.editVariablesModal" ng-if="c.editVariablesModal"></sp-widget>       
+  </div>
   
 </div>]]></template>
     </sp_widget>

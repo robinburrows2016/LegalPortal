@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="task" label="Legal Portal F680 Request" max_length="40" name="x_baes2_legal_port_f680_request" sizeclass="4" type="collection">
+    <element audit="true" extends="task" label="Legal Portal F680 Request" max_length="40" name="x_baes2_legal_port_f680_request" sizeclass="8" type="collection">
         <element label="Applicant" max_length="32" name="applicant" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element choice="1" label="Applicant BAE Permanent" max_length="40" name="applicant_bae_permanent" type="choice">
             <choice>
@@ -174,6 +174,7 @@
         <element label="Third Party Security Classification 7" max_length="4000" name="f680_third_parties_third_party_security_classification_7" reference="u_mod_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
         <element label="Third Party Security Classification 8" max_length="4000" name="f680_third_parties_third_party_security_classification_8" reference="u_mod_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
         <element label="Third Party Security Classification 9" max_length="4000" name="f680_third_parties_third_party_security_classification_9" reference="u_mod_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
+        <element label="MOD Authorisation Expiry Date" max_length="40" name="mod_authorisation_expiry_date" type="glide_date"/>
         <element label="MOD Authorisation Reference" max_length="128" name="mod_authorisation_reference" type="string"/>
         <element choice="1" label="Previous Applications" max_length="40" name="previous_applications" type="choice">
             <choice>

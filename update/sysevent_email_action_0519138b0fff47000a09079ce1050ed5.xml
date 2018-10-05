@@ -41,6 +41,8 @@
 <div>${rejection_reason}</div>
 <div>&nbsp;</div>
 <div>${mail_script:last_additional_comments}</div>
+<div>&nbsp;</div>
+<div>If you wish to modify this application and resubmit, then this option is available from the Legal Request Status (Closed F680s) display.</div>
 <br />
 <div>Please discuss this with your export control contact below should you have further queries / concerns&nbsp;or contact us using&nbsp;<a href="mailto:import.exportdept@baesystems.com">import.exportdept@baesystems.com</a></div>
 <div>&nbsp;</div>
@@ -67,7 +69,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>0519138b0fff47000a09079ce1050ed5</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Legal F680 Rejected</sys_name>
         <sys_overrides/>
         <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
@@ -76,7 +78,7 @@
         <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
         <sys_update_name>sysevent_email_action_0519138b0fff47000a09079ce1050ed5</sys_update_name>
         <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-        <sys_updated_on>2018-06-28 10:18:29</sys_updated_on>
+        <sys_updated_on>2018-09-03 08:20:43</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>

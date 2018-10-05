@@ -19,12 +19,13 @@
         <order/>
         <script><![CDATA[function onSubmit() {
 	
-	// Define Variables
+	// Define Variables	
 	var travelDateNum;
 	var returnDateNum;	
 
 	// ESS Access / Validation
 	if (typeof (moment) === "undefined") {
+		
 		//get travel date
 		var travelDateStr = g_form.getValue('travel_date');
 		travelDateNum = getDateFromFormat(travelDateStr, g_user_date_format);
@@ -34,19 +35,21 @@
 		returnDateNum = getDateFromFormat(returnDateStr, g_user_date_format);
 	}	
 	// Service Portal Access / Validation
-	else {
+	else {		
 		
 		//get travel date  
-		travelDateNum = moment(g_form.getValue('travel_date'), "DD/MM/YYYY").valueOf();
+		travelDateNum = moment(g_form.getValue('travel_date'), g_user_date_format.toUpperCase()).valueOf();
 
 		//get return date
-		returnDateNum = moment(g_form.getValue('return_date'), "DD/MM/YYYY").valueOf();		
-	} 
+		returnDateNum = moment(g_form.getValue('return_date'), g_user_date_format.toUpperCase()).valueOf();		
+	}
+	
+	//alert('travel_date=' + g_form.getValue('travel_date') + '   return_date=' + g_form.getValue('return_date') +'   g_user_date_format=' + g_user_date_format.toUpperCase() + '    travelDateNum=' + travelDateNum + '    returnDateNum=' + returnDateNum);	
 
 	if (returnDateNum < travelDateNum) {
-		alert('You must enter Return date after Departure date');
+		g_form.addErrorMessage(g_form.getLabelOf("return_date") + ' must be after ' + g_form.getLabelOf("travel_date"));			
 		return false;
-	}
+	}	
 
 	return true;
 }]]></script>
@@ -56,7 +59,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>67718ab40f4ddf400a09079ce1050e55</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>CAO - Check Return Date &gt; Departure D</sys_name>
         <sys_overrides/>
         <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
@@ -65,7 +68,7 @@
         <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
         <sys_update_name>catalog_script_client_67718ab40f4ddf400a09079ce1050e55</sys_update_name>
         <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-        <sys_updated_on>2018-03-22 08:59:07</sys_updated_on>
+        <sys_updated_on>2018-10-02 08:27:28</sys_updated_on>
         <table/>
         <type>onSubmit</type>
         <ui_type>1</ui_type>

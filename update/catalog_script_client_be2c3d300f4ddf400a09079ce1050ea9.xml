@@ -40,13 +40,13 @@
 		currentDateNum = moment().valueOf();
 		
 		//get travel date  
-		travelDateNum = moment(g_form.getValue('travel_date'), "DD/MM/YYYY").valueOf(); 
+		travelDateNum = moment(g_form.getValue('travel_date'), g_user_date_format.toUpperCase()).valueOf(); 
 	} 
-
+	
 	if (travelDateNum < currentDateNum) {
-		alert('You must enter Deparure date after Today');
+		g_form.addErrorMessage('You must enter ' + g_form.getLabelOf("travel_date") + ' after Today');		
 		return false;
-	}
+	}		
 
 	return true;
 }]]></script>
@@ -56,7 +56,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>be2c3d300f4ddf400a09079ce1050ea9</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>CAO - Check Departure Date &gt; Today</sys_name>
         <sys_overrides/>
         <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
@@ -65,7 +65,7 @@
         <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
         <sys_update_name>catalog_script_client_be2c3d300f4ddf400a09079ce1050ea9</sys_update_name>
         <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-        <sys_updated_on>2018-03-22 08:58:49</sys_updated_on>
+        <sys_updated_on>2018-10-02 08:27:53</sys_updated_on>
         <table/>
         <type>onSubmit</type>
         <ui_type>1</ui_type>

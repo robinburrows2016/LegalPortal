@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Service Catalog" name="Service Catalog">be9d02137f232200ee2e108c3ffa9155</category>
+        <collection>x_baes2_legal_port_f680_request</collection>
+        <condition/>
+        <content_type>text/html</content_type>
+        <description/>
+        <event_name>x_baes2_legal_port.f680.expiry.reminder</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>event</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p>${mail_script:Weekly_Digest_Script_Bootstrap_3.3.6_CSS}</p>
+<div>${mail_script:IMT_standard_email_header}</div>
+<div>&nbsp;</div>
+<div>Please find below the MoD Authorisation details for F680 application ${number}:&nbsp;</div>
+<div>&nbsp;</div>
+<div>MOD Reference: ${mod_authorisation_reference}</div>
+<div>&nbsp;</div>
+<div>MOD Authorisation Expiry: ${mod_authorisation_expiry_date}</div>
+<div>&nbsp;</div>
+<p>${mail_script:IMT_table_fields_detail}</p>
+<div>&nbsp;&nbsp;</div>
+<div>You can view more details of this application within myService by clicking here:&nbsp;${mail_script:IMT_sp_table_link}</div>
+<div>&nbsp;</div>
+<div>${mail_script:EC_standard_email_footer}&nbsp;</div>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Legal F680 Authorisation Expiry Reminder</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields/>
+        <recipient_groups name="Export Control Approval Override Officers">483b5f4edbd7d340e9c39334ca9619a5</recipient_groups>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>false</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>F680 Request ${number} for ${programme} - Authorisation expires within 6 months</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-09-17 13:38:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>8e08b4e2db68a740e9c39334ca96194b</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Legal F680 Authorisation Expiry Reminder</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
+        <sys_update_name>sysevent_email_action_8e08b4e2db68a740e9c39334ca96194b</sys_update_name>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-09-17 13:55:00</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template/>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

@@ -106,6 +106,7 @@ gs.addInfoMessage(msg);]]></script>
         <u_notification_event>false</u_notification_event>
         <u_notification_event_name/>
         <u_notify_itsecadmn>false</u_notify_itsecadmn>
+        <u_save_as_draft>false</u_save_as_draft>
         <u_service_portal_tabbed>false</u_service_portal_tabbed>
         <u_vendor_product_code/>
         <use_sc_layout>true</use_sc_layout>

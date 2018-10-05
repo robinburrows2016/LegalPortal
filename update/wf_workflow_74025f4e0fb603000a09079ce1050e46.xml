@@ -34,12 +34,12 @@
         <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
         <sys_created_on>2018-07-16 08:55:54</sys_created_on>
         <sys_id>888bdb8edbd7d340e9c39334ca961921</sys_id>
-        <sys_mod_count>12</sys_mod_count>
-        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-        <sys_updated_on>2018-07-30 09:56:17</sys_updated_on>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_updated_by>elliot.neil@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-08-28 14:28:31</sys_updated_on>
         <table>x_baes2_legal_port_cao_request</table>
         <timezone/>
-        <validated>false</validated>
+        <validated>true</validated>
         <workflow display_value="NS Legal CAO Request">74025f4e0fb603000a09079ce1050e46</workflow>
     </wf_workflow_version>
     <wf_workflow action="INSERT_OR_UPDATE">
@@ -95,6 +95,25 @@
         <x>1164</x>
         <y>109</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=4c8bdb8edbd7d340e9c39334ca961930"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4c8bdb8edbd7d340e9c39334ca961930</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>cc8bdb8edbd7d340e9c39334ca961930</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>// Set As Approved&#13;
+current.approval = 'approved';&#13;
+&#13;
+// Set As Approved&#13;
+current.state = 3;</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>4c8bdb8edbd7d340e9c39334ca961930</document_key>
@@ -162,6 +181,24 @@ current.state = 3;</value>
         <x>1164</x>
         <y>273</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=8c8bdb8edbd7d340e9c39334ca96192c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>8c8bdb8edbd7d340e9c39334ca96192c</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>008bdb8edbd7d340e9c39334ca96192d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>current.approval = 'rejected';&#13;
+&#13;
+// Set As Rejected&#13;
+current.state = 7;</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>8c8bdb8edbd7d340e9c39334ca96192c</document_key>
@@ -228,6 +265,21 @@ current.state = 7;</value>
         <x>40</x>
         <y>195</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=088bdb8edbd7d340e9c39334ca961923"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>088bdb8edbd7d340e9c39334ca961923</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:54</sys_created_on>
+        <sys_id>8c8bdb8edbd7d340e9c39334ca961923</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:54</sys_updated_on>
+        <value>current.approval = 'requested';</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>088bdb8edbd7d340e9c39334ca961923</document_key>
@@ -291,6 +343,7 @@ current.state = 7;</value>
         <x>4</x>
         <y>58</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=488bdb8edbd7d340e9c39334ca961939"/>
     <wf_condition action="INSERT_OR_UPDATE">
         <activity display_value="Begin">488bdb8edbd7d340e9c39334ca961939</activity>
         <condition>true</condition>
@@ -340,6 +393,7 @@ current.state = 7;</value>
         <x>1433</x>
         <y>386</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=488bdb8edbd7d340e9c39334ca96192a"/>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Create Event">9f680b92c0a801640026553f665b429f</activity_definition>
         <activity_definition_updated>false</activity_definition_updated>
@@ -368,6 +422,55 @@ current.state = 7;</value>
         <x>682</x>
         <y>24</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=848bdb8edbd7d340e9c39334ca96192b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>848bdb8edbd7d340e9c39334ca96192b</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>008bdb8edbd7d340e9c39334ca96192c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>(function() {&#13;
+	// return the value to use for Parameter 2&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="">c35dd3ef0a0a0ba96248a70947e35325</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>848bdb8edbd7d340e9c39334ca96192b</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>4c8bdb8edbd7d340e9c39334ca96192b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>(function() {&#13;
+	// return the value to use for Parameter 1&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="">c35dd0310a0a0ba96248a70936d276b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>848bdb8edbd7d340e9c39334ca96192b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>888bdb8edbd7d340e9c39334ca96192b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>7a4e13e40f4747000a09079ce1050eba</value>
+        <variable display_value="">c35dcc7a0a0a0ba96248a70926fa68b5</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>848bdb8edbd7d340e9c39334ca96192b</document_key>
@@ -465,6 +568,61 @@ current.state = 7;</value>
         <x>786</x>
         <y>227</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=4c8bdb8edbd7d340e9c39334ca961936"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4c8bdb8edbd7d340e9c39334ca961936</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>448bdb8edbd7d340e9c39334ca961937</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+//   answer = ifScript();&#13;
+//&#13;
+//   function ifScript() {&#13;
+//      if (condition is true) {&#13;
+//         return 'yes';&#13;
+//      }&#13;
+//      return 'no';&#13;
+//   }&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4c8bdb8edbd7d340e9c39334ca961936</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>808bdb8edbd7d340e9c39334ca961937</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4c8bdb8edbd7d340e9c39334ca961936</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>cc8bdb8edbd7d340e9c39334ca961936</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>applicant_manager_email_response=2^EQ</value>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>4c8bdb8edbd7d340e9c39334ca961936</document_key>
@@ -589,6 +747,345 @@ current.state = 7;</value>
         <x>551</x>
         <y>306</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=c88bdb8edbd7d340e9c39334ca961931"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c88bdb8edbd7d340e9c39334ca961931</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>008bdb8edbd7d340e9c39334ca961932</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">02ca01820a0a0b261cf923fb95f5e1d0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c88bdb8edbd7d340e9c39334ca961931</document_key>
+        <order>104</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>008bdb8edbd7d340e9c39334ca961935</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value/>
+        <variable display_value="">e37a96e80a0004f978b47d2d6c5e0b22</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c88bdb8edbd7d340e9c39334ca961931</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>048bdb8edbd7d340e9c39334ca961934</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value/>
+        <variable display_value="">4485eef70a6a803f6bc4bafa9e999640</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c88bdb8edbd7d340e9c39334ca961931</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>088bdb8edbd7d340e9c39334ca961933</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>${applicant_bae_manager}</value>
+        <variable display_value="">c35e4cc40a0a0ba96248a7098ec9cb06</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c88bdb8edbd7d340e9c39334ca961931</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>0c8bdb8edbd7d340e9c39334ca961932</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="">e846198f0a0004f91fba434a514ba8b8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c88bdb8edbd7d340e9c39334ca961931</document_key>
+        <order>115</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>0c8bdb8edbd7d340e9c39334ca961935</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value/>
+        <variable display_value="">a76680b9c0a8006661b107d0f21fae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c88bdb8edbd7d340e9c39334ca961931</document_key>
+        <order>1110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>408bdb8edbd7d340e9c39334ca961934</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value/>
+        <variable display_value="">a769a182c0a8006629db7fa3fc2a863d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c88bdb8edbd7d340e9c39334ca961931</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>448bdb8edbd7d340e9c39334ca961933</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">a782cde9c0a8006608f39abdd85c8395</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c88bdb8edbd7d340e9c39334ca961931</document_key>
+        <order>1330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>488bdb8edbd7d340e9c39334ca961932</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 09:21:22</sys_updated_on>
+        <value/>
+        <variable display_value="">02c618170a0a0b26436f5c2c9f7a3901</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c88bdb8edbd7d340e9c39334ca961931</document_key>
+        <order>2050</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>488bdb8edbd7d340e9c39334ca961935</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user ids and/or group ids or an array of user/group ids to add as approvers.&#13;
+//&#13;
+// For example:&#13;
+//       answer = [];&#13;
+//       answer.push('id1');&#13;
+//       answer.push('id2');&#13;
+</value>
+        <variable display_value="">c35e582f0a0a0ba96248a70985207e63</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c88bdb8edbd7d340e9c39334ca961931</document_key>
+        <order>110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>4c8bdb8edbd7d340e9c39334ca961931</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value/>
+        <variable display_value="">a77191a4c0a800662b403f7dff5f1bbd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c88bdb8edbd7d340e9c39334ca961931</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>4c8bdb8edbd7d340e9c39334ca961934</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value/>
+        <variable display_value="">a7754e91c0a800664938d0ef6d2664d7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c88bdb8edbd7d340e9c39334ca961931</document_key>
+        <order>120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>808bdb8edbd7d340e9c39334ca961933</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value/>
+        <variable display_value="">a77903a7c0a8006641af7c9b1d34444e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c88bdb8edbd7d340e9c39334ca961931</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>848bdb8edbd7d340e9c39334ca961932</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value/>
+        <variable display_value="">a775f59ac0a8006665d72362ae687035</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c88bdb8edbd7d340e9c39334ca961931</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>848bdb8edbd7d340e9c39334ca961935</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value/>
+        <variable display_value="">a774138dc0a80066000be7af20961c7d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c88bdb8edbd7d340e9c39334ca961931</document_key>
+        <order>1150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>888bdb8edbd7d340e9c39334ca961934</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value/>
+        <variable display_value="">a76b8c6ec0a800664bb14d5d8b9cd7c4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c88bdb8edbd7d340e9c39334ca961931</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>8c8bdb8edbd7d340e9c39334ca961933</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>reject</value>
+        <variable display_value="">502163410a6a803f0356332b24dc7945</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c88bdb8edbd7d340e9c39334ca961931</document_key>
+        <order>1370</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>c08bdb8edbd7d340e9c39334ca961932</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>// Set the variable 'answer' to '', 'approved' or 'rejected' to indicate the approval status for this approval.  When called, the following information is available:&#13;
+//&#13;
+//    counts.total = total number of users that are part of this approval&#13;
+//    counts.approved = # of users that approved so far&#13;
+//    counts.rejected = # of users that rejected so far&#13;
+//    counts.requested = # of users that are pending approval&#13;
+//    counts.not_requested = # of users that are not pending approval&#13;
+//    counts.not_required = # of users that approval is not required&#13;
+//&#13;
+</value>
+        <variable display_value="">02c86d780a0a0b261e6a356bc893d348</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c88bdb8edbd7d340e9c39334ca961931</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>c08bdb8edbd7d340e9c39334ca961935</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>any</value>
+        <variable display_value="">c35e5bdd0a0a0ba96248a709f495c9ae</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c88bdb8edbd7d340e9c39334ca961931</document_key>
+        <order>1120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>c48bdb8edbd7d340e9c39334ca961934</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">a76c6257c0a8006645cff43883470e64</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c88bdb8edbd7d340e9c39334ca961931</document_key>
+        <order>330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>c88bdb8edbd7d340e9c39334ca961933</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="">e863e3b80a0004f911d67787e77e0f16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c88bdb8edbd7d340e9c39334ca961931</document_key>
+        <order>103</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>cc8bdb8edbd7d340e9c39334ca961932</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value/>
+        <variable display_value="">e37b77ac0a0004f973283ad13b341c5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c88bdb8edbd7d340e9c39334ca961931</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>cc8bdb8edbd7d340e9c39334ca961935</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value/>
+        <variable display_value="">a7781cb6c0a80066147dc7a5244d5d16</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>c88bdb8edbd7d340e9c39334ca961931</document_key>
@@ -997,6 +1494,61 @@ answer = 0;</value>
         <x>285</x>
         <y>379</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=c48bdb8edbd7d340e9c39334ca96192f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c48bdb8edbd7d340e9c39334ca96192f</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>0c8bdb8edbd7d340e9c39334ca96192f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c48bdb8edbd7d340e9c39334ca96192f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>488bdb8edbd7d340e9c39334ca96192f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>purpose_of_travelIN3,2^EQ</value>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c48bdb8edbd7d340e9c39334ca96192f</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>cc8bdb8edbd7d340e9c39334ca96192f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+answer = ifScript();&#13;
+&#13;
+function ifScript() {&#13;
+if (current.applicant_bae_permanent == '1') {&#13;
+return 'yes';&#13;
+}&#13;
+return 'no';&#13;
+}&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>c48bdb8edbd7d340e9c39334ca96192f</document_key>
@@ -1121,6 +1673,21 @@ return 'no';&#13;
         <x>1166</x>
         <y>15</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=565d0f2edbafdf40561fb29a689619e5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>565d0f2edbafdf40561fb29a689619e5</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-30 07:27:17</sys_created_on>
+        <sys_id>8e7d8f2edbafdf40561fb29a689619ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-30 07:27:17</sys_updated_on>
+        <value>approved</value>
+        <variable display_value="">50ab35f70a6a803f76d36e1ebaf3639e</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>565d0f2edbafdf40561fb29a689619e5</document_key>
@@ -1184,6 +1751,21 @@ return 'no';&#13;
         <x>1079</x>
         <y>495</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=a5ddcf2edbafdf40561fb29a6896192b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a5ddcf2edbafdf40561fb29a6896192b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-30 07:29:38</sys_created_on>
+        <sys_id>e80e836edbafdf40561fb29a689619f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-30 07:29:38</sys_updated_on>
+        <value>rejected</value>
+        <variable display_value="">50ab35f70a6a803f76d36e1ebaf3639e</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>a5ddcf2edbafdf40561fb29a6896192b</document_key>
@@ -1247,6 +1829,61 @@ return 'no';&#13;
         <x>550</x>
         <y>203</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=4c8bdb8edbd7d340e9c39334ca96192d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4c8bdb8edbd7d340e9c39334ca96192d</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>048bdb8edbd7d340e9c39334ca96192e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4c8bdb8edbd7d340e9c39334ca96192d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>408bdb8edbd7d340e9c39334ca96192e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>applicant_bae_permanent=1^EQ</value>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>4c8bdb8edbd7d340e9c39334ca96192d</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>c48bdb8edbd7d340e9c39334ca96192e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+//   answer = ifScript();&#13;
+//&#13;
+//   function ifScript() {&#13;
+//      if (condition is true) {&#13;
+//         return 'yes';&#13;
+//      }&#13;
+//      return 'no';&#13;
+//   }&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>4c8bdb8edbd7d340e9c39334ca96192d</document_key>
@@ -1371,6 +2008,345 @@ return 'no';&#13;
         <x>831</x>
         <y>618</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=c08bdb8edbd7d340e9c39334ca961925"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c08bdb8edbd7d340e9c39334ca961925</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>008bdb8edbd7d340e9c39334ca961926</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value/>
+        <variable display_value="">a775f59ac0a8006665d72362ae687035</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c08bdb8edbd7d340e9c39334ca961925</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>008bdb8edbd7d340e9c39334ca961929</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value/>
+        <variable display_value="">a774138dc0a80066000be7af20961c7d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c08bdb8edbd7d340e9c39334ca961925</document_key>
+        <order>1150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>048bdb8edbd7d340e9c39334ca961928</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value/>
+        <variable display_value="">a76b8c6ec0a800664bb14d5d8b9cd7c4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c08bdb8edbd7d340e9c39334ca961925</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>088bdb8edbd7d340e9c39334ca961927</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>reject</value>
+        <variable display_value="">502163410a6a803f0356332b24dc7945</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c08bdb8edbd7d340e9c39334ca961925</document_key>
+        <order>120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>0c8bdb8edbd7d340e9c39334ca961926</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value/>
+        <variable display_value="">a77903a7c0a8006641af7c9b1d34444e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c08bdb8edbd7d340e9c39334ca961925</document_key>
+        <order>1120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>408bdb8edbd7d340e9c39334ca961928</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">a76c6257c0a8006645cff43883470e64</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c08bdb8edbd7d340e9c39334ca961925</document_key>
+        <order>330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>448bdb8edbd7d340e9c39334ca961927</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="">e863e3b80a0004f911d67787e77e0f16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c08bdb8edbd7d340e9c39334ca961925</document_key>
+        <order>103</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>488bdb8edbd7d340e9c39334ca961926</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value/>
+        <variable display_value="">e37b77ac0a0004f973283ad13b341c5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c08bdb8edbd7d340e9c39334ca961925</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>488bdb8edbd7d340e9c39334ca961929</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value/>
+        <variable display_value="">a7781cb6c0a80066147dc7a5244d5d16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c08bdb8edbd7d340e9c39334ca961925</document_key>
+        <order>1370</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>4c8bdb8edbd7d340e9c39334ca961925</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>// Set the variable 'answer' to '', 'approved' or 'rejected' to indicate the approval status for this approval.  When called, the following information is available:&#13;
+//&#13;
+//    counts.total = total number of users that are part of this approval&#13;
+//    counts.approved = # of users that approved so far&#13;
+//    counts.rejected = # of users that rejected so far&#13;
+//    counts.requested = # of users that are pending approval&#13;
+//    counts.not_requested = # of users that are not pending approval&#13;
+//    counts.not_required = # of users that approval is not required&#13;
+//&#13;
+</value>
+        <variable display_value="">02c86d780a0a0b261e6a356bc893d348</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c08bdb8edbd7d340e9c39334ca961925</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>4c8bdb8edbd7d340e9c39334ca961928</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>any</value>
+        <variable display_value="">c35e5bdd0a0a0ba96248a709f495c9ae</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c08bdb8edbd7d340e9c39334ca961925</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>808bdb8edbd7d340e9c39334ca961927</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>${site.u_contact_user}</value>
+        <variable display_value="">c35e4cc40a0a0ba96248a7098ec9cb06</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c08bdb8edbd7d340e9c39334ca961925</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>848bdb8edbd7d340e9c39334ca961926</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="">e846198f0a0004f91fba434a514ba8b8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c08bdb8edbd7d340e9c39334ca961925</document_key>
+        <order>115</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>848bdb8edbd7d340e9c39334ca961929</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value/>
+        <variable display_value="">a76680b9c0a8006661b107d0f21fae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c08bdb8edbd7d340e9c39334ca961925</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>888bdb8edbd7d340e9c39334ca961925</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">02ca01820a0a0b261cf923fb95f5e1d0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c08bdb8edbd7d340e9c39334ca961925</document_key>
+        <order>104</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>888bdb8edbd7d340e9c39334ca961928</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value/>
+        <variable display_value="">e37a96e80a0004f978b47d2d6c5e0b22</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c08bdb8edbd7d340e9c39334ca961925</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>8c8bdb8edbd7d340e9c39334ca961927</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value/>
+        <variable display_value="">4485eef70a6a803f6bc4bafa9e999640</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c08bdb8edbd7d340e9c39334ca961925</document_key>
+        <order>1330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>c08bdb8edbd7d340e9c39334ca961926</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 09:21:08</sys_updated_on>
+        <value>9a6dbabbdbae5f00496e728dae9619d9</value>
+        <variable display_value="">02c618170a0a0b26436f5c2c9f7a3901</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c08bdb8edbd7d340e9c39334ca961925</document_key>
+        <order>2050</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>c08bdb8edbd7d340e9c39334ca961929</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user ids and/or group ids or an array of user/group ids to add as approvers.&#13;
+//&#13;
+// For example:&#13;
+//       answer = [];&#13;
+//       answer.push('id1');&#13;
+//       answer.push('id2');&#13;
+</value>
+        <variable display_value="">c35e582f0a0a0ba96248a70985207e63</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c08bdb8edbd7d340e9c39334ca961925</document_key>
+        <order>110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>c48bdb8edbd7d340e9c39334ca961925</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value/>
+        <variable display_value="">a77191a4c0a800662b403f7dff5f1bbd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c08bdb8edbd7d340e9c39334ca961925</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>c48bdb8edbd7d340e9c39334ca961928</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value/>
+        <variable display_value="">a7754e91c0a800664938d0ef6d2664d7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c08bdb8edbd7d340e9c39334ca961925</document_key>
+        <order>1110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>c88bdb8edbd7d340e9c39334ca961927</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value/>
+        <variable display_value="">a769a182c0a8006629db7fa3fc2a863d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c08bdb8edbd7d340e9c39334ca961925</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>cc8bdb8edbd7d340e9c39334ca961926</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">a782cde9c0a8006608f39abdd85c8395</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>c08bdb8edbd7d340e9c39334ca961925</document_key>
@@ -1779,6 +2755,37 @@ answer = 0;</value>
         <x>784</x>
         <y>122</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=048bdb8edbd7d340e9c39334ca961938"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>048bdb8edbd7d340e9c39334ca961938</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>088bdb8edbd7d340e9c39334ca961938</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>048bdb8edbd7d340e9c39334ca961938</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+        <sys_created_on>2018-07-16 08:55:55</sys_created_on>
+        <sys_id>c88bdb8edbd7d340e9c39334ca961938</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+        <sys_updated_on>2018-07-16 08:55:55</sys_updated_on>
+        <value>applicant_manager_email_response=1^ORapplicant_manager_email_response=2^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>048bdb8edbd7d340e9c39334ca961938</document_key>

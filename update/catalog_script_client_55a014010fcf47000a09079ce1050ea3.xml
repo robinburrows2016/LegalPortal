@@ -19,6 +19,41 @@
         <order/>
         <script><![CDATA[function onLoad() {
 	
+	// Load Existing Record Details If Required, i.e. Resubmit Functionality
+    /*var catalog_id = g_form.getUniqueValue();
+	var record_id = getParmVal('rec_id');	
+	var table_name = 'x_baes2_legal_port_f680_request';
+	
+	if (record_id) {
+		var ga = new GlideAjax('global.BAEFormFunctions');
+		ga.addParam('sysparm_name','getFormData');
+		ga.addParam('sysparm_catalog_id', catalog_id);		
+		ga.addParam('sysparm_record_id', record_id);		
+		ga.addParam('sysparm_table_name', table_name);
+		ga.getXML(function(response) {
+			answer = response.responseXML.documentElement.getAttribute('answer');
+			//alert(answer);
+			var Fields = JSON.parse(answer);
+			var i = 0;
+			while (i < Fields.length) {
+				g_form.setValue(Fields[i].var_name, Fields[i].var_value);    
+				i++;
+			}
+		});
+	}*/
+	
+	function getParmVal(name) {  
+		name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");  
+		var regexS = "[\\?&]" + name + "=([^&#]*)";  
+		var regex = new RegExp(regexS);  
+		var results = regex.exec(top.location);  
+		if (results == null) {  
+			return "";  
+		} else {  
+			return unescape(results[1]);  
+		}  
+	}	
+	
 	/*Retrieve user and display information
 	var user_sysid = g_user.userID;	
 	var lookup = new GlideRecord('sys_user');
@@ -60,6 +95,7 @@
 	
 	// Style Sections
 	//$j('legend').hide();
+	
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
@@ -67,7 +103,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>55a014010fcf47000a09079ce1050ea3</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>55</sys_mod_count>
         <sys_name>F680 - Initial Load</sys_name>
         <sys_overrides/>
         <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
@@ -76,7 +112,7 @@
         <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
         <sys_update_name>catalog_script_client_55a014010fcf47000a09079ce1050ea3</sys_update_name>
         <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-        <sys_updated_on>2018-06-18 14:36:29</sys_updated_on>
+        <sys_updated_on>2018-09-20 13:05:24</sys_updated_on>
         <table/>
         <type>onLoad</type>
         <ui_type>1</ui_type>

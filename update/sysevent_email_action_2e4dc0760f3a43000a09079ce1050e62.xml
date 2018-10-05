@@ -43,6 +43,8 @@
 <div>${mail_script:IMT_email_rejection_history}</div>
 <div>&nbsp;</div>
 <div>Therefore permission has not been granted at this time for you to take your (Mobile/tablet/laptop) with you when you travel.</div>
+<div>&nbsp;</div>
+<div>If you wish to modify this application and resubmit, then this option is available from the Legal Request Status (Closed CAOs) display.</div>
 <br />
 <div>Please discuss this with your export control contact below should you have further queries / concerns&nbsp;or contact us using&nbsp;<a href="mailto:import.exportdept@baesystems.com">import.exportdept@baesystems.com</a></div>
 <div>&nbsp;</div>
@@ -69,7 +71,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>2e4dc0760f3a43000a09079ce1050e62</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>Legal CAO Rejected</sys_name>
         <sys_overrides/>
         <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
@@ -78,7 +80,7 @@
         <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
         <sys_update_name>sysevent_email_action_2e4dc0760f3a43000a09079ce1050e62</sys_update_name>
         <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-        <sys_updated_on>2018-08-24 07:38:05</sys_updated_on>
+        <sys_updated_on>2018-09-03 08:21:04</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>

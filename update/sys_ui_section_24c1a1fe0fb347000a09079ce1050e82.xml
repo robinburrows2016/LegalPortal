@@ -5,27 +5,41 @@
             <element>mod_authorisation_reference</element>
             <position>0</position>
             <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
-            <sys_created_on>2018-01-25 12:16:59</sys_created_on>
-            <sys_id>d0185eb60f7747000a09079ce1050ec4</sys_id>
+            <sys_created_on>2018-09-17 12:40:52</sys_created_on>
+            <sys_id>592b64eadb28a740e9c39334ca9619ed</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Evaluation" display_value="Evaluation" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">24c1a1fe0fb347000a09079ce1050e82</sys_ui_section>
             <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-            <sys_updated_on>2018-01-25 12:16:59</sys_updated_on>
+            <sys_updated_on>2018-09-17 12:40:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>mod_authorisation_expiry_date</element>
+            <position>1</position>
+            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
+            <sys_created_on>2018-09-17 12:40:52</sys_created_on>
+            <sys_id>d92b64eadb28a740e9c39334ca9619ed</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Evaluation" display_value="Evaluation" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">24c1a1fe0fb347000a09079ce1050e82</sys_ui_section>
+            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
+            <sys_updated_on>2018-09-17 12:40:52</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>rejection_reason</element>
-            <position>1</position>
+            <position>2</position>
             <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
-            <sys_created_on>2018-01-25 12:16:59</sys_created_on>
-            <sys_id>54185eb60f7747000a09079ce1050ec4</sys_id>
+            <sys_created_on>2018-09-17 12:40:52</sys_created_on>
+            <sys_id>5d2b64eadb28a740e9c39334ca9619ed</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Evaluation" display_value="Evaluation" name="x_baes2_legal_port_f680_request" sys_domain="global" view="Default view">24c1a1fe0fb347000a09079ce1050e82</sys_ui_section>
             <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-            <sys_updated_on>2018-01-25 12:16:59</sys_updated_on>
+            <sys_updated_on>2018-09-17 12:40:52</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
