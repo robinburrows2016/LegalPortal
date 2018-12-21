@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="task" label="Legal Portal F680 Request" max_length="40" name="x_baes2_legal_port_f680_request" sizeclass="8" type="collection">
+    <element audit="true" extends="task" label="Legal Portal F680 Request" max_length="40" name="x_baes2_legal_port_f680_request" sizeclass="9" type="collection">
         <element label="Applicant" max_length="32" name="applicant" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element choice="1" label="Applicant BAE Permanent" max_length="40" name="applicant_bae_permanent" type="choice">
             <choice>

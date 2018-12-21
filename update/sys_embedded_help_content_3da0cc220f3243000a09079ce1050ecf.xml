@@ -4,7 +4,7 @@
         <active>true</active>
         <category>service-catalog</category>
         <content><![CDATA[ <h1 class="title topictitle1">Service catalog variables</h1>  <div class="body conbody">  <p class="p"><span class="ph">Service catalog variables capture and pass on information about          choices a customer makes when ordering a catalog item. Variables help define the structure          of a catalog item form that is displayed to the customer.</span></p>  <p class="p">For example, you can define a variable called          <span class="ph uicontrol">Memory</span> to provide users with memory options at an extra cost for a        PC catalog item. An Apple iPhone catalog item can use a variable called          <span class="ph uicontrol">Color</span> that allows customers to select the color when they order the        phone from the catalog. You can define some variables to affect an item price, depending on        the choices made. </p>  <p class="p">Variables are also used in record producers that insert a record into a task table, such as an   incident. Record producer variables can be mapped to a field in the task table.</p> </div> <div class="related-links"><div class="relinfo"><div class="reltitle">Related information<br /><div><a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:Using_Service_Catalog_Variables&amp;version&#61;jakarta" target="_blank">Service catalog variables</a></div></div></div></div>]]></content>
-        <last_sync>2018-09-21 09:24:04</last_sync>
+        <last_sync>2018-12-20 09:28:10</last_sync>
         <modifier>normal</modifier>
         <name>item_option_new_list-normal</name>
         <page>item_option_new_list</page>
@@ -18,7 +18,7 @@
         <sys_created_on>2017-12-05 13:34:10</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>3da0cc220f3243000a09079ce1050ecf</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>item_option_new_list-normal</sys_name>
         <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
         <sys_policy/>
@@ -26,7 +26,7 @@
         <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
         <sys_update_name>sys_embedded_help_content_3da0cc220f3243000a09079ce1050ecf</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2018-09-21 09:24:04</sys_updated_on>
+        <sys_updated_on>2018-12-20 09:28:10</sys_updated_on>
         <version>j</version>
     </sys_embedded_help_content>
 </record_update>

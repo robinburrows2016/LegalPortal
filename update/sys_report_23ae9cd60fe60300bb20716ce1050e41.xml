@@ -24,7 +24,7 @@
         <column>active</column>
         <compute_percent>aggregate</compute_percent>
         <content/>
-        <created_by_user/>
+        <created_by_user display_value="Robin Burrows">ae49343c6f7b81006b8746916e3ee4b9</created_by_user>
         <custom_chart_size>false</custom_chart_size>
         <custom_chart_title_position>false</custom_chart_title_position>
         <decimal_precision>2</decimal_precision>
