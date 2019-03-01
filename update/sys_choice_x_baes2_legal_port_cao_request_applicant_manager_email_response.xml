@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_choice action="INSERT_OR_UPDATE" field="applicant_manager_email_response" table="x_baes2_legal_port_cao_request" version="3">
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -10,13 +9,13 @@
             <language>en</language>
             <name>x_baes2_legal_port_cao_request</name>
             <sequence/>
-            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
-            <sys_created_on>2018-07-06 07:33:56</sys_created_on>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2018-07-10 16:02:56</sys_created_on>
             <sys_domain>global</sys_domain>
-            <sys_id>ffc86bf2dbcb1f00e9c39334ca961996</sys_id>
+            <sys_id>24b3c2d8db1b9780496e728dae961930</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-            <sys_updated_on>2018-07-06 07:33:56</sys_updated_on>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2018-07-10 16:02:56</sys_updated_on>
             <value>1</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -28,23 +27,23 @@
             <language>en</language>
             <name>x_baes2_legal_port_cao_request</name>
             <sequence/>
-            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
-            <sys_created_on>2018-07-06 07:34:11</sys_created_on>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2018-07-10 16:02:56</sys_created_on>
             <sys_domain>global</sys_domain>
-            <sys_id>63d8e332dbcb1f00e9c39334ca961972</sys_id>
+            <sys_id>64b3c2d8db1b9780496e728dae961930</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-            <sys_updated_on>2018-07-06 07:34:11</sys_updated_on>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2018-07-10 16:02:56</sys_updated_on>
             <value>2</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>applicant_manager_email_response</element>
             <name>x_baes2_legal_port_cao_request</name>
             <sys_class_name>sys_choice_set</sys_class_name>
-            <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
-            <sys_created_on>2018-07-06 07:33:42</sys_created_on>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2018-07-10 16:02:56</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>1ac86bf2dbcb1f00e9c39334ca961994</sys_id>
+            <sys_id>68b3c2d8db1b9780496e728dae961930</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>applicant_manager_email_response</sys_name>
             <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
@@ -52,8 +51,8 @@
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
             <sys_update_name>sys_choice_x_baes2_legal_port_cao_request_applicant_manager_email_response</sys_update_name>
-            <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-            <sys_updated_on>2018-07-06 07:33:42</sys_updated_on>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2018-07-10 16:02:56</sys_updated_on>
         </sys_choice_set>
     </sys_choice>
 </record_update>

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update sys_domain="global" table="sysevent_email_action">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
     <sysevent_email_action action="INSERT_OR_UPDATE">
         <action_insert>false</action_insert>
         <action_update>true</action_update>
@@ -13,7 +12,17 @@
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <content_type>text/html</content_type>
+        <default_interval/>
         <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<br><hr><br>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digestable>false</digestable>
         <event_name/>
         <event_parm_1>false</event_parm_1>
         <event_parm_2>false</event_parm_2>
@@ -41,8 +50,6 @@
 <div>${rejection_reason}</div>
 <div>&nbsp;</div>
 <div>${mail_script:last_additional_comments}</div>
-<div>&nbsp;</div>
-<div>If you wish to modify this application and resubmit, then this option is available from the Legal Request Status (Closed F680s) display.</div>
 <br />
 <div>Please discuss this with your export control contact below should you have further queries / concerns&nbsp;or contact us using&nbsp;<a href="mailto:import.exportdept@baesystems.com">import.exportdept@baesystems.com</a></div>
 <div>&nbsp;</div>
@@ -69,7 +76,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>0519138b0fff47000a09079ce1050ed5</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Legal F680 Rejected</sys_name>
         <sys_overrides/>
         <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
@@ -78,7 +85,7 @@
         <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
         <sys_update_name>sysevent_email_action_0519138b0fff47000a09079ce1050ed5</sys_update_name>
         <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-        <sys_updated_on>2018-09-03 08:20:43</sys_updated_on>
+        <sys_updated_on>2018-06-28 10:17:59</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>

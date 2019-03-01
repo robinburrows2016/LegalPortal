@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
+<?xml version="1.0" encoding="UTF-8"?><database>
     <element extends="cmdb_servicetask_product_model" label="Legal Portal Task Template" max_length="40" name="x_baes2_legal_portal_task_template" type="collection"/>
 </database>

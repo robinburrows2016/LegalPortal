@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_embedded_help_role">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
     <sys_embedded_help_role action="INSERT_OR_UPDATE">
         <order>1000</order>
         <role display_value="x_baes2_legal_port.legal_portal_cao_request_user" name="x_baes2_legal_port.legal_portal_cao_request_user">74f2815e0f2643000a09079ce1050eca</role>

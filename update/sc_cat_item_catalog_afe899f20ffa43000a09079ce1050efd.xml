@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sc_cat_item_catalog">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
     <sc_cat_item_catalog action="INSERT_OR_UPDATE">
         <sc_cat_item display_value="Company Electronic Asset Overseas Evaluation">dc8819f20ffa43000a09079ce1050e42</sc_cat_item>
         <sc_catalog display_value="Legal Portal Catalog">02ae1cd60fe60300bb20716ce1050ea2</sc_catalog>

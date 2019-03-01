@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update sys_domain="global" table="sysevent_email_action">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
     <sysevent_email_action action="INSERT_OR_UPDATE">
         <action_insert>false</action_insert>
         <action_update>false</action_update>
@@ -10,7 +9,17 @@
         <collection>x_baes2_legal_port_f680_request</collection>
         <condition/>
         <content_type>text/html</content_type>
+        <default_interval/>
         <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<br><hr><br>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digestable>false</digestable>
         <event_name>x_baes2_legal_port.f680.expiry.reminder</event_name>
         <event_parm_1>false</event_parm_1>
         <event_parm_2>false</event_parm_2>
@@ -45,13 +54,13 @@
         <order>100</order>
         <push_message_only>false</push_message_only>
         <recipient_fields/>
-        <recipient_groups name="Export Control Approval Override Officers">483b5f4edbd7d340e9c39334ca9619a5</recipient_groups>
+        <recipient_groups>483b5f4edbd7d340e9c39334ca9619a5</recipient_groups>
         <recipient_users/>
         <reply_to/>
         <send_self>false</send_self>
         <sms_alternate/>
         <style/>
-        <subject>F680 Request ${number} for ${programme} - Authorisation expires within 6 months</subject>
+        <subject>F680 Request ${number} for ${programme} - Authorisation expires within 3 months</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
@@ -59,7 +68,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>8e08b4e2db68a740e9c39334ca96194b</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Legal F680 Authorisation Expiry Reminder</sys_name>
         <sys_overrides/>
         <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
@@ -68,7 +77,7 @@
         <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
         <sys_update_name>sysevent_email_action_8e08b4e2db68a740e9c39334ca96194b</sys_update_name>
         <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-        <sys_updated_on>2018-09-17 13:55:00</sys_updated_on>
+        <sys_updated_on>2018-11-12 16:05:52</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>

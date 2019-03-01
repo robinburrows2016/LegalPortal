@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
+<?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" extends="sm_order" label="Legal Portal Request" max_length="40" name="x_baes2_legal_portal_request" type="collection">
         <element label="Description" mandatory="true" max_length="1024" name="x_baes2_legal_port_description" type="translated_text"/>
         <element label="Title" mandatory="true" max_length="255" name="x_baes2_legal_port_title" type="string"/>

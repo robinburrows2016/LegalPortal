@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sc_cat_item_producer">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_producer">
     <sc_cat_item_producer action="INSERT_OR_UPDATE">
         <active>true</active>
         <availability>on_desktop</availability>
@@ -18,6 +17,7 @@
 <p style="display: none!important;">&nbsp;</p>]]></description>
         <entitlement_script/>
         <group/>
+        <hide_sp>false</hide_sp>
         <icon/>
         <ignore_price>true</ignore_price>
         <image/>
@@ -39,6 +39,7 @@
         <order>10</order>
         <ordered_item_link/>
         <picture/>
+        <post_insert_script/>
         <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=8a00d11a0f6643000a09079ce1050e86&amp;sysparm_preview=true", "summary");</preview>
         <price>0</price>
         <recurring_frequency/>

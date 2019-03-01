@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_form_sections form_id="2541c55d0fc787000a09079ce1050e4f" sys_domain="global" table="x_baes2_legal_port_f680_request" version="3">
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>0</position>

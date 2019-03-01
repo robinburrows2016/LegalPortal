@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_choice action="INSERT_OR_UPDATE" field="itar_control_data" table="x_baes2_legal_port_cao_request" version="3">
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sc_cat_item_producer">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_producer">
     <sc_cat_item_producer action="INSERT_OR_UPDATE">
         <active>true</active>
         <availability>on_both</availability>
@@ -14,6 +13,7 @@
         <description/>
         <entitlement_script/>
         <group/>
+        <hide_sp>false</hide_sp>
         <icon/>
         <ignore_price>true</ignore_price>
         <image/>
@@ -35,6 +35,7 @@
         <order>20</order>
         <ordered_item_link/>
         <picture/>
+        <post_insert_script/>
         <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=70f2adfe0fb347000a09079ce1050eab&amp;sysparm_preview=true", "summary");</preview>
         <price>0</price>
         <recurring_frequency/>
@@ -71,7 +72,7 @@ current.number = null;
 current.setAbortAction(true);
 
 // Notification / Redirect
-producer.redirect = "/splg";
+producer.portal_redirect = "/splg";
 var msg = 'F680 request has been successfully updated.';
 gs.addInfoMessage(msg);]]></script>
         <short_description>Evaluation of F680 request - MoD SPIRE Notification</short_description>
@@ -82,7 +83,7 @@ gs.addInfoMessage(msg);]]></script>
         <sys_created_on>2018-01-25 08:24:54</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>70f2adfe0fb347000a09079ce1050eab</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>F680 – MoD SPIRE Notification</sys_name>
         <sys_package display_value="Legal Portal" source="x_baes2_legal_port">3a7e14960fe60300bb20716ce1050e8c</sys_package>
         <sys_policy/>
@@ -90,7 +91,7 @@ gs.addInfoMessage(msg);]]></script>
         <sys_scope display_value="Legal Portal">3a7e14960fe60300bb20716ce1050e8c</sys_scope>
         <sys_update_name>sc_cat_item_producer_70f2adfe0fb347000a09079ce1050eab</sys_update_name>
         <sys_updated_by>robin.burrows@baesystems.com</sys_updated_by>
-        <sys_updated_on>2018-09-17 12:48:02</sys_updated_on>
+        <sys_updated_on>2019-02-27 08:59:22</sys_updated_on>
         <table_name>x_baes2_legal_port_f680_request</table_name>
         <template/>
         <type>item</type>

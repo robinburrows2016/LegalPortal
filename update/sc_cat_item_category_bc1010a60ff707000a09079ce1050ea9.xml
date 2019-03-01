@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sc_cat_item_category">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
     <sc_cat_item_category action="INSERT_OR_UPDATE">
         <sc_cat_item display_value="Company Electronic Asset Overseas Evaluation">dc8819f20ffa43000a09079ce1050e42</sc_cat_item>
         <sc_category display_value="Managing Legal Forms">f0bfc4a60ff707000a09079ce1050ee0</sc_category>

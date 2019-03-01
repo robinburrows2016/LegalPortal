@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_documentation element="f680_third_parties_third_party_security_classification_12" label="Third Party Security Classification 12" language="en" table="x_baes2_legal_port_f680_request">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>f680_third_parties_third_party_security_classification_12</element>

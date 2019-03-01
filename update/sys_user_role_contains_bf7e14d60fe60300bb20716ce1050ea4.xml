@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_user_role_contains">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
     <sys_user_role_contains action="INSERT_OR_UPDATE">
         <contains display_value="approver_user" name="approver_user">debab85bff02110053ccffffffffffb6</contains>
         <role display_value="x_baes2_legal_port_approver_user" name="x_baes2_legal_port_approver_user">bf7e14d60fe60300bb20716ce1050e79</role>

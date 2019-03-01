@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Access / Sharing" section_id="df4768760f7a43000a09079ce1050ea8" sys_domain="global" table="x_baes2_legal_port_cao_request" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>information_shared</element>

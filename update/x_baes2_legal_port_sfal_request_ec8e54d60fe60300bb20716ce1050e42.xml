@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="x_baes2_legal_port_sfal_request">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_baes2_legal_port_sfal_request">
     <x_baes2_legal_port_sfal_request action="INSERT_OR_UPDATE">
         <active>true</active>
         <automatic_condition/>

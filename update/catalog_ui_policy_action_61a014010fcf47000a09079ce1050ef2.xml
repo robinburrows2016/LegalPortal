@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="catalog_ui_policy_action">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
     <catalog_ui_policy_action action="INSERT_OR_UPDATE">
         <catalog_item display_value="F680 Request">a790d4cd0f8f47000a09079ce1050e4a</catalog_item>
         <catalog_variable>IO:cca0d0010fcf47000a09079ce1050e8f</catalog_variable>
+        <cleared>false</cleared>
         <disabled>ignore</disabled>
         <field/>
         <mandatory>ignore</mandatory>
+        <order>100</order>
         <sys_class_name>catalog_ui_policy_action</sys_class_name>
         <sys_created_by>robin.burrows@baesystems.com</sys_created_by>
         <sys_created_on>2017-12-13 09:08:52</sys_created_on>

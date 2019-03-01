@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
-    <element audit="true" extends="task" label="Legal Portal CAO Request" max_length="40" name="x_baes2_legal_port_cao_request" sizeclass="55" type="collection">
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="Legal Portal CAO Request" max_length="40" name="x_baes2_legal_port_cao_request" sizeclass="307" type="collection">
         <element label="Applicant" max_length="32" name="applicant" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element label="Applicant BAE Manager" max_length="32" name="applicant_bae_manager" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element choice="1" label="Applicant BAE Permanent" max_length="40" name="applicant_bae_permanent" type="choice">
             <choice>
-                <element label="No" value="0"/>
-                <element label="Yes" value="1"/>
+                <element inactive_on_update="false" label="No" value="0"/>
+                <element inactive_on_update="false" label="Yes" value="1"/>
             </choice>
         </element>
         <element label="Applicant Email" max_length="128" name="applicant_email" type="string"/>
@@ -14,8 +13,8 @@
         <element label="Applicant Manager Email" max_length="128" name="applicant_manager" type="string"/>
         <element choice="1" label="Applicant Manager Email Response" max_length="40" name="applicant_manager_email_response" type="choice">
             <choice>
-                <element label="Approved" value="1"/>
-                <element label="Rejected" value="2"/>
+                <element inactive_on_update="false" label="Approved" value="1"/>
+                <element inactive_on_update="false" label="Rejected" value="2"/>
             </choice>
         </element>
         <element label="Applicant Passport Name" mandatory="true" max_length="128" name="applicant_passport_name" type="string"/>
@@ -25,44 +24,44 @@
         <element label="Authorised By" max_length="32" name="authorised_by" reference="sys_user" type="reference"/>
         <element choice="1" label="BAE Laptop Asset" max_length="40" name="bae_laptop_asset" type="choice">
             <choice>
-                <element label="No" value="0"/>
-                <element label="Yes" value="1"/>
+                <element inactive_on_update="false" label="No" value="0"/>
+                <element inactive_on_update="false" label="Yes" value="1"/>
             </choice>
         </element>
         <element label="BAE Laptop Asset Number" max_length="80" name="bae_laptop_asset_number" type="string"/>
         <element choice="1" label="BAE Laptop Standard Configuration" max_length="40" name="bae_laptop_configuration" type="choice">
             <choice>
-                <element label="No" value="0"/>
-                <element label="Yes" value="1"/>
+                <element inactive_on_update="false" label="No" value="0"/>
+                <element inactive_on_update="false" label="Yes" value="1"/>
             </choice>
         </element>
         <element label="BAE Laptop Non Standard Information" max_length="255" name="bae_laptop_non_standard_information" type="string_full_utf8"/>
         <element choice="1" label="BAE Systems Legal Entity" max_length="40" name="bae_legal_entity" type="choice">
             <choice>
-                <element label="BAE Systems Surface Ships (Projects) Limited" value="3"/>
-                <element label="BAE Systems Surface Ships International Limited" value="2"/>
-                <element label="BAE Systems Surface Ships Limited" value="1"/>
+                <element inactive_on_update="false" label="BAE Systems Surface Ships (Projects) Limited" value="3"/>
+                <element inactive_on_update="false" label="BAE Systems Surface Ships International Limited" value="2"/>
+                <element inactive_on_update="false" label="BAE Systems Surface Ships Limited" value="1"/>
             </choice>
         </element>
         <element choice="1" label="BAE Mobile Asset" max_length="40" name="bae_mobile_asset" type="choice">
             <choice>
-                <element label="No" value="0"/>
-                <element label="Yes" value="1"/>
+                <element inactive_on_update="false" label="No" value="0"/>
+                <element inactive_on_update="false" label="Yes" value="1"/>
             </choice>
         </element>
         <element label="BAE Mobile Asset IMEI" max_length="1024" name="bae_mobile_asset_imei" type="string_full_utf8"/>
         <element label="BAE Mobile Asset Model" max_length="1024" name="bae_mobile_asset_models" type="string_full_utf8"/>
         <element choice="1" label="BAE Network Access" max_length="40" name="bae_network_access" type="choice">
             <choice>
-                <element label="No" value="0"/>
-                <element label="Yes" value="1"/>
+                <element inactive_on_update="false" label="No" value="0"/>
+                <element inactive_on_update="false" label="Yes" value="1"/>
             </choice>
         </element>
         <element label="BAE Network Classification" max_length="4000" name="bae_network_classification" reference="u_bae_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
         <element choice="1" label="BAE Other Devices" max_length="40" name="bae_other_devices" type="choice">
             <choice>
-                <element label="No" value="0"/>
-                <element label="Yes" value="1"/>
+                <element inactive_on_update="false" label="No" value="0"/>
+                <element inactive_on_update="false" label="Yes" value="1"/>
             </choice>
         </element>
         <element label="BAE Other Devices Assets" max_length="1024" name="bae_other_devices_assets" type="string_full_utf8"/>
@@ -72,35 +71,35 @@
         <element label="Destination USA Confirmation" max_length="40" name="destination_usa_confirmation" type="boolean"/>
         <element choice="1" label="EAR Controlled Technology" max_length="40" name="ear_controlled_technology" type="choice">
             <choice>
-                <element label="No" value="0"/>
-                <element label="Yes" value="1"/>
+                <element inactive_on_update="false" label="No" value="0"/>
+                <element inactive_on_update="false" label="Yes" value="1"/>
             </choice>
         </element>
         <element label="Expiry Date" max_length="40" name="expiry_date" type="glide_date"/>
         <element choice="1" label="Export Control Data" max_length="40" name="export_control_data" type="choice">
             <choice>
-                <element label="No" value="0"/>
-                <element label="Yes" value="1"/>
+                <element inactive_on_update="false" label="No" value="0"/>
+                <element inactive_on_update="false" label="Yes" value="1"/>
             </choice>
         </element>
         <element label="Export Control Data Information" max_length="1024" name="export_control_data_information" type="string_full_utf8"/>
         <element choice="1" label="Function" mandatory="true" max_length="40" name="function" type="choice">
             <choice>
-                <element label="Commercial" value="1"/>
-                <element label="Communications" value="2"/>
-                <element label="Engineering" value="3"/>
-                <element label="Finance" value="4"/>
-                <element label="HR" value="5"/>
-                <element label="IM&amp;T" value="6"/>
-                <element label="Legal" value="7"/>
-                <element label="Operations" value="8"/>
-                <element label="Other" value="9"/>
-                <element label="Product Safety and Environment" value="10"/>
-                <element label="Project Management" value="11"/>
-                <element label="Quality" value="12"/>
-                <element label="Security" value="13"/>
-                <element label="SHE" value="14"/>
-                <element label="Supply Chain" value="15"/>
+                <element inactive_on_update="false" label="Commercial" value="1"/>
+                <element inactive_on_update="false" label="Communications" value="2"/>
+                <element inactive_on_update="false" label="Engineering" value="3"/>
+                <element inactive_on_update="false" label="Finance" value="4"/>
+                <element inactive_on_update="false" label="HR" value="5"/>
+                <element inactive_on_update="false" label="IM&amp;T" value="6"/>
+                <element inactive_on_update="false" label="Legal" value="7"/>
+                <element inactive_on_update="false" label="Operations" value="8"/>
+                <element inactive_on_update="false" label="Other" value="9"/>
+                <element inactive_on_update="false" label="Product Safety and Environment" value="10"/>
+                <element inactive_on_update="false" label="Project Management" value="11"/>
+                <element inactive_on_update="false" label="Quality" value="12"/>
+                <element inactive_on_update="false" label="Security" value="13"/>
+                <element inactive_on_update="false" label="SHE" value="14"/>
+                <element inactive_on_update="false" label="Supply Chain" value="15"/>
             </choice>
         </element>
         <element label="Information Classification" max_length="4000" name="information_classification" reference="u_bae_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
@@ -108,14 +107,14 @@
         <element label="Information Reason" max_length="255" name="information_reason" type="string_full_utf8"/>
         <element choice="1" label="Information Shared" max_length="40" name="information_shared" type="choice">
             <choice>
-                <element label="No" value="0"/>
-                <element label="Yes" value="1"/>
+                <element inactive_on_update="false" label="No" value="0"/>
+                <element inactive_on_update="false" label="Yes" value="1"/>
             </choice>
         </element>
         <element choice="1" label="ITAR Control Data" max_length="40" name="itar_control_data" type="choice">
             <choice>
-                <element label="No" value="0"/>
-                <element label="Yes" value="1"/>
+                <element inactive_on_update="false" label="No" value="0"/>
+                <element inactive_on_update="false" label="Yes" value="1"/>
             </choice>
         </element>
         <element label="ITAR Control Data Information" max_length="1024" name="itar_control_data_information" type="string_full_utf8"/>
@@ -124,46 +123,46 @@
         <element label="Other Licences" max_length="1024" name="other_licences" type="string_full_utf8"/>
         <element choice="1" label="Present Controlled Data" max_length="40" name="present_controlled_data" type="choice">
             <choice>
-                <element label="No" value="0"/>
-                <element label="Yes" value="1"/>
+                <element inactive_on_update="false" label="No" value="0"/>
+                <element inactive_on_update="false" label="Yes" value="1"/>
             </choice>
         </element>
         <element choice="1" label="Project" mandatory="true" max_length="40" name="project" type="choice">
             <choice>
-                <element label="Australia Sea 5000" value="9"/>
-                <element label="Central Engineering" value="1"/>
-                <element label="Combat Systems" value="2"/>
-                <element label="CSC (Canada)" value="10"/>
-                <element label="GCS - Pre-Contract" value="3"/>
-                <element label="N/A" value="13"/>
-                <element label="Oman" value="8"/>
-                <element label="Pre-Contract - International (other)" value="12"/>
-                <element label="QEC" value="4"/>
-                <element label="RCB2" value="5"/>
-                <element label="Thailand" value="6"/>
-                <element label="Type 26" value="7"/>
-                <element label="Type 31e" value="11"/>
+                <element inactive_on_update="false" label="Australia Sea 5000" value="9"/>
+                <element inactive_on_update="false" label="Central Engineering" value="1"/>
+                <element inactive_on_update="false" label="Combat Systems" value="2"/>
+                <element inactive_on_update="false" label="CSC (Canada)" value="10"/>
+                <element inactive_on_update="false" label="GCS - Pre-Contract" value="3"/>
+                <element inactive_on_update="false" label="N/A" value="13"/>
+                <element inactive_on_update="false" label="Oman" value="8"/>
+                <element inactive_on_update="false" label="Pre-Contract - International (other)" value="12"/>
+                <element inactive_on_update="false" label="QEC" value="4"/>
+                <element inactive_on_update="false" label="RCB2" value="5"/>
+                <element inactive_on_update="false" label="Thailand" value="6"/>
+                <element inactive_on_update="false" label="Type 26" value="7"/>
+                <element inactive_on_update="false" label="Type 31e" value="11"/>
             </choice>
         </element>
         <element choice="1" label="Purpose of Travel" max_length="40" name="purpose_of_travel" type="choice">
             <choice>
-                <element label="Business" value="1"/>
-                <element label="Business and Personal" value="3"/>
-                <element label="Personal" value="2"/>
+                <element inactive_on_update="false" label="Business" value="1"/>
+                <element inactive_on_update="false" label="Business and Personal" value="3"/>
+                <element inactive_on_update="false" label="Personal" value="2"/>
             </choice>
         </element>
         <element choice="1" label="Rejection reason" max_length="40" name="rejection_reason" type="choice">
             <choice>
-                <element label="Authorisation already exists" sequence="10" value="1"/>
-                <element label="Application resubmitted" sequence="20" value="2"/>
-                <element label="Incorrect application" sequence="30" value="3"/>
-                <element label="Manual approval" sequence="40" value="4"/>
-                <element label="Non BAE equipment usage" sequence="50" value="5"/>
-                <element label="Non naval ships employee" sequence="60" value="6"/>
-                <element label="OGEL conditions not met" sequence="70" value="7"/>
-                <element label="Replaced by OSTR" sequence="80" value="8"/>
-                <element label="Request no longer required" sequence="90" value="9"/>
-                <element label="Unauthorised country" sequence="100" value="10"/>
+                <element inactive_on_update="false" label="Authorisation already exists" sequence="10" value="1"/>
+                <element inactive_on_update="false" label="Application resubmitted" sequence="20" value="2"/>
+                <element inactive_on_update="false" label="Incorrect application" sequence="30" value="3"/>
+                <element inactive_on_update="false" label="Manual approval" sequence="40" value="4"/>
+                <element inactive_on_update="false" label="Non BAE equipment usage" sequence="50" value="5"/>
+                <element inactive_on_update="false" label="Non naval ships employee" sequence="60" value="6"/>
+                <element inactive_on_update="false" label="OGEL conditions not met" sequence="70" value="7"/>
+                <element inactive_on_update="false" label="Replaced by OSTR" sequence="80" value="8"/>
+                <element inactive_on_update="false" label="Request no longer required" sequence="90" value="9"/>
+                <element inactive_on_update="false" label="Unauthorised country" sequence="100" value="10"/>
             </choice>
         </element>
         <element label="Return Date" mandatory="true" max_length="40" name="return_date" type="glide_date"/>

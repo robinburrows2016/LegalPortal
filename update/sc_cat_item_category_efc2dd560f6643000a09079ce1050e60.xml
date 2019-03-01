@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sc_cat_item_category">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
     <sc_cat_item_category action="INSERT_OR_UPDATE">
         <sc_cat_item display_value="Company Electronic Asset Overseas Request">8a00d11a0f6643000a09079ce1050e86</sc_cat_item>
         <sc_category display_value="Legal Service Portal Forms">a662d19a0f6643000a09079ce1050e07</sc_category>

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
+<?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Legal Portal Licence Type" max_length="40" name="x_baes2_legal_port_licence_type" type="collection">
         <element label="Description" mandatory="true" max_length="1024" name="description" type="translated_text"/>
         <element display="true" label="Title" mandatory="true" max_length="100" name="title" type="string"/>

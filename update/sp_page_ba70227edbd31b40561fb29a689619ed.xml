@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_page">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
     <sp_page action="INSERT_OR_UPDATE">
+        <category>custom</category>
         <css>.panel-default {&#13;
     margin-top: 20px;&#13;
 }&#13;
@@ -12,6 +12,7 @@
   font-size: 14px;  &#13;
 }</css>
         <draft>false</draft>
+        <dynamic_title_structure/>
         <id>legal_team</id>
         <internal>false</internal>
         <public>false</public>

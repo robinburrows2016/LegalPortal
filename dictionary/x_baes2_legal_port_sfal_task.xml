@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
+<?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="update_synch=true" extends="sf_sm_flow" label="Legal Portal Task Flow" max_length="40" name="x_baes2_legal_port_sfal_task" type="collection"/>
 </database>

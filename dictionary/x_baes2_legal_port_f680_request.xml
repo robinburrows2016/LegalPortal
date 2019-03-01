@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
-    <element audit="true" extends="task" label="Legal Portal F680 Request" max_length="40" name="x_baes2_legal_port_f680_request" sizeclass="9" type="collection">
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="Legal Portal F680 Request" max_length="40" name="x_baes2_legal_port_f680_request" sizeclass="32" type="collection">
         <element label="Applicant" max_length="32" name="applicant" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element choice="1" label="Applicant BAE Permanent" max_length="40" name="applicant_bae_permanent" type="choice">
             <choice>
-                <element label="No" value="0"/>
-                <element label="Yes" value="1"/>
+                <element inactive_on_update="false" label="No" value="0"/>
+                <element inactive_on_update="false" label="Yes" value="1"/>
             </choice>
         </element>
         <element label="Applicant BAE Technical Contact" max_length="1024" name="applicant_bae_technical_contact" type="string_full_utf8"/>
@@ -17,15 +16,15 @@
         <element label="Application Further Information" max_length="1024" name="application_further_information" type="string_full_utf8"/>
         <element choice="1" label="BAE Legal Entity" max_length="40" name="bae_legal_entity" type="choice">
             <choice>
-                <element label="BAE Systems Surface Ships International Limited" value="2"/>
-                <element label="BAE Systems Surface Ships Limited" value="1"/>
+                <element inactive_on_update="false" label="BAE Systems Surface Ships International Limited" value="2"/>
+                <element inactive_on_update="false" label="BAE Systems Surface Ships Limited" value="1"/>
             </choice>
         </element>
         <element label="Clearance Required By" max_length="40" name="clearance_required_by" type="glide_date"/>
         <element choice="1" label="Clearance Within 30 Days" max_length="40" name="clearance_within_30_days" type="choice">
             <choice>
-                <element label="No" value="0"/>
-                <element label="Yes" value="1"/>
+                <element inactive_on_update="false" label="No" value="0"/>
+                <element inactive_on_update="false" label="Yes" value="1"/>
             </choice>
         </element>
         <element label="Clearance Within 30 Days Information" max_length="1024" name="clearance_within_30_days_information" type="string_full_utf8"/>
@@ -35,19 +34,19 @@
         <element label="End User Information" max_length="1024" name="end_user_information" type="string_full_utf8"/>
         <element label="End User Name" max_length="128" name="end_user_name" type="string"/>
         <element label="End User Security Classification" max_length="4000" name="end_user_security_classification" reference="u_mod_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>
-        <element choice="1" label="Equipment Clearance" max_length="40" name="equipment_clearance" reference="sys_choice" reference_qual="element=equipment_clearance^name=x_baes2_legal_port_f680_request^EQ" reference_qual_condition="element=equipment_clearance^name=x_baes2_legal_port_f680_request^EQ" type="glide_list">
+        <element choice="1" label="Equipment Clearance" max_length="1024" name="equipment_clearance" reference="sys_choice" reference_qual="element=equipment_clearance^name=x_baes2_legal_port_f680_request^EQ" reference_qual_condition="element=equipment_clearance^name=x_baes2_legal_port_f680_request^EQ" type="glide_list">
             <choice>
-                <element label="Demonstration In The United Kingdom To Overseas Customers" value="Demonstration In The United Kingdom To Overseas Customers"/>
-                <element label="Demonstration Overseas" value="Demonstration Overseas"/>
-                <element label="Market Survey/Initial Discussions/Promotion" value="Market Survey/Initial Discussions/Promotion"/>
-                <element label="Through Life Support" value="Through Life Support"/>
-                <element label="Training" value="Training"/>
+                <element inactive_on_update="false" label="Demonstration In The United Kingdom To Overseas Customers" value="Demonstration In The United Kingdom To Overseas Customers"/>
+                <element inactive_on_update="false" label="Demonstration Overseas" value="Demonstration Overseas"/>
+                <element inactive_on_update="false" label="Market Survey/Initial Discussions/Promotion" value="Market Survey/Initial Discussions/Promotion"/>
+                <element inactive_on_update="false" label="Through Life Support" value="Through Life Support"/>
+                <element inactive_on_update="false" label="Training" value="Training"/>
             </choice>
         </element>
         <element choice="1" label="Equipment Cryptographic Usage" max_length="40" name="equipment_cryptographic_usage" type="choice">
             <choice>
-                <element label="No" value="0"/>
-                <element label="Yes" value="1"/>
+                <element inactive_on_update="false" label="No" value="0"/>
+                <element inactive_on_update="false" label="Yes" value="1"/>
             </choice>
         </element>
         <element label="Equipment Cryptographic Usage Information" max_length="1024" name="equipment_cryptographic_usage_information" type="string_full_utf8"/>
@@ -55,23 +54,23 @@
         <element label="Equipment Export Control" max_length="1024" name="equipment_export_control" type="string_full_utf8"/>
         <element choice="1" label="Equipment Funding" max_length="40" name="equipment_funding" type="choice">
             <choice>
-                <element label="MOD Funded" value="0"/>
-                <element label="Part MOD Funded / Part Private Venture" value="1"/>
-                <element label="Private Venture" value="2"/>
+                <element inactive_on_update="false" label="MOD Funded" value="0"/>
+                <element inactive_on_update="false" label="Part MOD Funded / Part Private Venture" value="1"/>
+                <element inactive_on_update="false" label="Private Venture" value="2"/>
             </choice>
         </element>
         <element label="Equipment Funding Information" max_length="1024" name="equipment_funding_information" type="string_full_utf8"/>
         <element choice="1" label="Equipment Local Assembly" max_length="40" name="equipment_local_assembly" type="choice">
             <choice>
-                <element label="No" value="0"/>
-                <element label="Yes" value="1"/>
+                <element inactive_on_update="false" label="No" value="0"/>
+                <element inactive_on_update="false" label="Yes" value="1"/>
             </choice>
         </element>
         <element label="Equipment Local Assembly Information" max_length="1024" name="equipment_local_assembly_information" type="string_full_utf8"/>
         <element choice="1" label="Equipment MOD EW Release" max_length="40" name="equipment_mod_ew_release" type="choice">
             <choice>
-                <element label="No" value="0"/>
-                <element label="Yes" value="1"/>
+                <element inactive_on_update="false" label="No" value="0"/>
+                <element inactive_on_update="false" label="Yes" value="1"/>
             </choice>
         </element>
         <element label="Equipment Name" max_length="1024" name="equipment_name" type="string_full_utf8"/>
@@ -81,16 +80,16 @@
         <element label="Equipment Security Classification Issuing Authority" max_length="1024" name="equipment_security_classification_issuing_authority" type="string_full_utf8"/>
         <element choice="1" label="Equipment Security Classified" max_length="40" name="equipment_security_classified" type="choice">
             <choice>
-                <element label="No" value="0"/>
-                <element label="Yes" value="1"/>
+                <element inactive_on_update="false" label="No" value="0"/>
+                <element inactive_on_update="false" label="Yes" value="1"/>
             </choice>
         </element>
         <element label="Equipment Security Unclassified Action" max_length="1024" name="equipment_security_unclassified_action" type="string_full_utf8"/>
         <element label="Equipment Technical Description" max_length="1024" name="equipment_technical_description" type="string_full_utf8"/>
         <element choice="1" label="Equipment UK Armed Forces" max_length="40" name="equipment_uk_armed_forces" type="choice">
             <choice>
-                <element label="No" value="0"/>
-                <element label="Yes" value="1"/>
+                <element inactive_on_update="false" label="No" value="0"/>
+                <element inactive_on_update="false" label="Yes" value="1"/>
             </choice>
         </element>
         <element label="Equipment UK Armed Forces Information" max_length="1024" name="equipment_uk_armed_forces_information" type="string_full_utf8"/>
@@ -178,51 +177,51 @@
         <element label="MOD Authorisation Reference" max_length="128" name="mod_authorisation_reference" type="string"/>
         <element choice="1" label="Previous Applications" max_length="40" name="previous_applications" type="choice">
             <choice>
-                <element label="No" value="0"/>
-                <element label="Yes" value="1"/>
+                <element inactive_on_update="false" label="No" value="0"/>
+                <element inactive_on_update="false" label="Yes" value="1"/>
             </choice>
         </element>
         <element label="Previous Application Information" max_length="1024" name="previous_application_information" type="string_full_utf8"/>
         <element choice="1" label="Programme" max_length="40" name="programme" type="choice">
             <choice>
-                <element label="Australia Sea 5000" value="9"/>
-                <element label="Central Engineering" value="1"/>
-                <element label="Combat Systems" value="2"/>
-                <element label="CSC (Canada)" value="10"/>
-                <element label="GCS - Pre-Contract" value="3"/>
-                <element label="N/A" value="13"/>
-                <element label="Oman" value="8"/>
-                <element label="Pre-Contract - International (other)" value="12"/>
-                <element label="QEC" value="4"/>
-                <element label="RCB2" value="5"/>
-                <element label="Thailand" value="6"/>
-                <element label="Type 26" value="7"/>
-                <element label="Type 31e" value="11"/>
+                <element inactive_on_update="false" label="Australia Sea 5000" value="9"/>
+                <element inactive_on_update="false" label="Central Engineering" value="1"/>
+                <element inactive_on_update="false" label="Combat Systems" value="2"/>
+                <element inactive_on_update="false" label="CSC (Canada)" value="10"/>
+                <element inactive_on_update="false" label="GCS - Pre-Contract" value="3"/>
+                <element inactive_on_update="false" label="N/A" value="13"/>
+                <element inactive_on_update="false" label="Oman" value="8"/>
+                <element inactive_on_update="false" label="Pre-Contract - International (other)" value="12"/>
+                <element inactive_on_update="false" label="QEC" value="4"/>
+                <element inactive_on_update="false" label="RCB2" value="5"/>
+                <element inactive_on_update="false" label="Thailand" value="6"/>
+                <element inactive_on_update="false" label="Type 26" value="7"/>
+                <element inactive_on_update="false" label="Type 31e" value="11"/>
             </choice>
         </element>
         <element label="Prospect Estimated Value" max_length="20" name="prospect_estimated_value" type="currency"/>
         <element choice="1" label="Rejection reason" max_length="40" name="rejection_reason" type="choice">
             <choice>
-                <element label="Application resubmitted" value="2"/>
-                <element label="Authorisation already exists" value="1"/>
-                <element label="Incorrect application" value="3"/>
-                <element label="Manual approval" value="4"/>
-                <element label="Request no longer required" value="5"/>
+                <element inactive_on_update="false" label="Application resubmitted" value="2"/>
+                <element inactive_on_update="false" label="Authorisation already exists" value="1"/>
+                <element inactive_on_update="false" label="Incorrect application" value="3"/>
+                <element inactive_on_update="false" label="Manual approval" value="4"/>
+                <element inactive_on_update="false" label="Request no longer required" value="5"/>
             </choice>
         </element>
         <element choice="1" label="Release Foreign Technology" max_length="40" name="release_foreign_technology" type="choice">
             <choice>
-                <element label="No" value="0"/>
-                <element label="Yes" value="1"/>
+                <element inactive_on_update="false" label="No" value="0"/>
+                <element inactive_on_update="false" label="Yes" value="1"/>
             </choice>
         </element>
         <element label="Release Foreign Technology Information" max_length="1024" name="release_foreign_technology_information" type="string_full_utf8"/>
         <element choice="1" label="Release MTCR Rated" max_length="40" name="release_mtcr_rated" type="choice">
             <choice>
-                <element label="No" value="0"/>
-                <element label="Unknown" value="3"/>
-                <element label="Yes – MTCR Category 1" value="1"/>
-                <element label="Yes – MTCR Category 2" value="2"/>
+                <element inactive_on_update="false" label="No" value="0"/>
+                <element inactive_on_update="false" label="Unknown" value="3"/>
+                <element inactive_on_update="false" label="Yes – MTCR Category 1" value="1"/>
+                <element inactive_on_update="false" label="Yes – MTCR Category 2" value="2"/>
             </choice>
         </element>
         <element label="Release Security Classification" max_length="4000" name="release_security_classification" reference="u_mod_security_classification" reference_qual="u_active=true^EQ" reference_qual_condition="u_active=true^EQ" type="glide_list"/>

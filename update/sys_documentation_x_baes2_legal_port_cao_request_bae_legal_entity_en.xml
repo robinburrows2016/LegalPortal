@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_documentation element="bae_legal_entity" label="BAE Systems Legal Entity" language="en" table="x_baes2_legal_port_cao_request">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>bae_legal_entity</element>

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sm_config">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sm_config">
     <sm_config action="INSERT_OR_UPDATE">
         <accept_reject>false</accept_reject>
         <active>true</active>

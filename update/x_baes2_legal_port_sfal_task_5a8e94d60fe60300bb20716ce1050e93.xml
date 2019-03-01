@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="x_baes2_legal_port_sfal_task">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_baes2_legal_port_sfal_task">
     <x_baes2_legal_port_sfal_task action="INSERT_OR_UPDATE">
         <active>true</active>
         <automatic_condition table="x_baes2_legal_portal_task">stateIN16,17,18^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="IN" or="false" value="16,17,18"/>
